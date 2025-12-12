@@ -1,0 +1,94 @@
+{
+	"name": "net-6-runtime",
+	"version": "1.1.0",
+	"displayName": ".NET 6 Runtime",
+	"description": "Provides .NET runtime binaries for use by other extensions",
+	"publisher": "Microsoft",
+	"license": "SEE LICENSE IN LICENSE.rtf",
+	"icon": "resources/icon.png",
+	"main": "./bin/dist/extension.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/azuredatastudio.git"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"engines": {
+		"vscode": "*",
+		"azdata": ">=1.21.0"
+	},
+	"contributes": {
+		"configuration": [
+			{
+				"title": "%constants.extensionName%",
+				"properties": {
+					"net6.dotnetPath": {
+						"type": "string",
+						"description": "%extension.configuration.dotnetPath.description%"
+					},
+					"net6.logLevel": {
+						"type": "string",
+						"enum": [
+							"Error",
+							"Warning",
+							"Info",
+							"Debug"
+						],
+						"default": "Warning",
+						"description": "%extension.configuration.logLevel.description%"
+					}
+				}
+			}
+		]
+	},
+	"scripts": {
+		"build": "eslint src/** test/** --max-warnings 0 -f visualstudio && tsc --build",
+		"clean": "tsc --build --clean",
+		"test": "mocha bin/test/**/*.spec.js",
+		"package-debug": "webpack --mode development && npm run create-vsix-package",
+		"minify": "webpack --mode production",
+		"create-vsix-package": "vsce package -o bin"
+	},
+	"devDependencies": {
+		"@types/azdata": "^1.35.0",
+		"@types/mocha": "^8.2.1",
+		"@types/node": "^14.14.45",
+		"@types/node-fetch": "^2.5.8",
+		"@types/tar-fs": "^2.0.0",
+		"@types/vscode": "^1.54.0",
+		"@typescript-eslint/eslint-plugin": "^4.17.0",
+		"@typescript-eslint/parser": "^4.17.0",
+		"copy-webpack-plugin": "^9.0.1",
+		"dts-bundle-webpack": "^1.0.2",
+		"eslint": "^7.22.0",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-mocha": "^8.1.0",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-promise": "^4.3.1",
+		"mocha": "^8.3.2",
+		"ts-loader": "^8.0.18",
+		"typescript": "^4.2.3",
+		"vsce": "^1.87.0",
+		"webpack": "^5.25.0",
+		"webpack-cli": "^4.5.0"
+	},
+	"dependencies": {
+		"ads-common": "~1.0.222910002",
+		"node-stream-zip": "^1.13.2",
+		"tar-fs": "^2.1.1",
+		"vscode-nls": "^5.0.0"
+	},
+	"__metadata": {
+		"id": "85",
+		"publisherDisplayName": "Microsoft",
+		"publisherId": "Microsoft",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1730736330371
+	}
+}

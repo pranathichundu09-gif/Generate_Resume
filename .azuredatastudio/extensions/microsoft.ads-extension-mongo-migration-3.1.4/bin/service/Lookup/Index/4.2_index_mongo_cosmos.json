@@ -1,0 +1,133 @@
+{
+  "CompoundIndexOnNestedField": {
+    "AssessmentName": "Compound Index on Nested fields",
+    "AssessmentSeverity": "Critical",
+    "Message": "Compound indexes with nested fields are not fully supported in Azure Cosmos DB for MongoDB RU-based (v4.2). If you are using compound index where the value at the nested fields are docs (not arrays), you may enable the \"EnableUniqueCompoundNestedDocs\" capability on your database account. Else, consider switching to Azure Cosmos DB for MongoDB vCore.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-configure-capabilities",
+      "label": "Enabling the capability"
+    }
+  },
+
+  "UniqueIndexOnNestedField": {
+    "AssessmentName": "Unique Index on Nested fields",
+    "AssessmentSeverity": "Critical",
+    "Message": "Unique indexes with nested fields are not fully supported in Azure Cosmos DB for MongoDB RU-based (v4.2). If you are using unique index where the nested fields are docs (not arrays), you may enable the \"EnableUniqueCompoundNestedDocs\" capability on your database account. Else, consider switching to Azure Cosmos DB for MongoDB vCore.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-configure-capabilities",
+      "label": "Enabling the capability"
+    }
+  },
+
+  "CompoundIndexLimit": {
+    "AssessmentName": "Compound Index fields size",
+    "AssessmentSeverity": "Critical",
+    "Message": "Azure Cosmos DB for MongoDB RU-based (v4.2) supports a maximum of 8 fields and a total of 2048 characters in all the fields of the index. You would need to reduce the number of fields in the compound index. Compound indexes are only used in queries that sort results by multiple fields. For queries that have multiple filters that don't need to sort, create multiple single field indexes."
+  },
+
+  "UniqueIndex": {
+    "AssessmentName": "Unique Index",
+    "AssessmentSeverity": "Warning",
+    "Message": "Unique indexes can only be created on empty collections currently in Azure Cosmos DB for MongoDB RU-based (v4.2). To create unique indexes on non-empty collections, enable the \"EnableUniqueIndexReIndex\" on your account before migration.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-configure-capabilities",
+      "label": "Enable the capability"
+    }
+  },
+
+  "TextIndex": {
+    "AssessmentName": "Text Index",
+    "AssessmentSeverity": "Critical",
+    "Message": "Text indexes are currently not supported in Azure Cosmos DB for MongoDB RU-based (v4.2). We recommend using Azure Cognitive Search for full text search and advanced search features like wildcard search etc. You need to set up the search indexer. Else, consider switching to Azure Cosmos DB for MongoDB vCore",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/search/search-howto-index-cosmosdb-mongodb",
+      "label": "Setting up the search indexer"
+    }
+  },
+
+  "TTLIndexOnAbsolutePath": {
+    "AssessmentName": "TTL Index on Absolute Path",
+    "AssessmentSeverity": "Warning",
+    "Message": "TTL index on a custom path is not enabled by default on Azure Cosmos DB for MongoDB RU-based (v4.2). Please enable the \"EnableTtlOnCustomPath\" capability on your account before migration. Please also note that Azure Cosmos DB for MongoDB RU-based (v4.2) does not support creating TTL indexes on array of fields. You may only create TTL index on one field per collection.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-configure-capabilities",
+      "label": "Enabling the capability"
+    }
+  },
+
+  "MultipleTTLIndexesOnDifferentFields": {
+    "AssessmentName": "Multiple TTL Indexes on Different Fields",
+    "AssessmentSeverity": "Critical",
+    "Message": "Azure Cosmos DB for MongoDB RU-based (v4.2) does not support creating multiple TTL indexes. You may only create TTL index on one field per collection."
+  },
+
+  "PartialTTLIndex": {
+    "AssessmentName": "Partial TTL Index",
+    "AssessmentSeverity": "Critical",
+    "Message": "Azure Cosmos DB for MongoDB RU-based (v4.2) does not support creating partial TTL indexes."
+  },
+
+  "SparseUniqueTTLIndex": {
+    "AssessmentName": "Sparse Unique TTL Index",
+    "AssessmentSeverity": "Critical",
+    "Message": "Azure Cosmos DB for MongoDB RU-based (v4.2) does not support creating sparse unique TTL indexes."
+  },
+
+  "WildCardProjection": {
+    "AssessmentName": "Wild Card Projection",
+    "AssessmentSeverity": "Critical",
+    "Message": "Azure Cosmos DB for MongoDB RU-based (v4.2) does not support creating wildcard index on multiple single fields by specifying \"wildcardProjection\" during index creation. You can create multiple single field indexes instead."
+  },
+
+  "PartialIndex": {
+    "AssessmentName": "Partial Index",
+    "AssessmentSeverity": "Warning",
+    "Message": "Partial unique index is not enabled by default on Azure Cosmos DB for MongoDB RU (v4.2). Please enable the \"EnablePartialUniqueIndex\" capability on your account before migration. Partial indexes which are not unique are not supported in Azure Cosmos DB for MongoDB RU (v4.2).",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-configure-capabilities",
+      "label": "Enabling the capability"
+    }
+  },
+
+  "CaseInsensitiveIndex": {
+    "AssessmentName": "Case Insensitive Index",
+    "AssessmentSeverity": "Critical",
+    "Message": "Case insensitive indexes are not supported in Azure Cosmos DB for MongoDB RU-based (v4.2)."
+  },
+
+  "Geospatial2dIndex": {
+    "AssessmentName": "Geospatial 2d Index",
+    "AssessmentSeverity": "Critical",
+    "Message": "Geospatial 2d indexes are not supported in Azure Cosmos DB for MongoDB RU-based (v4.2). "
+  },
+
+  "GeoHaystackIndex": {
+    "AssessmentName": "GeoHaystack Index",
+    "AssessmentSeverity": "Critical",
+    "Message": "GeoHaystack indexes are deprecated and are not supported in Azure Cosmos DB for MongoDB RU-based (v4.2)."
+  },
+
+  "HashedIndex": {
+    "AssessmentName": "Hashed Index",
+    "AssessmentSeverity": "Warning",
+    "Message": "Hashed indexes are not supported in Azure Cosmos DB for MongoDB RU-based (v4.2). Hashed indexes are used for sharding in MongoDB, and Azure Cosmos DB for MongoDB automatically manages sharding based on your shard key, so they are not needed."
+  },
+
+  "SparseIndex": {
+    "AssessmentName": "Sparse Index",
+    "AssessmentSeverity": "Warning",
+    "Message": "Sparse indexes which are not unique are not required to be sparse in Azure Cosmos DB for MongoDB RU-based (v4.2). Consider using single field indexes to improve query performance instead."
+  },
+
+  "SparseUniqueIndexOnSingleField": {
+    "AssessmentName": "Sparse Unique Index on Single Field",
+    "AssessmentSeverity": "Warning",
+    "Message": "Sparse Unique indexes having single field are not supported with Azure Cosmos DB for MongoDB RU-based (v4.2). Consider using partial unique indexes instead."
+  },
+
+  "SparseUniqueIndexOnMultipleFields": {
+    "AssessmentName": "Sparse Unique Index on Multiple Fields",
+    "AssessmentSeverity": "Critical",
+    "Message": "Sparse Unique indexes having multiple fields are not supported with Azure Cosmos DB for MongoDB RU-based (v4.2)."
+  }
+}

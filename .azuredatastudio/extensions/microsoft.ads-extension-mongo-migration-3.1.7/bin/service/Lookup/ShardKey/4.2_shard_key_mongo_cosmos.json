@@ -1,0 +1,14 @@
+{
+  "RangedSharding": {
+    "AssessmentName": "Ranged Sharding",
+    "AssessmentSeverity": "Warning",
+    "Message": "RU based Azure Cosmos DB for MongoDB does not support Ranged sharding. We recommend you switch to a single-field shard key using hashed sharding instead.",
+    "MoreInfo": null
+  },
+  "MultiFieldShardKey": {
+    "AssessmentName": "Multi-field Shard Key",
+    "AssessmentSeverity": "Warning",
+    "Message": "RU based Azure Cosmos DB for MongoDB does not support sharding by multiple fields. We recommend switching to a single field as a shard key instead.",
+    "MoreInfo": null
+  }
+}

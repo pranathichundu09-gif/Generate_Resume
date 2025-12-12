@@ -1,0 +1,809 @@
+{
+  "eval": {
+    "AssessmentName": "eval",
+    "FeatureType": "database command",
+    "FeatureSubtype": "query and write operation command",
+    "AssessmentSeverity": "Warning",
+    "Message": "eval is no longer a valid MongoDB command and it is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "getPrevError": {
+    "AssessmentName": "getPrevError",
+    "FeatureType": "database command",
+    "FeatureSubtype": "query and write operation command",
+    "AssessmentSeverity": "Informational",
+    "Message": "getPrevError is no longer a valid MongoDB command and it is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "parallelCollectionScan": {
+    "AssessmentName": "parallelCollectionScan",
+    "FeatureType": "database command",
+    "FeatureSubtype": "query and write operation command",
+    "AssessmentSeverity": "Informational",
+    "Message": "parallelCollectionScan is no longer a valid MongoDB command and it is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "resetError": {
+    "AssessmentName": "resetError",
+    "FeatureType": "database command",
+    "FeatureSubtype": "query and write operation command",
+    "AssessmentSeverity": "Informational",
+    "Message": "resetError is no longer a valid MongoDB command and it is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "geoSearch": {
+    "AssessmentName": "geoSearch",
+    "FeatureType": "database command",
+    "FeatureSubtype": "geospatial command",
+    "AssessmentSeverity": "Informational",
+    "Message": "geoSearch is no longer a valid MongoDB command and it is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "planCacheClear": {
+    "AssessmentName": "planCacheClear",
+    "FeatureType": "database command",
+    "FeatureSubtype": "query plan cache command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Query plan cache command planCacheClear is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "planCacheClearFilters": {
+    "AssessmentName": "planCacheClearFilters",
+    "FeatureType": "database command",
+    "FeatureSubtype": "query plan cache command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Query plan cache command planCacheClearFilters is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "planCacheListFilters": {
+    "AssessmentName": "planCacheListFilters",
+    "FeatureType": "database command",
+    "FeatureSubtype": "query plan cache command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Query plan cache command planCacheListFilters is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "planCacheSetFilter": {
+    "AssessmentName": "planCacheSetFilter",
+    "FeatureType": "database command",
+    "FeatureSubtype": "query plan cache command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Query plan cache command planCacheSetFilter is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "getnonce": {
+    "AssessmentName": "getnonce",
+    "FeatureType": "database command",
+    "FeatureSubtype": "query plan cache command",
+    "AssessmentSeverity": "Informational",
+    "Message": "getnonce command is not supported in Azure Cosmos DB for MongoDB vCore. It is a deprecated MongoDB command. Please use connection string to authenticate to the resources instead."
+  },
+
+  "createUser": {
+    "AssessmentName": "createUser",
+    "FeatureType": "database command",
+    "FeatureSubtype": "user management command",
+    "AssessmentSeverity": "Warning",
+    "Message": "User management command createUser is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "dropAllUsersFromDatabase": {
+    "AssessmentName": "dropAllUsersFromDatabase",
+    "FeatureType": "database command",
+    "FeatureSubtype": "user management command",
+    "AssessmentSeverity": "Warning",
+    "Message": "User management command dropAllUsersFromDatabase is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "dropUser": {
+    "AssessmentName": "dropUser",
+    "FeatureType": "database command",
+    "FeatureSubtype": "user management command",
+    "AssessmentSeverity": "Warning",
+    "Message": "User management command dropUser is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "grantRolesToUser": {
+    "AssessmentName": "grantRolesToUser",
+    "FeatureType": "database command",
+    "FeatureSubtype": "user management command",
+    "AssessmentSeverity": "Warning",
+    "Message": "User management command grantRolesToUser is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "revokeRolesFromUser": {
+    "AssessmentName": "revokeRolesFromUser",
+    "FeatureType": "database command",
+    "FeatureSubtype": "user management command",
+    "AssessmentSeverity": "Warning",
+    "Message": "User management command revokeRolesFromUser is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "updateUser": {
+    "AssessmentName": "updateUser",
+    "FeatureType": "database command",
+    "FeatureSubtype": "user management command",
+    "AssessmentSeverity": "Warning",
+    "Message": "User management command updateUser is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "usersInfo": {
+    "AssessmentName": "usersInfo",
+    "FeatureType": "database command",
+    "FeatureSubtype": "user management command",
+    "AssessmentSeverity": "Warning",
+    "Message": "User management command usersInfo is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "createRole": {
+    "AssessmentName": "createRole",
+    "FeatureType": "database command",
+    "FeatureSubtype": "role management command",
+    "AssessmentSeverity": "Warning",
+    "Message": "Role management command createRole is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "dropRole": {
+    "AssessmentName": "dropRole",
+    "FeatureType": "database command",
+    "FeatureSubtype": "role management command",
+    "AssessmentSeverity": "Warning",
+    "Message": "Role management command dropRole is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "dropAllRolesFromDatabase": {
+    "AssessmentName": "dropAllRolesFromDatabase",
+    "FeatureType": "database command",
+    "FeatureSubtype": "role management command",
+    "AssessmentSeverity": "Warning",
+    "Message": "Role management command dropAllRolesFromDatabase is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "grantPrivilegesToRole": {
+    "AssessmentName": "grantPrivilegesToRole",
+    "FeatureType": "database command",
+    "FeatureSubtype": "role management command",
+    "AssessmentSeverity": "Warning",
+    "Message": "Role management command grantPrivilegesToRole is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "grantRolesToRole": {
+    "AssessmentName": "grantRolesToRole",
+    "FeatureType": "database command",
+    "FeatureSubtype": "role management command",
+    "AssessmentSeverity": "Warning",
+    "Message": "Role management command grantRolesToRole is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "invalidateUserCache": {
+    "AssessmentName": "invalidateUserCache",
+    "FeatureType": "database command",
+    "FeatureSubtype": "role management command",
+    "AssessmentSeverity": "Warning",
+    "Message": "Role management command invalidateUserCache is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "revokePrivilegesFromRole": {
+    "AssessmentName": "revokePrivilegesFromRole",
+    "FeatureType": "database command",
+    "FeatureSubtype": "role management command",
+    "AssessmentSeverity": "Warning",
+    "Message": "Role management command revokePrivilegesFromRole is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "revokeRolesFromRole": {
+    "AssessmentName": "revokeRolesFromRole",
+    "FeatureType": "database command",
+    "FeatureSubtype": "role management command",
+    "AssessmentSeverity": "Warning",
+    "Message": "Role management command revokeRolesFromRole is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "rolesInfo": {
+    "AssessmentName": "rolesInfo",
+    "FeatureType": "database command",
+    "FeatureSubtype": "role management command",
+    "AssessmentSeverity": "Warning",
+    "Message": "Role management command rolesInfo is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "updateRole": {
+    "AssessmentName": "updateRole",
+    "FeatureType": "database command",
+    "FeatureSubtype": "role management command",
+    "AssessmentSeverity": "Warning",
+    "Message": "Role management command updateRole is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "applyOps": {
+    "AssessmentName": "applyOps",
+    "FeatureType": "database command",
+    "FeatureSubtype": "replication command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command applyOps is not supported in Azure Cosmos DB for MongoDB vCore. Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run replication commands. Replication is handled by the platform instead."
+  },
+
+  "replSetAbortPrimaryCatchUp": {
+    "AssessmentName": "replSetAbortPrimaryCatchUp",
+    "FeatureType": "database command",
+    "FeatureSubtype": "replication command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command replSetAbortPrimaryCatchUp is not supported in Azure Cosmos DB for MongoDB vCore. Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run replication commands. Replication is handled by the platform instead."
+  },
+
+  "replSetFreeze": {
+    "AssessmentName": "replSetFreeze",
+    "FeatureType": "database command",
+    "FeatureSubtype": "replication command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command replSetFreeze is not supported in Azure Cosmos DB for MongoDB vCore. Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run replication commands. Replication is handled by the platform instead."
+  },
+
+  "replSetGetConfig": {
+    "AssessmentName": "replSetGetConfig",
+    "FeatureType": "database command",
+    "FeatureSubtype": "replication command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command replSetGetConfig is not supported in Azure Cosmos DB for MongoDB vCore. Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run replication commands. Replication is handled by the platform instead."
+  },
+
+  "replSetGetStatus": {
+    "AssessmentName": "replSetGetStatus",
+    "FeatureType": "database command",
+    "FeatureSubtype": "replication command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command replSetGetStatus is not supported in Azure Cosmos DB for MongoDB vCore. Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run replication commands. Replication is handled by the platform instead."
+  },
+
+  "replSetInitiate": {
+    "AssessmentName": "replSetInitiate",
+    "FeatureType": "database command",
+    "FeatureSubtype": "replication command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command replSetInitiate is not supported in Azure Cosmos DB for MongoDB vCore. Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run replication commands. Replication is handled by the platform instead."
+  },
+
+  "replSetMaintenance": {
+    "AssessmentName": "replSetMaintenance",
+    "FeatureType": "database command",
+    "FeatureSubtype": "replication command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command replSetMaintenance is not supported in Azure Cosmos DB for MongoDB vCore. Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run replication commands. Replication is handled by the platform instead."
+  },
+
+  "replSetReconfig": {
+    "AssessmentName": "replSetReconfig",
+    "FeatureType": "database command",
+    "FeatureSubtype": "replication command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command replSetReconfig is not supported in Azure Cosmos DB for MongoDB vCore. Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run replication commands. Replication is handled by the platform instead."
+  },
+
+  "replSetResizeOplog": {
+    "AssessmentName": "replSetResizeOplog",
+    "FeatureType": "database command",
+    "FeatureSubtype": "replication command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command replSetResizeOplog is not supported in Azure Cosmos DB for MongoDB vCore. Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run replication commands. Replication is handled by the platform instead."
+  },
+
+  "replSetStepDown": {
+    "AssessmentName": "replSetStepDown",
+    "FeatureType": "database command",
+    "FeatureSubtype": "replication command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command replSetStepDown is not supported in Azure Cosmos DB for MongoDB vCore. Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run replication commands. Replication is handled by the platform instead."
+  },
+
+  "replSetSyncFrom": {
+    "AssessmentName": "replSetSyncFrom",
+    "FeatureType": "database command",
+    "FeatureSubtype": "replication command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command replSetSyncFrom is not supported in Azure Cosmos DB for MongoDB vCore. Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run replication commands. Replication is handled by the platform instead."
+  },
+
+  "abortReshardCollection": {
+    "AssessmentName": "abortReshardCollection",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "addShard": {
+    "AssessmentName": "addShard",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "addShardToZone": {
+    "AssessmentName": "addShardToZone",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "balancerCollectionStatus": {
+    "AssessmentName": "balancerCollectionStatus",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "balancerStart": {
+    "AssessmentName": "balancerStart",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "balancerStatus": {
+    "AssessmentName": "balancerStatus",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "balancerStop": {
+    "AssessmentName": "balancerStop",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "checkShardingIndex": {
+    "AssessmentName": "checkShardingIndex",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "clearJumboFlag": {
+    "AssessmentName": "clearJumboFlag",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "cleanupOrphaned": {
+    "AssessmentName": "cleanupOrphaned",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "cleanupReshardCollection": {
+    "AssessmentName": "cleanupReshardCollection",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "commitReshardCollection": {
+    "AssessmentName": "commitReshardCollection",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "configureCollectionBalancing": {
+    "AssessmentName": "configureCollectionBalancing",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "flushRouterConfig": {
+    "AssessmentName": "flushRouterConfig",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "getShardMap": {
+    "AssessmentName": "getShardMap",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "getShardVersion": {
+    "AssessmentName": "getShardVersion",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "isdbgrid": {
+    "AssessmentName": "isdbgrid",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "listShards": {
+    "AssessmentName": "listShards",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "medianKey": {
+    "AssessmentName": "medianKey",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "moveChunk": {
+    "AssessmentName": "moveChunk",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "movePrimary": {
+    "AssessmentName": "movePrimary",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "mergeChunks": {
+    "AssessmentName": "mergeChunks",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "refineCollectionShardKey": {
+    "AssessmentName": "refineCollectionShardKey",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "removeShard": {
+    "AssessmentName": "removeShard",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "removeShardFromZone": {
+    "AssessmentName": "removeShardFromZone",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "reshardCollection": {
+    "AssessmentName": "reshardCollection",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "setShardVersion": {
+    "AssessmentName": "setShardVersion",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "shardingState": {
+    "AssessmentName": "shardingState",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "split": {
+    "AssessmentName": "split",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "splitVector": {
+    "AssessmentName": "splitVector",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "unsetSharding": {
+    "AssessmentName": "unsetSharding",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "updateZoneKeyRange": {
+    "AssessmentName": "updateZoneKeyRange",
+    "FeatureType": "database command",
+    "FeatureSubtype": "sharding command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database where you do not need to run shard management commands. Sharding commands other than shardCollection and enableSharding are not supported. You only need to enable sharding on collections. Shard management activities such as load balancing, failover and other operations are handled by the platform instead."
+  },
+
+  "endSessions": {
+    "AssessmentName": "endSessions",
+    "FeatureType": "database command",
+    "FeatureSubtype": "session command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Session comand endSessions is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "killAllSessions": {
+    "AssessmentName": "killAllSessions",
+    "FeatureType": "database command",
+    "FeatureSubtype": "session command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Session comand killAllSessions is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "killAllSessionsByPattern": {
+    "AssessmentName": "killAllSessionsByPattern",
+    "FeatureType": "database command",
+    "FeatureSubtype": "session command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Session comand killAllSessionsByPattern is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "killSessions": {
+    "AssessmentName": "killSessions",
+    "FeatureType": "database command",
+    "FeatureSubtype": "session command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Session comand killSessions is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "refreshSessions": {
+    "AssessmentName": "refreshSessions",
+    "FeatureType": "database command",
+    "FeatureSubtype": "session command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Session comand refreshSessions is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "convertToCapped": {
+    "AssessmentName": "convertToCapped, cloneCollectionAsCapped",
+    "FeatureType": "database command",
+    "FeatureSubtype": "administration command",
+    "AssessmentSeverity": "Critical",
+    "Message": "Capped collections are not supported in Azure Cosmos DB for MongoDB vCore. Please use TTL indexes in order to limit the collection size instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/indexing#ttl-indexes",
+      "label": "TTl indexes"
+    }
+  },
+
+  "compact": {
+    "AssessmentName": "compact",
+    "FeatureType": "database command",
+    "FeatureSubtype": "administration command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Administration command compact is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "copydb": {
+    "AssessmentName": "copydb",
+    "FeatureType": "database command",
+    "FeatureSubtype": "administration command",
+    "AssessmentSeverity": "Informational",
+    "Message": "copydb is no longer a valid MongoDB command and it is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "dbHash": {
+    "AssessmentName": "dbHash",
+    "FeatureType": "database command",
+    "FeatureSubtype": "diagnostic command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore automatically manages the checksum and consistency of the data in a replica set, so dbHash is not needed while using Cosmos DB."
+  },
+
+  "features": {
+    "AssessmentName": "features",
+    "FeatureType": "database command",
+    "FeatureSubtype": "diagnostic command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database and features command is not supported."
+  },
+
+  "profile": {
+    "AssessmentName": "profile",
+    "FeatureType": "database command",
+    "FeatureSubtype": "diagnostic command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Profile is not supported in Azure Cosmos DB for MongoDB vCore. Please use Azure diagnostic resource logs instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/monitor-resource-logs?tabs=azure-portal",
+      "label": "Azure diagnostic resource logs"
+    }
+  },
+
+  "serverStatus": {
+    "AssessmentName": "serverStatus",
+    "FeatureType": "database command",
+    "FeatureSubtype": "diagnostic command",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB vCore is a managed database. serverStatus command is not needed while using Cosmos DB."
+  },
+
+  "createSearchIndexes": {
+    "AssessmentName": "createSearchIndexes",
+    "FeatureType": "database command",
+    "FeatureSubtype": "atlas search command",
+    "AssessmentSeverity": "Informational",
+    "Message": "createSearchIndexes is not required in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "dropSearchIndex": {
+    "AssessmentName": "dropSearchIndex",
+    "FeatureType": "database command",
+    "FeatureSubtype": "atlas search command",
+    "AssessmentSeverity": "Informational",
+    "Message": "dropSearchIndex is not required in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "updateSearchIndex": {
+    "AssessmentName": "updateSearchIndex",
+    "FeatureType": "database command",
+    "FeatureSubtype": "atlas search command",
+    "AssessmentSeverity": "Informational",
+    "Message": "updateSearchIndex is not required in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "mapReduce": {
+    "AssessmentName": "mapReduce",
+    "FeatureType": "aggregation pipeline",
+    "FeatureSubtype": "aggregation command",
+    "AssessmentSeverity": "Critical",
+    "Message": "mapReduce is not supported in aggregation pipelines in Azure Cosmos DB for MongoDB vCore.Please use supported stages of the aggregation pipeline instead."
+  },
+
+  "$bucket": {
+    "AssessmentName": "$bucket",
+    "FeatureType": "aggregation pipeline",
+    "FeatureSubtype": "aggregation stage",
+    "AssessmentSeverity": "Critical",
+    "Message": "$bucket is not supported in aggregation pipelines in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "$bucketAuto": {
+    "AssessmentName": "$bucketAuto",
+    "FeatureType": "aggregation pipeline",
+    "FeatureSubtype": "aggregation stage",
+    "AssessmentSeverity": "Critical",
+    "Message": "$bucketAuto is not supported in aggregation pipelines in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "$indexStats": {
+    "AssessmentName": "$indexStats",
+    "FeatureType": "aggregation pipeline",
+    "FeatureSubtype": "aggregation stage",
+    "AssessmentSeverity": "Warning",
+    "Message": "$indexStats is not supported in aggregation pipelines in Azure Cosmos DB for MongoDB vCore. Please use Azure monitor to view the index stats instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/use-metrics",
+      "label": "Azure monitor"
+    }
+  },
+
+  "$listLocalSessions": {
+    "AssessmentName": "$listLocalSessions",
+    "FeatureType": "aggregation pipeline",
+    "FeatureSubtype": "aggregation stage",
+    "AssessmentSeverity": "Informational",
+    "Message": "$listLocalSessions is not supported in aggregation pipelines in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "$listSessions": {
+    "AssessmentName": "$listSessions",
+    "FeatureType": "aggregation pipeline",
+    "FeatureSubtype": "aggregation stage",
+    "AssessmentSeverity": "Informational",
+    "Message": "$listSessions is not supported in aggregation pipelines in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "$lookup": {
+    "AssessmentName": "$lookup with let",
+    "FeatureType": "aggregation pipeline",
+    "FeatureSubtype": "aggregation stage",
+    "AssessmentSeverity": "Critical",
+    "Message": "Azure Cosmos DB for MongoDB vCore supports lookup performing equality match with a single join condition. Join conditions and subqueries using ''let'' field is not supported. We recommend handling such joins on the client."
+  },
+
+  "$listSearchIndexes": {
+    "AssessmentName": "$listSearchIndexes",
+    "FeatureType": "aggregation pipeline",
+    "FeatureSubtype": "aggregation stage",
+    "AssessmentSeverity": "Informational",
+    "Message": "$listSearchIndexes is not required in aggregation pipelines in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "$listSampledQueries": {
+    "AssessmentName": "$listSampledQueries",
+    "FeatureType": "aggregation pipeline",
+    "FeatureSubtype": "aggregation stage",
+    "AssessmentSeverity": "Critical",
+    "Message": "$listSampledQueries is not supported in aggregation pipelines in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "$median": {
+    "AssessmentName": "$median",
+    "FeatureType": "aggregation pipeline",
+    "FeatureSubtype": "aggregation operator",
+    "AssessmentSeverity": "Critical",
+    "Message": "$median is not supported in aggregation pipelines in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "$percentile": {
+    "AssessmentName": "$percentile",
+    "FeatureType": "aggregation pipeline",
+    "FeatureSubtype": "aggregation operator",
+    "AssessmentSeverity": "Critical",
+    "Message": "$percentile is not supported in aggregation pipelines in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "$jsonSchema": {
+    "AssessmentName": "$jsonSchema",
+    "FeatureType": "operator",
+    "FeatureSubtype": "evaluation query operator",
+    "AssessmentSeverity": "Critical",
+    "Message": "Json schema validation is not supported in Azure Cosmos DB for MongoDB vCore. You would need to handle the schema requirements within the application code."
+  },
+
+  "$where": {
+    "AssessmentName": "$where",
+    "FeatureType": "operator",
+    "FeatureSubtype": "evaluation query operator",
+    "AssessmentSeverity": "Critical",
+    "Message": "$where is not supported in aggregation pipelines in Azure Cosmos DB for MongoDB vCore. Use $expr or supported stages of the aggregation pipeline instead."
+  },
+
+  "$comment": {
+    "AssessmentName": "$comment",
+    "FeatureType": "operator",
+    "FeatureSubtype": "misc query operator",
+    "AssessmentSeverity": "Critical",
+    "Message": "$comment is not supported in Azure Cosmos DB for MongoDB vCore. Please use Azure diagnostic resource logs instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/monitor-resource-logs?tabs=azure-portal",
+      "label": "Azure diagnostic resource logs"
+    }
+  }
+}

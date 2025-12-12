@@ -1,0 +1,2266 @@
+﻿[
+  {
+    "resourceType": "disks",
+    "name": "Premium_LRS",
+    "tier": "Premium",
+    "size": "P1",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "4"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "0"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "120"
+      },
+      {
+        "name": "MinIOps",
+        "value": "120"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "25"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "25"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "3"
+      },
+      {
+        "name": "MaxBurstIops",
+        "value": "3500"
+      },
+      {
+        "name": "MaxBurstBandwidthMBps",
+        "value": "170"
+      },
+      {
+        "name": "MaxBurstDurationInMin",
+        "value": "30"
+      },
+      {
+        "name": "BurstCreditBucketSizeInIO",
+        "value": "6084000"
+      },
+      {
+        "name": "BurstCreditBucketSizeInGiB",
+        "value": "255"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Premium_LRS",
+    "tier": "Premium",
+    "size": "P10",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "128"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "64"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "500"
+      },
+      {
+        "name": "MinIOps",
+        "value": "500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "100"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "100"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "3"
+      },
+      {
+        "name": "MaxBurstIops",
+        "value": "3500"
+      },
+      {
+        "name": "MaxBurstBandwidthMBps",
+        "value": "170"
+      },
+      {
+        "name": "MaxBurstDurationInMin",
+        "value": "30"
+      },
+      {
+        "name": "BurstCreditBucketSizeInIO",
+        "value": "5400000"
+      },
+      {
+        "name": "BurstCreditBucketSizeInGiB",
+        "value": "123"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Premium_LRS",
+    "tier": "Premium",
+    "size": "P15",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "256"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "128"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "1100"
+      },
+      {
+        "name": "MinIOps",
+        "value": "1100"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "125"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "125"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "3"
+      },
+      {
+        "name": "MaxBurstIops",
+        "value": "3500"
+      },
+      {
+        "name": "MaxBurstBandwidthMBps",
+        "value": "170"
+      },
+      {
+        "name": "MaxBurstDurationInMin",
+        "value": "30"
+      },
+      {
+        "name": "BurstCreditBucketSizeInIO",
+        "value": "4320000"
+      },
+      {
+        "name": "BurstCreditBucketSizeInGiB",
+        "value": "79"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Premium_LRS",
+    "tier": "Premium",
+    "size": "P2",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "8"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "4"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "120"
+      },
+      {
+        "name": "MinIOps",
+        "value": "120"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "25"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "25"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "3"
+      },
+      {
+        "name": "MaxBurstIops",
+        "value": "3500"
+      },
+      {
+        "name": "MaxBurstBandwidthMBps",
+        "value": "170"
+      },
+      {
+        "name": "MaxBurstDurationInMin",
+        "value": "30"
+      },
+      {
+        "name": "BurstCreditBucketSizeInIO",
+        "value": "6084000"
+      },
+      {
+        "name": "BurstCreditBucketSizeInGiB",
+        "value": "255"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Premium_LRS",
+    "tier": "Premium",
+    "size": "P20",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "512"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "256"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "2300"
+      },
+      {
+        "name": "MinIOps",
+        "value": "2300"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "150"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "150"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "3"
+      },
+      {
+        "name": "MaxBurstIops",
+        "value": "3500"
+      },
+      {
+        "name": "MaxBurstBandwidthMBps",
+        "value": "170"
+      },
+      {
+        "name": "MaxBurstDurationInMin",
+        "value": "30"
+      },
+      {
+        "name": "BurstCreditBucketSizeInIO",
+        "value": "2160000"
+      },
+      {
+        "name": "BurstCreditBucketSizeInGiB",
+        "value": "35"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Premium_LRS",
+    "tier": "Premium",
+    "size": "P3",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "16"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "8"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "120"
+      },
+      {
+        "name": "MinIOps",
+        "value": "120"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "25"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "25"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "3"
+      },
+      {
+        "name": "MaxBurstIops",
+        "value": "3500"
+      },
+      {
+        "name": "MaxBurstBandwidthMBps",
+        "value": "170"
+      },
+      {
+        "name": "MaxBurstDurationInMin",
+        "value": "30"
+      },
+      {
+        "name": "BurstCreditBucketSizeInIO",
+        "value": "6084000"
+      },
+      {
+        "name": "BurstCreditBucketSizeInGiB",
+        "value": "255"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Premium_LRS",
+    "tier": "Premium",
+    "size": "P30",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "1024"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "512"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "5000"
+      },
+      {
+        "name": "MinIOps",
+        "value": "5000"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "200"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "200"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "5"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Premium_LRS",
+    "tier": "Premium",
+    "size": "P4",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "32"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "16"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "120"
+      },
+      {
+        "name": "MinIOps",
+        "value": "120"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "25"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "25"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "3"
+      },
+      {
+        "name": "MaxBurstIops",
+        "value": "3500"
+      },
+      {
+        "name": "MaxBurstBandwidthMBps",
+        "value": "170"
+      },
+      {
+        "name": "MaxBurstDurationInMin",
+        "value": "30"
+      },
+      {
+        "name": "BurstCreditBucketSizeInIO",
+        "value": "6084000"
+      },
+      {
+        "name": "BurstCreditBucketSizeInGiB",
+        "value": "255"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Premium_LRS",
+    "tier": "Premium",
+    "size": "P40",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "2048"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "1024"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "7500"
+      },
+      {
+        "name": "MinIOps",
+        "value": "7500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "250"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "250"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "5"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Premium_LRS",
+    "tier": "Premium",
+    "size": "P50",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "4096"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "2048"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "7500"
+      },
+      {
+        "name": "MinIOps",
+        "value": "7500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "250"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "250"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "5"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Premium_LRS",
+    "tier": "Premium",
+    "size": "P6",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "64"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "32"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "240"
+      },
+      {
+        "name": "MinIOps",
+        "value": "240"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "50"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "50"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "3"
+      },
+      {
+        "name": "MaxBurstIops",
+        "value": "3500"
+      },
+      {
+        "name": "MaxBurstBandwidthMBps",
+        "value": "170"
+      },
+      {
+        "name": "MaxBurstDurationInMin",
+        "value": "30"
+      },
+      {
+        "name": "BurstCreditBucketSizeInIO",
+        "value": "5868000"
+      },
+      {
+        "name": "BurstCreditBucketSizeInGiB",
+        "value": "211"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Premium_LRS",
+    "tier": "Premium",
+    "size": "P60",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "8192"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "4096"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "16000"
+      },
+      {
+        "name": "MinIOps",
+        "value": "16000"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "500"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "500"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "10"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Premium_LRS",
+    "tier": "Premium",
+    "size": "P70",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "16384"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "8192"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "18000"
+      },
+      {
+        "name": "MinIOps",
+        "value": "18000"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "750"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "750"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "10"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Premium_LRS",
+    "tier": "Premium",
+    "size": "P80",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "32767"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "16384"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "20000"
+      },
+      {
+        "name": "MinIOps",
+        "value": "20000"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "900"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "900"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "10"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "StandardSSD_LRS",
+    "tier": "Standard",
+    "size": "E1",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "4"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "0"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "500"
+      },
+      {
+        "name": "MinIOps",
+        "value": "500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "3"
+      },
+      {
+        "name": "MaxBurstIops",
+        "value": "600"
+      },
+      {
+        "name": "MaxBurstBandwidthMBps",
+        "value": "150"
+      },
+      {
+        "name": "MaxBurstDurationInMin",
+        "value": "1800"
+      },
+      {
+        "name": "BurstCreditBucketSizeInIO",
+        "value": "180000"
+      },
+      {
+        "name": "BurstCreditBucketSizeInGiB",
+        "value": "162"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "StandardSSD_LRS",
+    "tier": "Standard",
+    "size": "E10",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "128"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "64"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "500"
+      },
+      {
+        "name": "MinIOps",
+        "value": "500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "3"
+      },
+      {
+        "name": "MaxBurstIops",
+        "value": "600"
+      },
+      {
+        "name": "MaxBurstBandwidthMBps",
+        "value": "150"
+      },
+      {
+        "name": "MaxBurstDurationInMin",
+        "value": "1800"
+      },
+      {
+        "name": "BurstCreditBucketSizeInIO",
+        "value": "180000"
+      },
+      {
+        "name": "BurstCreditBucketSizeInGiB",
+        "value": "162"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "StandardSSD_LRS",
+    "tier": "Standard",
+    "size": "E15",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "256"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "128"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "500"
+      },
+      {
+        "name": "MinIOps",
+        "value": "500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "3"
+      },
+      {
+        "name": "MaxBurstIops",
+        "value": "600"
+      },
+      {
+        "name": "MaxBurstBandwidthMBps",
+        "value": "150"
+      },
+      {
+        "name": "MaxBurstDurationInMin",
+        "value": "1800"
+      },
+      {
+        "name": "BurstCreditBucketSizeInIO",
+        "value": "180000"
+      },
+      {
+        "name": "BurstCreditBucketSizeInGiB",
+        "value": "162"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "StandardSSD_LRS",
+    "tier": "Standard",
+    "size": "E2",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "8"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "4"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "500"
+      },
+      {
+        "name": "MinIOps",
+        "value": "500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "3"
+      },
+      {
+        "name": "MaxBurstIops",
+        "value": "600"
+      },
+      {
+        "name": "MaxBurstBandwidthMBps",
+        "value": "150"
+      },
+      {
+        "name": "MaxBurstDurationInMin",
+        "value": "1800"
+      },
+      {
+        "name": "BurstCreditBucketSizeInIO",
+        "value": "180000"
+      },
+      {
+        "name": "BurstCreditBucketSizeInGiB",
+        "value": "162"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "StandardSSD_LRS",
+    "tier": "Standard",
+    "size": "E20",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "512"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "256"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "500"
+      },
+      {
+        "name": "MinIOps",
+        "value": "500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "3"
+      },
+      {
+        "name": "MaxBurstIops",
+        "value": "600"
+      },
+      {
+        "name": "MaxBurstBandwidthMBps",
+        "value": "150"
+      },
+      {
+        "name": "MaxBurstDurationInMin",
+        "value": "1800"
+      },
+      {
+        "name": "BurstCreditBucketSizeInIO",
+        "value": "180000"
+      },
+      {
+        "name": "BurstCreditBucketSizeInGiB",
+        "value": "162"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "StandardSSD_LRS",
+    "tier": "Standard",
+    "size": "E3",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "16"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "8"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "500"
+      },
+      {
+        "name": "MinIOps",
+        "value": "500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "3"
+      },
+      {
+        "name": "MaxBurstIops",
+        "value": "600"
+      },
+      {
+        "name": "MaxBurstBandwidthMBps",
+        "value": "150"
+      },
+      {
+        "name": "MaxBurstDurationInMin",
+        "value": "1800"
+      },
+      {
+        "name": "BurstCreditBucketSizeInIO",
+        "value": "180000"
+      },
+      {
+        "name": "BurstCreditBucketSizeInGiB",
+        "value": "162"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "StandardSSD_LRS",
+    "tier": "Standard",
+    "size": "E30",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "1024"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "512"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "500"
+      },
+      {
+        "name": "MinIOps",
+        "value": "500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "5"
+      },
+      {
+        "name": "MaxBurstIops",
+        "value": "1000"
+      },
+      {
+        "name": "MaxBurstBandwidthMBps",
+        "value": "250"
+      },
+      {
+        "name": "MaxBurstDurationInMin",
+        "value": "1800"
+      },
+      {
+        "name": "BurstCreditBucketSizeInIO",
+        "value": "900000"
+      },
+      {
+        "name": "BurstCreditBucketSizeInGiB",
+        "value": "342"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "StandardSSD_LRS",
+    "tier": "Standard",
+    "size": "E4",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "32"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "16"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "500"
+      },
+      {
+        "name": "MinIOps",
+        "value": "500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "3"
+      },
+      {
+        "name": "MaxBurstIops",
+        "value": "600"
+      },
+      {
+        "name": "MaxBurstBandwidthMBps",
+        "value": "150"
+      },
+      {
+        "name": "MaxBurstDurationInMin",
+        "value": "1800"
+      },
+      {
+        "name": "BurstCreditBucketSizeInIO",
+        "value": "180000"
+      },
+      {
+        "name": "BurstCreditBucketSizeInGiB",
+        "value": "162"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "StandardSSD_LRS",
+    "tier": "Standard",
+    "size": "E40",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "2048"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "1024"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "500"
+      },
+      {
+        "name": "MinIOps",
+        "value": "500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "5"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "StandardSSD_LRS",
+    "tier": "Standard",
+    "size": "E50",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "4096"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "2048"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "500"
+      },
+      {
+        "name": "MinIOps",
+        "value": "500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "5"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "StandardSSD_LRS",
+    "tier": "Standard",
+    "size": "E6",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "64"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "32"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "500"
+      },
+      {
+        "name": "MinIOps",
+        "value": "500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "3"
+      },
+      {
+        "name": "MaxBurstIops",
+        "value": "600"
+      },
+      {
+        "name": "MaxBurstBandwidthMBps",
+        "value": "150"
+      },
+      {
+        "name": "MaxBurstDurationInMin",
+        "value": "1800"
+      },
+      {
+        "name": "BurstCreditBucketSizeInIO",
+        "value": "180000"
+      },
+      {
+        "name": "BurstCreditBucketSizeInGiB",
+        "value": "162"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "StandardSSD_LRS",
+    "tier": "Standard",
+    "size": "E60",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "8192"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "4096"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "2000"
+      },
+      {
+        "name": "MinIOps",
+        "value": "2000"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "400"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "400"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "10"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "StandardSSD_LRS",
+    "tier": "Standard",
+    "size": "E70",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "16384"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "8192"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "4000"
+      },
+      {
+        "name": "MinIOps",
+        "value": "4000"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "600"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "600"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "10"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "StandardSSD_LRS",
+    "tier": "Standard",
+    "size": "E80",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "32767"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "16384"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "6000"
+      },
+      {
+        "name": "MinIOps",
+        "value": "6000"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "750"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "750"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "10"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Standard_LRS",
+    "tier": "Standard",
+    "size": "S10",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "128"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "64"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "500"
+      },
+      {
+        "name": "MinIOps",
+        "value": "500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "1"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Standard_LRS",
+    "tier": "Standard",
+    "size": "S15",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "256"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "128"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "500"
+      },
+      {
+        "name": "MinIOps",
+        "value": "500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "1"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Standard_LRS",
+    "tier": "Standard",
+    "size": "S20",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "512"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "256"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "500"
+      },
+      {
+        "name": "MinIOps",
+        "value": "500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "2"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Standard_LRS",
+    "tier": "Standard",
+    "size": "S30",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "1024"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "512"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "500"
+      },
+      {
+        "name": "MinIOps",
+        "value": "500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "5"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Standard_LRS",
+    "tier": "Standard",
+    "size": "S4",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "32"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "0"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "500"
+      },
+      {
+        "name": "MinIOps",
+        "value": "500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "1"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Standard_LRS",
+    "tier": "Standard",
+    "size": "S40",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "2048"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "1024"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "500"
+      },
+      {
+        "name": "MinIOps",
+        "value": "500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "5"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Standard_LRS",
+    "tier": "Standard",
+    "size": "S50",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "4096"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "2048"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "500"
+      },
+      {
+        "name": "MinIOps",
+        "value": "500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "5"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Standard_LRS",
+    "tier": "Standard",
+    "size": "S6",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "64"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "32"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "500"
+      },
+      {
+        "name": "MinIOps",
+        "value": "500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "1"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Standard_LRS",
+    "tier": "Standard",
+    "size": "S60",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "8192"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "4096"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "1300"
+      },
+      {
+        "name": "MinIOps",
+        "value": "500"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "300"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "60"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "5"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Standard_LRS",
+    "tier": "Standard",
+    "size": "S70",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "16384"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "8192"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "2000"
+      },
+      {
+        "name": "MinIOps",
+        "value": "1300"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "500"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "300"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "5"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "Standard_LRS",
+    "tier": "Standard",
+    "size": "S80",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "32767"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "16384"
+      },
+      {
+        "name": "MaxIOps",
+        "value": "2000"
+      },
+      {
+        "name": "MinIOps",
+        "value": "2000"
+      },
+      {
+        "name": "MaxBandwidthMBps",
+        "value": "500"
+      },
+      {
+        "name": "MinBandwidthMBps",
+        "value": "500"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "5"
+      }
+    ],
+    "restrictions": []
+  },
+  {
+    "resourceType": "disks",
+    "name": "UltraSSD_LRS",
+    "tier": "Ultra",
+    "size": "U",
+    "locations": [
+      "westus"
+    ],
+    "locationInfo": [
+      {
+        "location": "westus",
+        "zones": [],
+        "zoneDetails": []
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "MaxSizeGiB",
+        "value": "65536"
+      },
+      {
+        "name": "MinSizeGiB",
+        "value": "4"
+      },
+      {
+        "name": "MaxIOpsReadWrite",
+        "value": "160000"
+      },
+      {
+        "name": "MinIOpsReadWrite",
+        "value": "100"
+      },
+      {
+        "name": "MaxBandwidthMBpsReadWrite",
+        "value": "4000"
+      },
+      {
+        "name": "MinBandwidthMBpsReadWrite",
+        "value": "1"
+      },
+      {
+        "name": "MaxValueOfMaxShares",
+        "value": "5"
+      },
+      {
+        "name": "MinIOSizeKiBps",
+        "value": "4"
+      },
+      {
+        "name": "MaxIOSizeKiBps",
+        "value": "256"
+      },
+      {
+        "name": "MinIopsReadOnly",
+        "value": "100"
+      },
+      {
+        "name": "MaxIopsReadOnly",
+        "value": "160000"
+      },
+      {
+        "name": "MinBandwidthMBpsReadOnly",
+        "value": "1"
+      },
+      {
+        "name": "MaxBandwidthMBpsReadOnly",
+        "value": "4000"
+      },
+      {
+        "name": "MaxIopsPerGiBReadWrite",
+        "value": "300"
+      },
+      {
+        "name": "MaxIopsPerGiBReadOnly",
+        "value": "300"
+      },
+      {
+        "name": "MinIopsPerGiBReadWrite",
+        "value": "1"
+      },
+      {
+        "name": "MinIopsPerGiBReadOnly",
+        "value": "1"
+      },
+      {
+        "name": "BillingPartitionSizes",
+        "value": "4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 3072, 4096, 5120, 6144, 7168, 8192, 9216, 10240, 11264, 12288, 13312, 14336, 15360, 16384, 17408, 18432, 19456, 20480, 21504, 22528, 23552,24576,25600,26624,27648,28672,29696,30720,31744,32768,33792,34816,35840,36864,37888,38912,39936,40960,41984,43008,44032,45056,46080,47104,48128,49152,50176,51200,52224,53248,54272,55296,56320,57344,58368,59392,60416,61440,62464,63488,64512,65536"
+      }
+    ],
+    "restrictions": []
+  }
+]

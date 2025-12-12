@@ -1,0 +1,154 @@
+{
+	"name": "postgresql-migration",
+	"version": "2.0.6",
+	"aiKey": "AIF-37eefaf0-8022-4671-a3fb-64752724682e",
+	"displayName": "%constants.extensionName%",
+	"description": "%constants.description%",
+	"publisher": "Microsoft",
+	"preview": true,
+	"license": "SEE LICENSE IN LICENSE.rtf",
+	"icon": "images/postgreSQLMigrationIcon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/PostgresToAzure.git"
+	},
+	"engines": {
+		"vscode": "*",
+		"azdata": ">=1.40.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*",
+		"onCommand:postgresql-migration.startassessment",
+		"onCommand:postgresql-migration.newsupportrequest",
+		"onCommand:postgresql-migration.sendfeedback"
+	],
+	"main": "./bin/dist/extension.js",
+	"extensionDependencies": [
+		"microsoft.net-6-runtime",
+		"microsoft.azuredatastudio-postgresql"
+	],
+	"contributes": {
+		"commands": [
+			{
+				"command": "postgresql-migration.startassessment",
+				"title": "Start Assessment",
+				"category": "Azure PostgreSQL migration"
+			},
+			{
+				"command": "postgresql-migration.newsupportrequest",
+				"title": "Help & Support ",
+				"category": "Azure PostgreSQL migration"
+			},
+			{
+				"command": "postgresql-migration.sendfeedback",
+				"title": "Send feedback",
+				"category": "Azure PostgreSQL migration"
+			}
+		],
+		"menu": {
+			"commandPalette": [
+				{
+					"command": "postgresql-migration.startassessment",
+					"when": "false"
+				},
+				{
+					"command": "postgresql-migration.newsupportrequest",
+					"when": "false"
+				},
+				{
+					"command": "postgresql-migration.sendfeedback",
+					"when": "false"
+				}
+			]
+		},
+		"configuration": [
+			{
+				"title": "%constants.extensionName%",
+				"properties": {
+					"postgresqlAssessment.assessmentPath": {
+						"type": "string",
+						"default": "",
+						"description": "Local path to store your assessment and performance statistics."
+					},
+					"postgresqlAssessment.expandAssessmentDetails": {
+						"type": "boolean",
+						"default": false,
+						"description": "Expand Assessment Details."
+					}
+				}
+			}
+		],
+		"dashboard.tabs": [
+			{
+				"id": "postgresql-dashboard",
+				"description": "Azure PostgreSQL migration",
+				"provider": "PGSQL",
+				"title": "Azure PostgreSQL migration",
+				"when": "connectionProvider == 'PGSQL'",
+				"icon": "images/postgreSQLMigrationIcon.png",
+				"container": {
+					"modelview-container": null
+				}
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint src --ext ts",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"proposedapi": "node installTypings.js",
+		"build": "eslint src/** test/** -f visualstudio && tsc --build",
+		"clean": "tsc --build --clean",
+		"test": "mocha bin/test/*.spec.js",
+		"package": "webpack --mode production && vsce package -o bin",
+		"package-debug": "dotnet publish ../Microsoft.AdsPgSqlAssessment.Service/Microsoft.AdsPgSqlAssessment.Service.csproj -p:PublishProfile=PublishToExtensionFolder && webpack --mode development && npm run create-vsix-package",
+		"create-vsix-package": "vsce package -o bin",
+		"minify": "webpack --mode production"
+	},
+	"devDependencies": {
+		"@types/azdata": "^1.40.0",
+		"@types/crypto-js": "^4.1.0",
+		"@types/mocha": "^8.2.1",
+		"@types/node": "^12.20.5",
+		"@types/uuid": "^8.3.4",
+		"@types/vscode": "^1.39.0",
+		"@typescript-eslint/eslint-plugin": "^4.17.0",
+		"@typescript-eslint/parser": "^4.17.0",
+		"copy-webpack-plugin": "^9.0.1",
+		"dts-bundle-webpack": "^1.0.2",
+		"eslint": "^7.22.0",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-mocha": "^8.1.0",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-promise": "^4.3.1",
+		"mocha": "^8.3.2",
+		"ts-loader": "^8.0.18",
+		"typescript": "^4.2.3",
+		"vsce": "^1.103.1",
+		"webpack": "^5.74.0",
+		"webpack-cli": "^4.9.1"
+	},
+	"dependencies": {
+		"@microsoft/ads-extension-telemetry": "^3.0.1",
+		"crypto-js": "^4.1.1",
+		"chart.js": "^4.1.1",
+		"dataprotocol-client": "github:microsoft/sqlops-dataprotocolclient#1.2.2",
+		"uuid": "^8.3.2",
+		"vscode-languageclient": "5.2.1",
+		"vscode-nls": "^5.0.0"
+	},
+	"__metadata": {
+		"id": "97",
+		"publisherDisplayName": "Microsoft",
+		"publisherId": "Microsoft",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1730736334683
+	}
+}

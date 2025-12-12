@@ -1,0 +1,47 @@
+{
+  "CappedCollections": {
+    "AssessmentName": "Capped collections",
+    "AssessmentSeverity": "Critical",
+    "Message": "Capped collections are not supported in RU based Azure Cosmos DB for MongoDB. Please use TTL indexes in order to limit the collection size instead.",
+    "MoreInfo": {
+      "href": "https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb/mongodb-indexing#ttl-indexes",
+      "label": "TTL indexes"
+    }
+  },
+  "ClusteredCollections": {
+    "AssessmentName": "Clustered collections",
+    "AssessmentSeverity": "Critical",
+    "Message": "Clustered collections are not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "Timeseries": {
+    "AssessmentName": "Timeseries",
+    "AssessmentSeverity": "Critical",
+    "Message": "Timeseries collections are not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "Views": {
+    "AssessmentName": "Views",
+    "AssessmentSeverity": "Critical",
+    "Message": "Views are not supported in RU based Azure Cosmos DB for MongoDB. Please use aggregation pipelines with $out to regularly save the results to another collection instead.",
+    "MoreInfo": null
+  },
+  "Validator": {
+    "AssessmentName": "Json Schema Validation",
+    "AssessmentSeverity": "Critical",
+    "Message": "Json schema validation is not supported in RU based Azure Cosmos DB for MongoDB. You would need to handle the schema requirements within the application code.",
+    "MoreInfo": null
+  },
+  "Collation": {
+    "AssessmentName": "Collation",
+    "AssessmentSeverity": "Critical",
+    "Message": "Collation is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "ChangeStreamPreAndPostImages": {
+    "AssessmentName": "ChangeStreamPreAndPostImages",
+    "AssessmentSeverity": "Critical",
+    "Message": "ChangeStreamPreAndPostImages are not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  }
+}

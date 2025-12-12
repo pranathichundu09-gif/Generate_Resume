@@ -1,0 +1,1181 @@
+{
+  "resetError": {
+    "AssessmentName": "resetError",
+    "AssessmentSeverity": "Warning",
+    "Message": "resetError is a deprecated MongoDB command and it is not supported in Azure Cosmos DB for MongoDB. Please use connection string to authenticate to the resources instead.",
+    "MoreInfo": null
+  },
+  "endSessions": {
+    "AssessmentName": "endSessions",
+    "AssessmentSeverity": "Informational",
+    "Message": "Session command endSessions is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "killAllSessions": {
+    "AssessmentName": "killAllSessions",
+    "AssessmentSeverity": "Informational",
+    "Message": "Session command killAllSessions is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "killAllSessionsByPattern": {
+    "AssessmentName": "killAllSessionsByPattern",
+    "AssessmentSeverity": "Informational",
+    "Message": "Session command killAllSessionsByPattern is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "killSessions": {
+    "AssessmentName": "killSessions",
+    "AssessmentSeverity": "Informational",
+    "Message": "Session command killSessions is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "refreshSessions": {
+    "AssessmentName": "refreshSessions",
+    "AssessmentSeverity": "Informational",
+    "Message": "Session command refreshSessions is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "startSession": {
+    "AssessmentName": "startSession",
+    "AssessmentSeverity": "Informational",
+    "Message": "Session command startSession is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "getnonce": {
+    "AssessmentName": "getnonce",
+    "AssessmentSeverity": "Informational",
+    "Message": "getnonce is a deprecated MongoDB command and it is not supported in Azure Cosmos DB for MongoDB. Please use connection string to authenticate to the resources instead.",
+    "MoreInfo": null
+  },
+  "geoSearch": {
+    "AssessmentName": "geoSearch",
+    "AssessmentSeverity": "Warning",
+    "Message": "geoSearch is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "planCacheClear": {
+    "AssessmentName": "planCacheClear",
+    "AssessmentSeverity": "Informational",
+    "Message": "Query plan cache command planCacheClear is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "planCacheClearFilters": {
+    "AssessmentName": "planCacheClearFilters",
+    "AssessmentSeverity": "Informational",
+    "Message": "Query plan cache command planCacheClearFilters is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "planCacheListFilters": {
+    "AssessmentName": "planCacheListFilters",
+    "AssessmentSeverity": "Informational",
+    "Message": "Query plan cache command planCacheListFilters is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "planCacheSetFilter": {
+    "AssessmentName": "planCacheSetFilter",
+    "AssessmentSeverity": "Informational",
+    "Message": "Query plan cache command planCacheSetFilter is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "cloneCollectionAsCapped": {
+    "AssessmentName": "cloneCollectionAsCapped",
+    "AssessmentSeverity": "Critical",
+    "Message": "cloneCollectionAsCapped is not supported in RU based Azure Cosmos DB for MongoDB. Capped collections are not supported in RU based Azure Cosmos DB for MongoDB. Please use TTL indexes in order to limit the collection size instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/indexing#ttl-indexes",
+      "label": "TTl indexes"
+    }
+  },
+  "collMod": {
+    "AssessmentName": "collMod",
+    "AssessmentSeverity": "Informational",
+    "Message": "collMod command is not supported in RU based Azure Cosmos DB for MongoDB. Please use the custom commands or appropriate index command instead.",
+    "MoreInfo": {
+      "href": "https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb/custom-commands#update-collection",
+      "label": "Custom Commands"
+    }
+  },
+  "compact": {
+    "AssessmentName": "compact",
+    "AssessmentSeverity": "Informational",
+    "Message": "Administration command compact is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "connPoolSync": {
+    "AssessmentName": "connPoolSync",
+    "AssessmentSeverity": "Warning",
+    "Message": "connPoolSync is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "convertToCapped": {
+    "AssessmentName": "convertToCapped",
+    "AssessmentSeverity": "Critical",
+    "Message": "convertToCapped is not supported in RU based Azure Cosmos DB for MongoDB. Capped collections are not supported in RU based Azure Cosmos DB for MongoDB. Please use TTL indexes in order to limit the collection size instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/indexing#ttl-indexes",
+      "label": "TTl indexes"
+    }
+  },
+  "dropConnections": {
+    "AssessmentName": "dropConnections",
+    "AssessmentSeverity": "Warning",
+    "Message": "dropConnections is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "fsync": {
+    "AssessmentName": "fsync",
+    "AssessmentSeverity": "Warning",
+    "Message": "fsync is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "fsyncUnlock": {
+    "AssessmentName": "fsyncUnlock",
+    "AssessmentSeverity": "Warning",
+    "Message": "fsyncUnlock is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "getDefaultRWConcern": {
+    "AssessmentName": "getDefaultRWConcern",
+    "AssessmentSeverity": "Warning",
+    "Message": "getDefaultRWConcern is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "getClusterParameter": {
+    "AssessmentName": "getClusterParameter",
+    "AssessmentSeverity": "Warning",
+    "Message": "getClusterParameter is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "getParameter": {
+    "AssessmentName": "getParameter",
+    "AssessmentSeverity": "Warning",
+    "Message": "getParameter is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "killOp": {
+    "AssessmentName": "killOp",
+    "AssessmentSeverity": "Informational",
+    "Message": "Terminating operations is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "logRotate": {
+    "AssessmentName": "logRotate",
+    "AssessmentSeverity": "Warning",
+    "Message": "logRotate is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "renameCollection": {
+    "AssessmentName": "renameCollection",
+    "AssessmentSeverity": "Warning",
+    "Message": "Renaming collections is not supported in RU based Azure Cosmos DB for MongoDB. Consider using Intra-account container copy jobs.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/azure/cosmos-db/intra-account-container-copy",
+      "label": "Intra-account container copy"
+    }
+  },
+  "rotateCertificates": {
+    "AssessmentName": "rotateCertificates",
+    "AssessmentSeverity": "Warning",
+    "Message": "rotateCertificates is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "setFeatureCompatibilityVersion": {
+    "AssessmentName": "setFeatureCompatibilityVersion",
+    "AssessmentSeverity": "Warning",
+    "Message": "setFeatureCompatibilityVersion is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "setIndexCommitQuorum": {
+    "AssessmentName": "setIndexCommitQuorum",
+    "AssessmentSeverity": "Warning",
+    "Message": "setIndexCommitQuorum is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "setParameter": {
+    "AssessmentName": "setParameter",
+    "AssessmentSeverity": "Warning",
+    "Message": "setParameter is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "setDefaultRWConcern": {
+    "AssessmentName": "setDefaultRWConcern",
+    "AssessmentSeverity": "Warning",
+    "Message": "setDefaultRWConcern is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "shutdown": {
+    "AssessmentName": "shutdown",
+    "AssessmentSeverity": "Warning",
+    "Message": "shutdown is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "createUser": {
+    "AssessmentName": "createUser",
+    "AssessmentSeverity": "Informational",
+    "Message": "RU based Azure Cosmos DB for MongoDB is a managed database. createUser command is not needed while using Cosmos DB. You may use Azure CLI to setup RBAC instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-setup-rbac",
+      "label": "Azure CLI to setup RBAC"
+    }
+  },
+  "dropAllUsersFromDatabase": {
+    "AssessmentName": "dropAllUsersFromDatabase",
+    "AssessmentSeverity": "Informational",
+    "Message": "RU based Azure Cosmos DB for MongoDB is a managed database. dropAllUsersFromDatabase command is not needed while using Cosmos DB. You may use Azure CLI to setup RBAC instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-setup-rbac",
+      "label": "Azure CLI to setup RBAC"
+    }
+  },
+  "dropUser": {
+    "AssessmentName": "dropUser",
+    "AssessmentSeverity": "Informational",
+    "Message": "RU based Azure Cosmos DB for MongoDB is a managed database. dropUser command is not needed while using Cosmos DB. You may use Azure CLI to setup RBAC instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-setup-rbac",
+      "label": "Azure CLI to setup RBAC"
+    }
+  },
+  "grantRolesToUser": {
+    "AssessmentName": "grantRolesToUser",
+    "AssessmentSeverity": "Informational",
+    "Message": "RU based Azure Cosmos DB for MongoDB is a managed database. grantRolesToUser command is not needed while using Cosmos DB. You may use Azure CLI to setup RBAC instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-setup-rbac",
+      "label": "Azure CLI to setup RBAC"
+    }
+  },
+  "revokeRolesFromUser": {
+    "AssessmentName": "revokeRolesFromUser",
+    "AssessmentSeverity": "Informational",
+    "Message": "RU based Azure Cosmos DB for MongoDB is a managed database. revokeRolesFromUser command is not needed while using Cosmos DB. You may use Azure CLI to setup RBAC instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-setup-rbac",
+      "label": "Azure CLI to setup RBAC"
+    }
+  },
+  "updateUser": {
+    "AssessmentName": "updateUser",
+    "AssessmentSeverity": "Informational",
+    "Message": "RU based Azure Cosmos DB for MongoDB is a managed database. updateUser command is not needed while using Cosmos DB. You may use Azure CLI to setup RBAC instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-setup-rbac",
+      "label": "Azure CLI to setup RBAC"
+    }
+  },
+  "usersInfo": {
+    "AssessmentName": "usersInfo",
+    "AssessmentSeverity": "Informational",
+    "Message": "RU based Azure Cosmos DB for MongoDB is a managed database. usersInfo command is not needed while using Cosmos DB. You may use Azure CLI to setup RBAC instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-setup-rbac",
+      "label": "Azure CLI to setup RBAC"
+    }
+  },
+  "createRole": {
+    "AssessmentName": "createRole",
+    "AssessmentSeverity": "Informational",
+    "Message": "RU based Azure Cosmos DB for MongoDB is a managed database. createRole command is not needed while using Cosmos DB. You may use Azure CLI to setup RBAC instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-setup-rbac",
+      "label": "Azure CLI to setup RBAC"
+    }
+  },
+  "dropRole": {
+    "AssessmentName": "dropRole",
+    "AssessmentSeverity": "Informational",
+    "Message": "RU based Azure Cosmos DB for MongoDB is a managed database. dropRole command is not needed while using Cosmos DB. You may use Azure CLI to setup RBAC instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-setup-rbac",
+      "label": "Azure CLI to setup RBAC"
+    }
+  },
+  "dropAllRolesFromDatabase": {
+    "AssessmentName": "dropAllRolesFromDatabase",
+    "AssessmentSeverity": "Informational",
+    "Message": "RU based Azure Cosmos DB for MongoDB is a managed database. dropAllRolesFromDatabase command is not needed while using Cosmos DB. You may use Azure CLI to setup RBAC instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-setup-rbac",
+      "label": "Azure CLI to setup RBAC"
+    }
+  },
+  "grantPrivilegesToRole": {
+    "AssessmentName": "grantPrivilegesToRole",
+    "AssessmentSeverity": "Informational",
+    "Message": "RU based Azure Cosmos DB for MongoDB is a managed database. grantPrivilegesToRole command is not needed while using Cosmos DB. You may use Azure CLI to setup RBAC instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-setup-rbac",
+      "label": "Azure CLI to setup RBAC"
+    }
+  },
+  "grantRolesToRole": {
+    "AssessmentName": "grantRolesToRole",
+    "AssessmentSeverity": "Informational",
+    "Message": "RU based Azure Cosmos DB for MongoDB is a managed database. grantRolesToRole command is not needed while using Cosmos DB. You may use Azure CLI to setup RBAC instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-setup-rbac",
+      "label": "Azure CLI to setup RBAC"
+    }
+  },
+  "invalidateUserCache": {
+    "AssessmentName": "invalidateUserCache",
+    "AssessmentSeverity": "Informational",
+    "Message": "RU based Azure Cosmos DB for MongoDB is a managed database. invalidateUserCache command is not needed while using Cosmos DB. You may use Azure CLI to setup RBAC instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-setup-rbac",
+      "label": "Azure CLI to setup RBAC"
+    }
+  },
+  "revokePrivilegesFromRole": {
+    "AssessmentName": "revokePrivilegesFromRole",
+    "AssessmentSeverity": "Informational",
+    "Message": "RU based Azure Cosmos DB for MongoDB is a managed database. revokePrivilegesFromRole command is not needed while using Cosmos DB. You may use Azure CLI to setup RBAC instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-setup-rbac",
+      "label": "Azure CLI to setup RBAC"
+    }
+  },
+  "revokeRolesFromRole": {
+    "AssessmentName": "revokeRolesFromRole",
+    "AssessmentSeverity": "Informational",
+    "Message": "RU based Azure Cosmos DB for MongoDB is a managed database. revokeRolesFromRole command is not needed while using Cosmos DB. You may use Azure CLI to setup RBAC instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-setup-rbac",
+      "label": "Azure CLI to setup RBAC"
+    }
+  },
+  "rolesInfo": {
+    "AssessmentName": "rolesInfo",
+    "AssessmentSeverity": "Informational",
+    "Message": "RU based Azure Cosmos DB for MongoDB is a managed database. rolesInfo command is not needed while using Cosmos DB. You may use Azure CLI to setup RBAC instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-setup-rbac",
+      "label": "Azure CLI to setup RBAC"
+    }
+  },
+  "updateRole": {
+    "AssessmentName": "updateRole",
+    "AssessmentSeverity": "Informational",
+    "Message": "RU based Azure Cosmos DB for MongoDB is a managed database. updateRole command is not needed while using Cosmos DB. You may use Azure CLI to setup RBAC instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-setup-rbac",
+      "label": "Azure CLI to setup RBAC"
+    }
+  },
+  "applyOps": {
+    "AssessmentName": "applyOps",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command applyOps is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database where you do not need to run replication commands. Replication is handled by the platform instead.",
+    "MoreInfo": null
+  },
+  "hello": {
+    "AssessmentName": "hello",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command hello is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database where you do not need to run replication commands. Replication is handled by the platform instead.",
+    "MoreInfo": null
+  },
+  "replSetAbortPrimaryCatchUp": {
+    "AssessmentName": "replSetAbortPrimaryCatchUp",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command replSetAbortPrimaryCatchUp is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database where you do not need to run replication commands. Replication is handled by the platform instead.",
+    "MoreInfo": null
+  },
+  "replSetFreeze": {
+    "AssessmentName": "replSetFreeze",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command replSetFreeze is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database where you do not need to run replication commands. Replication is handled by the platform instead.",
+    "MoreInfo": null
+  },
+  "replSetGetConfig": {
+    "AssessmentName": "replSetGetConfig",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command replSetGetConfig is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database where you do not need to run replication commands. Replication is handled by the platform instead.",
+    "MoreInfo": null
+  },
+  "replSetGetStatus": {
+    "AssessmentName": "replSetGetStatus",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command replSetGetStatus is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database where you do not need to run replication commands. Replication is handled by the platform instead.",
+    "MoreInfo": null
+  },
+  "replSetInitiate": {
+    "AssessmentName": "replSetInitiate",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command replSetInitiate is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database where you do not need to run replication commands. Replication is handled by the platform instead.",
+    "MoreInfo": null
+  },
+  "replSetMaintenance": {
+    "AssessmentName": "replSetMaintenance",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command replSetMaintenance is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database where you do not need to run replication commands. Replication is handled by the platform instead.",
+    "MoreInfo": null
+  },
+  "replSetReconfig": {
+    "AssessmentName": "replSetReconfig",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command replSetReconfig is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database where you do not need to run replication commands. Replication is handled by the platform instead.",
+    "MoreInfo": null
+  },
+  "replSetResizeOplog": {
+    "AssessmentName": "replSetResizeOplog",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command replSetResizeOplog is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database where you do not need to run replication commands. Replication is handled by the platform instead.",
+    "MoreInfo": null
+  },
+  "replSetStepDown": {
+    "AssessmentName": "replSetStepDown",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command replSetStepDown is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database where you do not need to run replication commands. Replication is handled by the platform instead.",
+    "MoreInfo": null
+  },
+  "replSetSyncFrom": {
+    "AssessmentName": "replSetSyncFrom",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command replSetSyncFrom is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database where you do not need to run replication commands. Replication is handled by the platform instead.",
+    "MoreInfo": null
+  },
+  "resync": {
+    "AssessmentName": "resync",
+    "AssessmentSeverity": "Informational",
+    "Message": "Replication command resync is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database where you do not need to run replication commands. Replication is handled by the platform instead.",
+    "MoreInfo": null
+  },
+  "abortReshardCollection": {
+    "AssessmentName": "abortReshardCollection",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "addShard": {
+    "AssessmentName": "addShard",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "addShardToZone": {
+    "AssessmentName": "addShardToZone",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "balancerCollectionStatus": {
+    "AssessmentName": "balancerCollectionStatus",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "balancerStart": {
+    "AssessmentName": "balancerStart",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "balancerStatus": {
+    "AssessmentName": "balancerStatus",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "balancerStop": {
+    "AssessmentName": "balancerStop",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "checkShardingIndex": {
+    "AssessmentName": "checkShardingIndex",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "clearJumboFlag": {
+    "AssessmentName": "clearJumboFlag",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "cleanupOrphaned": {
+    "AssessmentName": "cleanupOrphaned",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "cleanupReshardCollection": {
+    "AssessmentName": "cleanupReshardCollection",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "commitReshardCollection": {
+    "AssessmentName": "commitReshardCollection",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "configureCollectionBalancing": {
+    "AssessmentName": "configureCollectionBalancing",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "enableSharding": {
+    "AssessmentName": "enableSharding",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "getShardMap": {
+    "AssessmentName": "getShardMap",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "getShardVersion": {
+    "AssessmentName": "getShardVersion",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "isdbgrid": {
+    "AssessmentName": "isdbgrid",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "listShards": {
+    "AssessmentName": "listShards",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "medianKey": {
+    "AssessmentName": "medianKey",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "moveChunk": {
+    "AssessmentName": "moveChunk",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "movePrimary": {
+    "AssessmentName": "movePrimary",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "mergeChunks": {
+    "AssessmentName": "mergeChunks",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "refineCollectionShardKey": {
+    "AssessmentName": "refineCollectionShardKey",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "removeShard": {
+    "AssessmentName": "removeShard",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "removeShardFromZone": {
+    "AssessmentName": "removeShardFromZone",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "reshardCollection": {
+    "AssessmentName": "reshardCollection",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "setShardVersion": {
+    "AssessmentName": "setShardVersion",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "shardCollection": {
+    "AssessmentName": "shardCollection",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "shardingState": {
+    "AssessmentName": "shardingState",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "splitVector": {
+    "AssessmentName": "splitVector",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "unsetSharding": {
+    "AssessmentName": "unsetSharding",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "updateZoneKeyRange": {
+    "AssessmentName": "updateZoneKeyRange",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB is a managed database where you don\u0027t need to run shard management commands. You only need to pick the right shard key for the collection. Sharding is automatically handled by the platform.",
+    "MoreInfo": null
+  },
+  "availableQueryOptions": {
+    "AssessmentName": "availableQueryOptions",
+    "AssessmentSeverity": "Informational",
+    "Message": "Diagnostic command availableQueryOptions is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database.",
+    "MoreInfo": null
+  },
+  "connPoolStats": {
+    "AssessmentName": "connPoolStats",
+    "AssessmentSeverity": "Informational",
+    "Message": "Diagnostic command connPoolStats is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database. You don\u0027t need to handle the connections.",
+    "MoreInfo": null
+  },
+  "connectionStatus": {
+    "AssessmentName": "connectionStatus",
+    "AssessmentSeverity": "Informational",
+    "Message": "Diagnostic command connectionStatus is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database. You don\u0027t need to handle the connections.",
+    "MoreInfo": null
+  },
+  "cursorInfo": {
+    "AssessmentName": "cursorInfo",
+    "AssessmentSeverity": "Informational",
+    "Message": "Diagnostic command cursorInfo is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database. You don\u0027t need to handle the connections.",
+    "MoreInfo": null
+  },
+  "dataSize": {
+    "AssessmentName": "dataSize",
+    "AssessmentSeverity": "Informational",
+    "Message": "dataSize is not supported in RU based Azure Cosmos DB for MongoDB. Please use collStats to check the size of the collection or PartitionKeyStatistics to estimate the storage size of the partition keys.",
+    "MoreInfo": {
+      "href": "https://docs.microsoft.com/en-us/azure/cosmos-db/cosmosdb-monitor-resource-logs#choose-log-categories",
+      "label": "PartitionKeyStatistics"
+    }
+  },
+  "dbHash": {
+    "AssessmentName": "dbHash",
+    "AssessmentSeverity": "Informational",
+    "Message": "Azure Cosmos DB for MongoDB automatically manages the checksum and consistency of the data in a replica set, so dbHash is not needed while using Cosmos DB.",
+    "MoreInfo": null
+  },
+  "driverOIDTest": {
+    "AssessmentName": "driverOIDTest",
+    "AssessmentSeverity": "Informational",
+    "Message": "Diagnostic command driverOIDTest is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database.",
+    "MoreInfo": null
+  },
+  "features": {
+    "AssessmentName": "features",
+    "AssessmentSeverity": "Informational",
+    "Message": "Diagnostic command features is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database.",
+    "MoreInfo": null
+  },
+  "getCmdLineOpts": {
+    "AssessmentName": "getCmdLineOpts",
+    "AssessmentSeverity": "Informational",
+    "Message": "Diagnostic command getCmdLineOpts is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database.",
+    "MoreInfo": null
+  },
+  "getLog": {
+    "AssessmentName": "getLog",
+    "AssessmentSeverity": "Informational",
+    "Message": "Diagnostic command getLog is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database.",
+    "MoreInfo": null
+  },
+  "_isSelf": {
+    "AssessmentName": "_isSelf",
+    "AssessmentSeverity": "Informational",
+    "Message": "Diagnostic command _isSelf is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database.",
+    "MoreInfo": null
+  },
+  "listCommands": {
+    "AssessmentName": "listCommands",
+    "AssessmentSeverity": "Informational",
+    "Message": "listCommands is not supported in RU based Azure Cosmos DB for MongoDB. Please refer to our wire protocol documentation to get the list of supported commands instead.",
+    "MoreInfo": {
+      "href": "https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb/feature-support-42",
+      "label": "Wire protocol documentation"
+    }
+  },
+  "lockInfo": {
+    "AssessmentName": "lockInfo",
+    "AssessmentSeverity": "Informational",
+    "Message": "Diagnostic command lockInfo is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database.",
+    "MoreInfo": null
+  },
+  "netstat": {
+    "AssessmentName": "netstat",
+    "AssessmentSeverity": "Informational",
+    "Message": "Diagnostic command netstat is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database.",
+    "MoreInfo": null
+  },
+  "ping": {
+    "AssessmentName": "ping",
+    "AssessmentSeverity": "Informational",
+    "Message": "Diagnostic command ping is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database.",
+    "MoreInfo": null
+  },
+  "profile": {
+    "AssessmentName": "profile",
+    "AssessmentSeverity": "Informational",
+    "Message": "Profile is not supported in RU based Azure Cosmos DB for MongoDB. Please use Azure diagnostic resource logs instead.",
+    "MoreInfo": {
+      "href": "https://docs.microsoft.com/en-us/azure/cosmos-db/cosmosdb-monitor-resource-logs",
+      "label": "Azure diagnostic resource logs"
+    }
+  },
+  "serverStatus": {
+    "AssessmentName": "serverStatus",
+    "AssessmentSeverity": "Informational",
+    "Message": "RU based Azure Cosmos DB for MongoDB is a managed database. serverStatus command is not needed while using Cosmos DB.",
+    "MoreInfo": null
+  },
+  "shardConnPoolStats": {
+    "AssessmentName": "shardConnPoolStats",
+    "AssessmentSeverity": "Informational",
+    "Message": "Diagnostic command shardConnPoolStats is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database.",
+    "MoreInfo": null
+  },
+  "top": {
+    "AssessmentName": "top",
+    "AssessmentSeverity": "Informational",
+    "Message": "top is not supported in RU based Azure Cosmos DB for MongoDB. Please use Azure Monitor metrics to check the Request Units, Response time and counts of different operations instead.",
+    "MoreInfo": null
+  },
+  "validate": {
+    "AssessmentName": "validate",
+    "AssessmentSeverity": "Informational",
+    "Message": "Diagnostic command validate is not supported in RU based Azure Cosmos DB for MongoDB. RU based Azure Cosmos DB for MongoDB is a managed database.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/monitor-request-unit-usage",
+      "label": "Azure Monitor metrics"
+    }
+  },
+  "getFreeMonitoringStatus": {
+    "AssessmentName": "getFreeMonitoringStatus",
+    "AssessmentSeverity": "Informational",
+    "Message": "getFreeMonitoringStatus is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "setFreeMonitoring": {
+    "AssessmentName": "setFreeMonitoring",
+    "AssessmentSeverity": "Informational",
+    "Message": "setFreeMonitoring is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "logApplicationMessage": {
+    "AssessmentName": "logApplicationMessage",
+    "AssessmentSeverity": "Informational",
+    "Message": "logApplicationMessage is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "mapReduce": {
+    "AssessmentName": "mapReduce",
+    "AssessmentSeverity": "Warning",
+    "Message": "mapReduce is a deprecated MongoDB command and it is not supported in Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$addFields": {
+    "AssessmentName": "$addFields",
+    "AssessmentSeverity": "Warning",
+    "Message": "$addFields is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$bucket": {
+    "AssessmentName": "$bucket",
+    "AssessmentSeverity": "Critical",
+    "Message": "$bucket is not supported in aggregation pipelines in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$bucketAuto": {
+    "AssessmentName": "$bucketAuto",
+    "AssessmentSeverity": "Critical",
+    "Message": "$bucketAuto is not supported in aggregation pipelines in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$count": {
+    "AssessmentName": "$count",
+    "AssessmentSeverity": "Warning",
+    "Message": "$count is not supported in aggregation pipelines in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$currentOp": {
+    "AssessmentName": "$currentOp",
+    "AssessmentSeverity": "Warning",
+    "Message": "$currentOp is not supported in aggregation pipelines in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$indexStats": {
+    "AssessmentName": "$indexStats",
+    "AssessmentSeverity": "Critical",
+    "Message": "$indexStats is not supported in aggregation pipelines in RU based Azure Cosmos DB for MongoDB. Please use Azure monitor to view the stats for the collection instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/use-metrics",
+      "label": "Azure monitor"
+    }
+  },
+  "$listLocalSessions": {
+    "AssessmentName": "$listLocalSessions",
+    "AssessmentSeverity": "Critical",
+    "Message": "$listLocalSessions is not supported in aggregation pipelines in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$listSessions": {
+    "AssessmentName": "$listSessions",
+    "AssessmentSeverity": "Critical",
+    "Message": "$listSessions is not supported in aggregation pipelines in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$setIsSubset": {
+    "AssessmentName": "$setIsSubset",
+    "AssessmentSeverity": "Warning",
+    "Message": "$setIsSubset is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$meta": {
+    "AssessmentName": "$meta",
+    "AssessmentSeverity": "Critical",
+    "Message": "Text searches and $meta operator are not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$firstN": {
+    "AssessmentName": "$firstN",
+    "AssessmentSeverity": "Warning",
+    "Message": "$firstN is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$lastN": {
+    "AssessmentName": "$lastN",
+    "AssessmentSeverity": "Warning",
+    "Message": "$lastN is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$maxN": {
+    "AssessmentName": "$maxN",
+    "AssessmentSeverity": "Warning",
+    "Message": "$maxN is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$minN": {
+    "AssessmentName": "$minN",
+    "AssessmentSeverity": "Warning",
+    "Message": "$minN is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$sortArray": {
+    "AssessmentName": "$sortArray",
+    "AssessmentSeverity": "Warning",
+    "Message": "$sortArray is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$let": {
+    "AssessmentName": "$let",
+    "AssessmentSeverity": "Warning",
+    "Message": "RU based Azure Cosmos DB for MongoDB supports lookup performing equality match with a single join condition. Join conditions and subqueries using \u2018let\u2019 field is not supported. We recommend handling such joins on the client.",
+    "MoreInfo": null
+  },
+  "$bottomN": {
+    "AssessmentName": "$bottomN",
+    "AssessmentSeverity": "Warning",
+    "Message": "$bottomN is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$covarianceSamp": {
+    "AssessmentName": "$covarianceSamp",
+    "AssessmentSeverity": "Warning",
+    "Message": "$covarianceSamp is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$denseRank": {
+    "AssessmentName": "$denseRank",
+    "AssessmentSeverity": "Warning",
+    "Message": "$denseRank is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$derivative": {
+    "AssessmentName": "$derivative",
+    "AssessmentSeverity": "Warning",
+    "Message": "$derivative is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$documentNumber": {
+    "AssessmentName": "$documentNumber",
+    "AssessmentSeverity": "Warning",
+    "Message": "$documentNumber is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$expMovingAvg": {
+    "AssessmentName": "$expMovingAvg",
+    "AssessmentSeverity": "Warning",
+    "Message": "$expMovingAvg is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$integral": {
+    "AssessmentName": "$integral",
+    "AssessmentSeverity": "Warning",
+    "Message": "$integral is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$linearFill": {
+    "AssessmentName": "$linearFill",
+    "AssessmentSeverity": "Warning",
+    "Message": "$linearFill is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$getField": {
+    "AssessmentName": "$getField",
+    "AssessmentSeverity": "Warning",
+    "Message": "$getField is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$rand": {
+    "AssessmentName": "$rand",
+    "AssessmentSeverity": "Warning",
+    "Message": "$rand is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$sampleRate": {
+    "AssessmentName": "$sampleRate",
+    "AssessmentSeverity": "Warning",
+    "Message": "$sampleRate is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$setField": {
+    "AssessmentName": "$setField",
+    "AssessmentSeverity": "Warning",
+    "Message": "$setField is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$jsonSchema": {
+    "AssessmentName": "$jsonSchema",
+    "AssessmentSeverity": "Critical",
+    "Message": "Json schema validation is not supported in RU based Azure Cosmos DB for MongoDB. You would need to handle the schema requirements within the application code.",
+    "MoreInfo": null
+  },
+  "$text": {
+    "AssessmentName": "$text",
+    "AssessmentSeverity": "Warning",
+    "Message": "Text indexes are currently not supported in RU based Azure Cosmos DB for MongoDB. We recommend using Azure AI Search for full text search and advanced search features like wildcard search etc. You need to set up the search indexer. Else, consider switching to Azure Cosmos DB for MongoDB vCore.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/search/search-howto-index-cosmosdb-mongodb",
+      "label": "Setting up the search indexer"
+    }
+  },
+  "$where": {
+    "AssessmentName": "$where",
+    "AssessmentSeverity": "Critical",
+    "Message": "$where is not supported in aggregation pipelines in RU based Azure Cosmos DB for MongoDB. Use $expr or supported stages of the aggregation pipeline instead.",
+    "MoreInfo": null
+  },
+  "$bitsAllClear": {
+    "AssessmentName": "$bitsAllClear",
+    "AssessmentSeverity": "Critical",
+    "Message": "$bitsAllClear is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$bitsAllSet": {
+    "AssessmentName": "$bitsAllSet",
+    "AssessmentSeverity": "Critical",
+    "Message": "$bitsAllSet is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$bitsAnyClear": {
+    "AssessmentName": "$bitsAnyClear",
+    "AssessmentSeverity": "Critical",
+    "Message": "$bitsAnyClear is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$bitsAnySet": {
+    "AssessmentName": "$bitsAnySet",
+    "AssessmentSeverity": "Critical",
+    "Message": "$bitsAnySet is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$bitAnd": {
+    "AssessmentName": "$bitAnd",
+    "AssessmentSeverity": "Warning",
+    "Message": "$bitAnd is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$bitNot": {
+    "AssessmentName": "$bitNot",
+    "AssessmentSeverity": "Warning",
+    "Message": "$bitNot is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$bitOr": {
+    "AssessmentName": "$bitOr",
+    "AssessmentSeverity": "Warning",
+    "Message": "$bitOr is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$bitXor": {
+    "AssessmentName": "$bitXor",
+    "AssessmentSeverity": "Warning",
+    "Message": "$bitXor is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$box": {
+    "AssessmentName": "$box",
+    "AssessmentSeverity": "Warning",
+    "Message": "2d indexes using legacy co-ordinate pairs and the corresponding operators are not supported in RU based Azure Cosmos DB for MongoDB. Use GeoJSON objects instead.",
+    "MoreInfo": {
+      "href": "https://www.mongodb.com/docs/manual/geospatial-queries/#legacy-coordinate-pairs",
+      "label": "Legacy co-ordinate pairs"
+    }
+  },
+  "$center": {
+    "AssessmentName": "$center",
+    "AssessmentSeverity": "Warning",
+    "Message": "2d indexes using legacy co-ordinate pairs and the corresponding operators are not supported in RU based Azure Cosmos DB for MongoDB. Use GeoJSON objects instead.",
+    "MoreInfo": {
+      "href": "https://www.mongodb.com/docs/manual/geospatial-queries/#legacy-coordinate-pairs",
+      "label": "Legacy co-ordinate pairs"
+    }
+  },
+  "$centerSphere": {
+    "AssessmentName": "$centerSphere",
+    "AssessmentSeverity": "Warning",
+    "Message": "2d indexes using legacy co-ordinate pairs and the corresponding operators are not supported in RU based Azure Cosmos DB for MongoDB. Use GeoJSON objects instead.",
+    "MoreInfo": {
+      "href": "https://www.mongodb.com/docs/manual/geospatial-queries/#legacy-coordinate-pairs",
+      "label": "Legacy co-ordinate pairs"
+    }
+  },
+  "$polygon": {
+    "AssessmentName": "$polygon",
+    "AssessmentSeverity": "Warning",
+    "Message": "2d indexes using legacy co-ordinate pairs and the corresponding operators are not supported in RU based Azure Cosmos DB for MongoDB. Use GeoJSON objects instead.",
+    "MoreInfo": {
+      "href": "https://www.mongodb.com/docs/manual/geospatial-queries/#legacy-coordinate-pairs",
+      "label": "Legacy co-ordinate pairs"
+    }
+  },
+  "$uniqueDocs": {
+    "AssessmentName": "$uniqueDocs",
+    "AssessmentSeverity": "Warning",
+    "Message": "$uniqueDocs is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$densify": {
+    "AssessmentName": "$densify",
+    "AssessmentSeverity": "Warning",
+    "Message": "$densify is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$documents": {
+    "AssessmentName": "$documents",
+    "AssessmentSeverity": "Warning",
+    "Message": "$documents is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$fill": {
+    "AssessmentName": "$fill",
+    "AssessmentSeverity": "Warning",
+    "Message": "$fill is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$listSampledQueries": {
+    "AssessmentName": "$listSampledQueries",
+    "AssessmentSeverity": "Warning",
+    "Message": "$listSampledQueries is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$listSearchIndexes": {
+    "AssessmentName": "$listSearchIndexes",
+    "AssessmentSeverity": "Warning",
+    "Message": "$listSearchIndexes is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$searchMeta": {
+    "AssessmentName": "$searchMeta",
+    "AssessmentSeverity": "Warning",
+    "Message": "$searchMeta is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$setWindowFields": {
+    "AssessmentName": "$setWindowFields",
+    "AssessmentSeverity": "Warning",
+    "Message": "$setWindowFields is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$unionWith": {
+    "AssessmentName": "$unionWith",
+    "AssessmentSeverity": "Warning",
+    "Message": "$unionWith is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$shardedDataDistribution": {
+    "AssessmentName": "$shardedDataDistribution",
+    "AssessmentSeverity": "Warning",
+    "Message": "$shardedDataDistribution is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$changeStreamSplitLargeEvent": {
+    "AssessmentName": "$changeStreamSplitLargeEvent",
+    "AssessmentSeverity": "Warning",
+    "Message": "$changeStreamSplitLargeEvent is not supported in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$median": {
+    "AssessmentName": "$median",
+    "AssessmentSeverity": "Critical",
+    "Message": "$median is not supported in aggregation pipelines in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "$percentile": {
+    "AssessmentName": "$percentile",
+    "AssessmentSeverity": "Critical",
+    "Message": "$percentile is not supported in aggregation pipelines in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "createSearchIndexes": {
+    "AssessmentName": "createSearchIndexes",
+    "AssessmentSeverity": "Informational",
+    "Message": "createSearchIndexes is not required in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "dropSearchIndex": {
+    "AssessmentName": "dropSearchIndex",
+    "AssessmentSeverity": "Informational",
+    "Message": "dropSearchIndex is not required in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "updateSearchIndex": {
+    "AssessmentName": "updateSearchIndex",
+    "AssessmentSeverity": "Informational",
+    "Message": "updateSearchIndex is not required in RU based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "eval": {
+    "AssessmentName": "eval",
+    "AssessmentSeverity": "Informational",
+    "Message": "eval is no longer a valid MongoDB command and it is not supported in Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "getPrevError": {
+    "AssessmentName": "getPrevError",
+    "AssessmentSeverity": "Informational",
+    "Message": "getPrevError is no longer a valid MongoDB command and it is not supported in Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  },
+  "parallelCollectionScan": {
+    "AssessmentName": "parallelCollectionScan",
+    "AssessmentSeverity": "Informational",
+    "Message": "parallelCollectionScan is no longer a valid MongoDB command and it is not supported in Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  }
+}

@@ -1,0 +1,1264 @@
+{
+  "submissionResponses": [
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "dPRk1N4SKJL5pPfO5We7Iy+3PctJMUCWYMB1Ckn50sk=",
+          "hashType": "sha256",
+          "destinationHash": "IwaBXQde3I1WVS3oPyCDLeOyGKTFMtYwJ7E8xM1a2+c=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\CosmosDbProxy.dll",
+          "destinationFileSizeInBytes": 27680,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\CosmosDbProxy.dll"
+        }
+      ],
+      "operationId": "e5cd3c25-9641-4f06-9f47-b2d319f21b7a",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "gQ6HZ9AtcK8XO8M8wQSP8xp98BX9Rs9COjCcyJxQ3Gk=",
+          "hashType": "sha256",
+          "destinationHash": "8YoSAw5MpwBK+w8m5L/nqaOl0Fu+iDznXx3oTMd+uxc=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\System.Windows.Extensions.dll",
+          "destinationFileSizeInBytes": 26648,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\System.Windows.Extensions.dll"
+        }
+      ],
+      "operationId": "4d07fba4-4914-42d3-a6fa-3ddade9a4ccb",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "kbOrVxxfaaV9sfDgleGpfoL4xaVF3pqrbqFAJ5JQuDE=",
+          "hashType": "sha256",
+          "destinationHash": "YPi2jR9xbnJ0cbCSK0nZrCKzW8uRudwJppNjh+jCou4=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\fr\\Microsoft.VisualStudio.Threading.resources.dll",
+          "destinationFileSizeInBytes": 18488,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\fr\\Microsoft.VisualStudio.Threading.resources.dll"
+        }
+      ],
+      "operationId": "26756e81-856f-41f2-8942-27fb79a8b3dc",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "eeRvFAa/e/YaU7Cmfva6Q8gbJUt6dBFdRvcCaHAr38g=",
+          "hashType": "sha256",
+          "destinationHash": "u/4C0XoeC6bL8Q7+GLhvxQlVm28DlvNWyVOgKINCt7c=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\zh-Hant\\Microsoft.VisualStudio.Validation.resources.dll",
+          "destinationFileSizeInBytes": 14904,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\zh-Hant\\Microsoft.VisualStudio.Validation.resources.dll"
+        }
+      ],
+      "operationId": "55e200a7-c159-4e57-9704-90d29acd0688",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "5yhj91pa21aXFY8WsANprTqVcQI1ZHYmZ1pcBw8Q7Nk=",
+          "hashType": "sha256",
+          "destinationHash": "ekr/VAg/YA33umYdJIUZsS1gIbJjl9T4XP/nyMQUd6k=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\runtimes\\win\\lib\\net6.0\\System.Windows.Extensions.dll",
+          "destinationFileSizeInBytes": 44064,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\runtimes\\win\\lib\\net6.0\\System.Windows.Extensions.dll"
+        }
+      ],
+      "operationId": "7d85a3bb-7321-4121-9beb-c207e2153646",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "0YZFPuu6IeGakOT+oWwRw99Z7ZYQIBxaPG1ja5hk2EA=",
+          "hashType": "sha256",
+          "destinationHash": "M5lcqQbwxyiZFm3/dk3QGfvj5zrj2PqWce2DsIklHss=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\System.Security.Cryptography.ProtectedData.dll",
+          "destinationFileSizeInBytes": 21536,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\System.Security.Cryptography.ProtectedData.dll"
+        }
+      ],
+      "operationId": "09d6aca2-ef73-448a-bdbd-bad0d0609fab",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "Xh+c2I7p8ov932kiQ+X4O+V7+sK5n40DdRLYaj+nUB4=",
+          "hashType": "sha256",
+          "destinationHash": "CW+JEFZkQe2CAIEvFeRywY83+ee8k3YTZ7NmVadNyKI=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\runtimes\\win-x64\\native\\vcruntime140.dll",
+          "destinationFileSizeInBytes": 98336,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\runtimes\\win-x64\\native\\vcruntime140.dll"
+        }
+      ],
+      "operationId": "91ba092f-522d-4e1e-be3d-64288968c1f3",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "CKjGn98nH2y7OnNcIEwZQkZeMWqpkFKK1dkz5zK5ghk=",
+          "hashType": "sha256",
+          "destinationHash": "saFZfa5OYJx0LWbs8ej9Yfym9YLKgORpZ+SddjA5rQo=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\es\\Microsoft.VisualStudio.Threading.resources.dll",
+          "destinationFileSizeInBytes": 18464,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\es\\Microsoft.VisualStudio.Threading.resources.dll"
+        }
+      ],
+      "operationId": "809f93a6-f922-4344-8a11-1475026d4be4",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "Rnve6F7u/frKLnptngTgO3N4R6GTG+PgBTWpo4MzjC8=",
+          "hashType": "sha256",
+          "destinationHash": "VEkNZ9sbLLrbC6vtB+OdW0ktPZPEiYPCqv7ASaspG84=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\Microsoft.VisualStudio.Validation.dll",
+          "destinationFileSizeInBytes": 34336,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\Microsoft.VisualStudio.Validation.dll"
+        }
+      ],
+      "operationId": "4c0e8933-9c2c-41ab-92d6-f1f148b1bffe",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "yklb9shrfwktYkkoEBmFqUFTLRSdzYrP6hcPilO+iFA=",
+          "hashType": "sha256",
+          "destinationHash": "fQx4H8nBE+KU551c95VFOwmdKtQGSmi5KZNQfTlRcoQ=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\Microsoft.Win32.SystemEvents.dll",
+          "destinationFileSizeInBytes": 27168,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\Microsoft.Win32.SystemEvents.dll"
+        }
+      ],
+      "operationId": "8e84f488-e36a-48e0-94c1-4732cae1fc3f",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "dKfMcmlQMiTK/eQlg2SpmmJ9fFBRAGDq8Abzve9r6+E=",
+          "hashType": "sha256",
+          "destinationHash": "rAsBoUdzwtR4rM1YAFhAvGm753z3u9l5E1BgxrvhUjo=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\pt-BR\\Microsoft.VisualStudio.Validation.resources.dll",
+          "destinationFileSizeInBytes": 15392,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\pt-BR\\Microsoft.VisualStudio.Validation.resources.dll"
+        }
+      ],
+      "operationId": "b25326d1-324b-4d32-9b42-cdf65d7852ce",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "wRZfYaSuN9sU0+k7yhFCiQt0RM4KsfzrDvIwNjAaJmU=",
+          "hashType": "sha256",
+          "destinationHash": "iR7AtdXX7/7GFPPtXAtIi7vKIQ9tTuoYP90+zzUYB14=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\Microsoft.NET.StringTools.dll",
+          "destinationFileSizeInBytes": 30240,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\Microsoft.NET.StringTools.dll"
+        }
+      ],
+      "operationId": "ac32df08-acf3-41c5-a814-bd19f4717e98",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "BquXaZf5BuFSEiwLN7LNqBaBeIhUDi3OQOVG0dJG478=",
+          "hashType": "sha256",
+          "destinationHash": "f5ZVCCna5SJz11zBLLvmLgzasSpaZOfpl0ReMvcrLoQ=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\zh-Hant\\Microsoft.VisualStudio.Threading.resources.dll",
+          "destinationFileSizeInBytes": 17440,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\zh-Hant\\Microsoft.VisualStudio.Threading.resources.dll"
+        }
+      ],
+      "operationId": "d88db005-2595-4f01-b6ac-24e58f92d988",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "GVm1eJPmIiu4DRTZgfoyB216TdGmhRxA4J9UjKdWg44=",
+          "hashType": "sha256",
+          "destinationHash": "X7pYBp8/YeWhNwrFwQAhq8LpwXi7VlEe/Iecv9xfZXw=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\cs\\Microsoft.VisualStudio.Threading.resources.dll",
+          "destinationFileSizeInBytes": 17952,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\cs\\Microsoft.VisualStudio.Threading.resources.dll"
+        }
+      ],
+      "operationId": "b93a5c61-43b3-4d9f-9609-566bc48429be",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "vGrO1pL4/LNEkZvolxDjw1lLAvF/MPilp/wSeapAJ8Y=",
+          "hashType": "sha256",
+          "destinationHash": "JkAXEcmAXj9DfBvyLYSRyF8wyt7+rsegF+S/IjiYG8M=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\cs\\Microsoft.VisualStudio.Validation.resources.dll",
+          "destinationFileSizeInBytes": 14880,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\cs\\Microsoft.VisualStudio.Validation.resources.dll"
+        }
+      ],
+      "operationId": "1f3805ee-1049-4fa7-aff3-b63e90eedcc8",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "pSc3aRvrseMGGEyLK2fG/6HF2WB7wUCJR6ZpVMC0SP8=",
+          "hashType": "sha256",
+          "destinationHash": "7mxsrKq1afOvc8VSJl5t8Unkbre1Nd7z4PtS3H9+f6g=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\ru\\Microsoft.VisualStudio.Validation.resources.dll",
+          "destinationFileSizeInBytes": 15392,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\ru\\Microsoft.VisualStudio.Validation.resources.dll"
+        }
+      ],
+      "operationId": "f2f0a418-3dff-4e67-a133-06a9de193db2",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "L4a6LtPJCoEIWSHk9ze5glq5nYBa0pY63jW534+KXP8=",
+          "hashType": "sha256",
+          "destinationHash": "0SwYIrxp3SfKqnhSTYY7eaBiiWXYAzQ7DrMN7keJIss=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\ja\\Microsoft.VisualStudio.Validation.resources.dll",
+          "destinationFileSizeInBytes": 15392,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\ja\\Microsoft.VisualStudio.Validation.resources.dll"
+        }
+      ],
+      "operationId": "0bc9a8e8-6e55-41c8-94fa-a7dcebac2267",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "tdVbmricQVXtG6icry02D/2EGtCbkvlc95dC6/14Mfo=",
+          "hashType": "sha256",
+          "destinationHash": "oR17kjSirUnAFjpLBkatMCpyXcvb8KunzCP5ABGhFqk=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\tr\\Microsoft.VisualStudio.Threading.resources.dll",
+          "destinationFileSizeInBytes": 17976,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\tr\\Microsoft.VisualStudio.Threading.resources.dll"
+        }
+      ],
+      "operationId": "a86c6f1c-b3a6-4afa-a8ac-65e855b3dc67",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "0kqPrx3TbuQlKnC+bfAEEaJo+y/o4yIZpPU+Z8ENZrI=",
+          "hashType": "sha256",
+          "destinationHash": "CQ8KGZJyUXZ2U95QofTM0UO0/mcSBiyQJa1wBmqBHz0=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\de\\Microsoft.VisualStudio.Validation.resources.dll",
+          "destinationFileSizeInBytes": 14880,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\de\\Microsoft.VisualStudio.Validation.resources.dll"
+        }
+      ],
+      "operationId": "a979254c-5d3e-493f-87e6-8b983db5aa30",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "B9PqdGsPeaiOf22gUhepa9vhBDhLbqwP8mC1EeUap0Q=",
+          "hashType": "sha256",
+          "destinationHash": "iyA+F5xQOe0u6sC0Ucylf5khGNBzLhgRVVDjbpOIeyM=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\obj\\Release\\net6.0\\apphost.exe",
+          "destinationFileSizeInBytes": 159800,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\obj\\Release\\net6.0\\apphost.exe"
+        }
+      ],
+      "operationId": "76f25efa-6d26-4990-886f-272ed63e0892",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "rnri3OnZ8i4b39PzsvbWxmNmg+N9ZXpELh7ev3QUGVo=",
+          "hashType": "sha256",
+          "destinationHash": "UqdLw56QMJ1cIIE20ROY5TJj2Kp9rlJLs0tDqCSNhmc=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\System.Collections.Immutable.dll",
+          "destinationFileSizeInBytes": 195616,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\System.Collections.Immutable.dll"
+        }
+      ],
+      "operationId": "a8f34d1b-2f61-4c3a-8662-f26961d7632c",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "fwbdVyhg1RTtKJyv34EFUht+L5tj1InEuM0xHUUdTwM=",
+          "hashType": "sha256",
+          "destinationHash": "460eODzxL6WB6u7xKmKQC2Gneg/vLHF8p4sJ+e1Iam4=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\pl\\Microsoft.VisualStudio.Threading.resources.dll",
+          "destinationFileSizeInBytes": 18464,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\pl\\Microsoft.VisualStudio.Threading.resources.dll"
+        }
+      ],
+      "operationId": "055640c5-e7e2-44fb-900f-8e2bd2cb8109",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "y5+O+HE1PNgSn0TwPo3hH4YjhuwltS3gYIkrSTD2QOs=",
+          "hashType": "sha256",
+          "destinationHash": "+kf5c0GjJn1GS37aex6xU+gpLGdAMGsHa4MaOGIYa88=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\Microsoft.Bcl.HashCode.dll",
+          "destinationFileSizeInBytes": 15392,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\Microsoft.Bcl.HashCode.dll"
+        }
+      ],
+      "operationId": "b8f99d40-0390-4d48-bfde-c5063379debf",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "KZ3flJA15S5HWHMsICAp4siaFhdNg5BL7wzAQgXgl7c=",
+          "hashType": "sha256",
+          "destinationHash": "jO4Jf+YQ6h0ElZY5J5pYb5ZJNA7fWyXSTORezA5trJg=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Bcl.AsyncInterfaces.dll",
+          "destinationFileSizeInBytes": 18976,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Bcl.AsyncInterfaces.dll"
+        }
+      ],
+      "operationId": "98b7d246-a2b8-42af-b793-c1665dfe6d33",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "lR4AeSmcarQ5TydUHaL6lCdaWmn68dwbKZ5zQF17BpM=",
+          "hashType": "sha256",
+          "destinationHash": "yAUA/UD0BpI27I7GZUwrOezCdZdHnBjxgr1WIkxB6zU=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\zh-Hant\\StreamJsonRpc.resources.dll",
+          "destinationFileSizeInBytes": 24096,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\zh-Hant\\StreamJsonRpc.resources.dll"
+        }
+      ],
+      "operationId": "08bb1db2-da9c-4b76-9808-0f236f543759",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "YgaMD2v/sOtOwcakWhZ4TK7nVl9sVATYNCCJ9P9LNxI=",
+          "hashType": "sha256",
+          "destinationHash": "vcTPWzc7haTpP29OvdsN1g+l8FD3BPQNlKFQAtfRZFs=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\System.Security.Permissions.dll",
+          "destinationFileSizeInBytes": 104992,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\System.Security.Permissions.dll"
+        }
+      ],
+      "operationId": "b2040b6e-2182-41c7-8774-8918fa19787b",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "V+HKGKxiT6LK2WdIx3PXoavDA3X++S8coOk0PmAi7nM=",
+          "hashType": "sha256",
+          "destinationHash": "hqSED3MTiwUaf4cBaK6dijIxPjIcmXNobTEBPwZxnAE=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\fr\\Microsoft.VisualStudio.Validation.resources.dll",
+          "destinationFileSizeInBytes": 15416,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\fr\\Microsoft.VisualStudio.Validation.resources.dll"
+        }
+      ],
+      "operationId": "ee9aa37e-e7b5-434e-b289-4043ac3c0934",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "CuDbtRjDrYf/KjDYK2rjKJpBhbJUjnV0qQviGtmt2e4=",
+          "hashType": "sha256",
+          "destinationHash": "W4X+k7YFCQzwxmBjFQK8TIIoKFCFysDIHmbX4A/Xhcg=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\obj\\Release\\net6.0\\refint\\CosmosDbProxy.dll",
+          "destinationFileSizeInBytes": 21536,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\obj\\Release\\net6.0\\refint\\CosmosDbProxy.dll"
+        }
+      ],
+      "operationId": "4de43d3b-1217-484d-bf88-487c151ad212",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "mNB+ax59NkGoYIo2Cz3Cc/6KD3iSa24eX2eaegdNSR8=",
+          "hashType": "sha256",
+          "destinationHash": "Itpmu1T7E9376ntVT+RfVVDgClFyyap/9mN8m3meuSw=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\System.Drawing.Common.dll",
+          "destinationFileSizeInBytes": 176160,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\System.Drawing.Common.dll"
+        }
+      ],
+      "operationId": "c1e936a3-6480-4444-bc4c-57b867abbb3f",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "UUZolndqgfQq2IRMzLbWhoA5si3JNy+7ym/W9g14WuQ=",
+          "hashType": "sha256",
+          "destinationHash": "b2tdZ3zNI8b+8pm8Bh3E+cTZI93zWIpyRhf44lgLQLU=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\fr\\StreamJsonRpc.resources.dll",
+          "destinationFileSizeInBytes": 25632,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\fr\\StreamJsonRpc.resources.dll"
+        }
+      ],
+      "operationId": "1bde148b-bcf5-4005-9bf9-828243b87010",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "WC0J31pPv1iEk+dP8+7g7DbuevcB8VOGpdH32AkmRQQ=",
+          "hashType": "sha256",
+          "destinationHash": "pD0ek2TS9wmR+H+j3VkPe0rZW5TLPlrBffXC40UAufY=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\tr\\StreamJsonRpc.resources.dll",
+          "destinationFileSizeInBytes": 25120,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\tr\\StreamJsonRpc.resources.dll"
+        }
+      ],
+      "operationId": "f1bf762b-2644-4b39-99a9-fa47218ae03c",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "EEzcbSBAahRKvTc+0pfvgDIXwVASoPIsrPbGdkIdU+4=",
+          "hashType": "sha256",
+          "destinationHash": "mr/iQoE1UCq1rPhsXnafT+PTGocGC3qsy21lHSREwyI=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\runtimes\\win\\lib\\net6.0\\System.Security.Cryptography.ProtectedData.dll",
+          "destinationFileSizeInBytes": 34848,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\runtimes\\win\\lib\\net6.0\\System.Security.Cryptography.ProtectedData.dll"
+        }
+      ],
+      "operationId": "b09564a9-f688-4fe3-8387-b1fc841fe0fc",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "ul0WUd0XwsA+J1JnM2eMEaOoEnLsTyE2rVn1a8I/3DU=",
+          "hashType": "sha256",
+          "destinationHash": "VQw8Uv/EYJYE+Os4F22yxLjLVn8u2GIwRqcX9rx3v5c=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\es\\Microsoft.VisualStudio.Validation.resources.dll",
+          "destinationFileSizeInBytes": 15392,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\es\\Microsoft.VisualStudio.Validation.resources.dll"
+        }
+      ],
+      "operationId": "42e0e7a3-6182-4c92-8f83-bc9caaaf9666",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "gK8VYAbhOsIL6wL5jY3ZCY/M7vOO7cYeaDxUbwW39Qs=",
+          "hashType": "sha256",
+          "destinationHash": "lfPoOSIO53MytMrhW0U1njH2/96XuwNKWdhnTes+s/o=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\ja\\StreamJsonRpc.resources.dll",
+          "destinationFileSizeInBytes": 27168,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\ja\\StreamJsonRpc.resources.dll"
+        }
+      ],
+      "operationId": "83ef6339-8588-4332-8683-43f3c375525c",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "ny4S/Ri30E470+Krj8jWAuiLndcWbuLmnylwjvgMs9Y=",
+          "hashType": "sha256",
+          "destinationHash": "7WaC3wQOWS35p2MdXofFgSC/+zVQLQ3wpK2uOPgQklc=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\zh-Hans\\Microsoft.VisualStudio.Threading.resources.dll",
+          "destinationFileSizeInBytes": 16928,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\zh-Hans\\Microsoft.VisualStudio.Threading.resources.dll"
+        }
+      ],
+      "operationId": "0d750590-93d8-47aa-8016-ef40fae2c601",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "jf7pf9Cfg9e/j9FTMwZiWIKGOht33JzCfgmz1o8V0Bs=",
+          "hashType": "sha256",
+          "destinationHash": "/IkU29e77AmaOmPmzl4ATPsB1G/kUJFdPVjCVifU9bM=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\ko\\Microsoft.VisualStudio.Validation.resources.dll",
+          "destinationFileSizeInBytes": 15392,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\ko\\Microsoft.VisualStudio.Validation.resources.dll"
+        }
+      ],
+      "operationId": "31d7daf1-e808-49d8-b47e-f436407123f2",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "iepZXMsf0ThEgMHjC9SHySr10G07BvKVMj7/YBrNkBk=",
+          "hashType": "sha256",
+          "destinationHash": "BN8u3qwSe1g0drG7HNrl7QnZPohB9DZIy0oH6YPC/mU=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\runtimes\\unix\\lib\\net6.0\\System.Drawing.Common.dll",
+          "destinationFileSizeInBytes": 428064,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\runtimes\\unix\\lib\\net6.0\\System.Drawing.Common.dll"
+        }
+      ],
+      "operationId": "db9af9e7-01a1-4270-81c2-860166b3bab0",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "CXAC/VwN/QhPOnS3IWoTkydU/uIFuRhBejnofkjVt6c=",
+          "hashType": "sha256",
+          "destinationHash": "KLme8FgwLrU629Jhrazw99QpE4bWT2vFbjrGaMLWKbw=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\pt-BR\\StreamJsonRpc.resources.dll",
+          "destinationFileSizeInBytes": 25120,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\pt-BR\\StreamJsonRpc.resources.dll"
+        }
+      ],
+      "operationId": "bab29ce8-2463-4955-b8d7-f9bfa70ad90b",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "h59mzDzR0hKnSfQ9gJCjhrKhwEF4r7CKl+eG1/PKaLA=",
+          "hashType": "sha256",
+          "destinationHash": "8z7zpoXAU+UUklu3fdplWVmUIGOsP80P43HCn97rU3A=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\de\\StreamJsonRpc.resources.dll",
+          "destinationFileSizeInBytes": 25632,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\de\\StreamJsonRpc.resources.dll"
+        }
+      ],
+      "operationId": "69e7a235-4427-4199-99d4-9de69b7b8f6a",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "Rzyg63UUTSVOUbz3M76hG57GhRbaMZBayAOQ4Wa4AxE=",
+          "hashType": "sha256",
+          "destinationHash": "P8DfVr3QFBeKwt6oOWtR80F5GJoVsK/Zstw+mfCDjdU=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\ja\\Microsoft.VisualStudio.Threading.resources.dll",
+          "destinationFileSizeInBytes": 18464,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\ja\\Microsoft.VisualStudio.Threading.resources.dll"
+        }
+      ],
+      "operationId": "6f16cdc7-cb25-42ac-9160-08a6f01a22a9",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "k1k1u9uzKAFgpFgZLcoJFyA5t5J/PQN3UoSByhlyLCE=",
+          "hashType": "sha256",
+          "destinationHash": "km21B5qqLT4ae41knFIhrdvdiUxDOXK4vmd0DhX3jAU=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\ko\\Microsoft.VisualStudio.Threading.resources.dll",
+          "destinationFileSizeInBytes": 17952,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\ko\\Microsoft.VisualStudio.Threading.resources.dll"
+        }
+      ],
+      "operationId": "7ae92710-a974-48ab-8fcc-c07681c08dcb",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "GFES9BAiWvP7y+0A5fk6JXEBR9e8+v8mYWS40jfdrE8=",
+          "hashType": "sha256",
+          "destinationHash": "/KvioFMFq/X5J1gfEiopFlWJNLiMlMZ0f0foT9JkCzM=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\StreamJsonRpc.dll",
+          "destinationFileSizeInBytes": 319032,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\StreamJsonRpc.dll"
+        }
+      ],
+      "operationId": "8a803fa0-9960-4390-af52-5459860fc9d4",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "wxCQnYmgAr1wpFKFiUnqZDr9J4Nal1NaBA3G/StmkbA=",
+          "hashType": "sha256",
+          "destinationHash": "0drgJbZVxWYm6IC5Isqjxi/RsefABY14nyS1YJdMiBc=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\pt-BR\\Microsoft.VisualStudio.Threading.resources.dll",
+          "destinationFileSizeInBytes": 17952,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\pt-BR\\Microsoft.VisualStudio.Threading.resources.dll"
+        }
+      ],
+      "operationId": "76bff2f0-d6ef-4044-8ba9-4d45a99ae607",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "cs8pHUurDt0IqbB8YXPh560au3q3J/1wRL9jBddRVmE=",
+          "hashType": "sha256",
+          "destinationHash": "r32xbtm8eDXW+Z+1oIEkLgmpU54Ym471md17azxngZ0=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Newtonsoft.Json.dll",
+          "destinationFileSizeInBytes": 697888,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Newtonsoft.Json.dll"
+        }
+      ],
+      "operationId": "95519ff4-397f-4a2e-857e-4698ebe14bac",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "Ni86TIPCefqxnaOMjnnEAwwD+kIHbOYWH+6FpAeJZZw=",
+          "hashType": "sha256",
+          "destinationHash": "fEow4BB9pmoLte3evsukkKdQ01i4NFGxwnOP/HdEwJ8=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.ServiceInterop.dll",
+          "destinationFileSizeInBytes": 8511408,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.ServiceInterop.dll"
+        }
+      ],
+      "operationId": "63e02748-4aa3-464f-b44c-270c72891ace",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "JEpfVFSUpujIDCypLU2b9G+KbnF20SqLaPAshlqkC5s=",
+          "hashType": "sha256",
+          "destinationHash": "xvQAOygy9TsJQKU781D2A3hNkNuCyaDQBVG5V5Fjg8k=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\zh-Hans\\StreamJsonRpc.resources.dll",
+          "destinationFileSizeInBytes": 24096,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\zh-Hans\\StreamJsonRpc.resources.dll"
+        }
+      ],
+      "operationId": "88bd2ff7-7e43-4710-acf5-8fddfa7a0998",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "M/fgYSub7HX3VdGRQmxRkng88XJXUN59XyPu3KIRBEk=",
+          "hashType": "sha256",
+          "destinationHash": "56mGqlBVUJbAoPC5Tq7VFbU8yd5vaZ6nAhbcyv6QA8k=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\it\\Microsoft.VisualStudio.Threading.resources.dll",
+          "destinationFileSizeInBytes": 18464,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\it\\Microsoft.VisualStudio.Threading.resources.dll"
+        }
+      ],
+      "operationId": "f5186465-0bd4-4283-b0ce-1c39d064a0dc",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "JiWdmUQRjto/5RcaNNqdavMUJQc3pmfKCtkq/EBdcns=",
+          "hashType": "sha256",
+          "destinationHash": "pDy22NBqFZWl0z5uyn34FsUQVrYK4SbFEj4f9nD9x3Y=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\zh-Hans\\Microsoft.VisualStudio.Validation.resources.dll",
+          "destinationFileSizeInBytes": 14880,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\zh-Hans\\Microsoft.VisualStudio.Validation.resources.dll"
+        }
+      ],
+      "operationId": "31500102-5337-4468-ac67-5ffb1f359f4f",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "yN/n9GgzSmfK2mNdhKxi9Y2tssPDz8nBUpntQQim3Us=",
+          "hashType": "sha256",
+          "destinationHash": "HxVzE9Y++PilmM9F/B0BzoXzyOA6V8eONZHFYUqg7F8=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\System.IO.Pipelines.dll",
+          "destinationFileSizeInBytes": 81952,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\System.IO.Pipelines.dll"
+        }
+      ],
+      "operationId": "5315a3ce-0366-4301-998f-ef9ee9fe19a9",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "O1n3xlf0grl3tL7GM1rIovxoUZUPbv3AZo7cbBvYsDk=",
+          "hashType": "sha256",
+          "destinationHash": "inmD9WA+ncJzZs0/dWwceQ+2Bp2ZgGrug8DbQgJ+/L4=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\cs\\StreamJsonRpc.resources.dll",
+          "destinationFileSizeInBytes": 25120,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\cs\\StreamJsonRpc.resources.dll"
+        }
+      ],
+      "operationId": "661352a6-b7cd-41de-9285-a366544dfa42",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "kyMY5YgrTvtYhwr2XCcjNCszofcBrFohClvAFTMuJT4=",
+          "hashType": "sha256",
+          "destinationHash": "QrgVge7QVg+4xBZrbDBtsrXnG+CkS63brhCTltUiczI=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\System.Threading.Tasks.Dataflow.dll",
+          "destinationFileSizeInBytes": 186912,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\System.Threading.Tasks.Dataflow.dll"
+        }
+      ],
+      "operationId": "fedaf18f-ffd0-4f32-84b9-396f252506e4",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "v9w1fqUIiiZdogGqZJL2/QTxqUxo25DO6WXRMYy1dF8=",
+          "hashType": "sha256",
+          "destinationHash": "Jes7/VI1MWDSTGTa2HdoubGoC1aJWmC89uf1V9aUY7M=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\System.Diagnostics.DiagnosticSource.dll",
+          "destinationFileSizeInBytes": 150048,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\System.Diagnostics.DiagnosticSource.dll"
+        }
+      ],
+      "operationId": "188d3a2a-cb30-4985-9d86-880a7a4314fa",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "EErSfWhGAEAHeCByPbmGkt8L9yKmn5BQR8kb9ZTpfT4=",
+          "hashType": "sha256",
+          "destinationHash": "WwL8TV16TL9HGPUvILaW9XFfHooZzDagDnCTY99YTrI=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\it\\Microsoft.VisualStudio.Validation.resources.dll",
+          "destinationFileSizeInBytes": 15392,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\it\\Microsoft.VisualStudio.Validation.resources.dll"
+        }
+      ],
+      "operationId": "1945abd9-1f26-44e2-8c50-5fb943dbafff",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "cxufdaGFZDqpZlASxrRCZ23Uh7pv6UVp5sB7LJGJggA=",
+          "hashType": "sha256",
+          "destinationHash": "6t3sQ4JUV6CsesXxHk5intNSHFIVY9YjTYLGBJoctlU=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\pl\\StreamJsonRpc.resources.dll",
+          "destinationFileSizeInBytes": 25632,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\pl\\StreamJsonRpc.resources.dll"
+        }
+      ],
+      "operationId": "5201c72c-3a46-4e4d-bba6-0504766ba270",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "wbTpcT47y4DQVgCApK9GUuWTWLsSxbpTk6dgZ+ADMws=",
+          "hashType": "sha256",
+          "destinationHash": "4d/6Bi6U7YoJNjCbZMuIWlr9of3/l9kjvcVpWPYeBfM=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\ko\\StreamJsonRpc.resources.dll",
+          "destinationFileSizeInBytes": 26144,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\ko\\StreamJsonRpc.resources.dll"
+        }
+      ],
+      "operationId": "f50b14e9-e574-4caf-9201-fe2ea37a564a",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "aWI25G9cAWfl/5r93xc/S1IJQPJ8qZZugoVICpmiPgs=",
+          "hashType": "sha256",
+          "destinationHash": "6/kzdPPQkLXWdDLmaT2r3SPjmLRQX7ENbcOXfXM6ypw=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\de\\Microsoft.VisualStudio.Threading.resources.dll",
+          "destinationFileSizeInBytes": 18464,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\de\\Microsoft.VisualStudio.Threading.resources.dll"
+        }
+      ],
+      "operationId": "9db7e230-1214-427c-8341-776271336c6b",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "2UDQNXnwwQWLvx421jnXwouDySPOhG86T3mI7nkd8iM=",
+          "hashType": "sha256",
+          "destinationHash": "IfIuB9cnTfsIQTQA2Toy/dy9IUSy9OTqGrpnubVb2Gw=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\it\\StreamJsonRpc.resources.dll",
+          "destinationFileSizeInBytes": 25632,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\it\\StreamJsonRpc.resources.dll"
+        }
+      ],
+      "operationId": "96c5a7b0-d27a-4c3c-9b34-045e2f64facc",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "rwhLqdi9ohGKBsufXJ6r52UhoQCo/ACI0wA9bsC3llM=",
+          "hashType": "sha256",
+          "destinationHash": "fH5cPOdz+Hwubu6AAUuMG+TcbMbqbbXYTpc2b1JiYsU=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\msvcp140.dll",
+          "destinationFileSizeInBytes": 568864,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\msvcp140.dll"
+        }
+      ],
+      "operationId": "47ab1cbb-92e5-4441-b7cb-e87c51488d14",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "FCzOTtisnaItacOKbyJzir+yIJDckxPotY5vkZeOia8=",
+          "hashType": "sha256",
+          "destinationHash": "FXQk4ftyKrSzxaLQnv5NIYa8tFtMdVlyVKV0NfAfTFM=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\runtimes\\win\\lib\\net6.0\\Microsoft.Win32.SystemEvents.dll",
+          "destinationFileSizeInBytes": 54304,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\runtimes\\win\\lib\\net6.0\\Microsoft.Win32.SystemEvents.dll"
+        }
+      ],
+      "operationId": "0f237622-0fd6-4360-b3af-d43194c642c2",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "KTyl2GNY+yzgDaAsY+78s0Ron8DGNrYcl8PxsVqAqlE=",
+          "hashType": "sha256",
+          "destinationHash": "16j0YoRTOBnbsmM+L7ylW3lZg9QGgtWbrpHNA2U8PKc=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\System.Memory.Data.dll",
+          "destinationFileSizeInBytes": 22552,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\System.Memory.Data.dll"
+        }
+      ],
+      "operationId": "0694485f-3408-4f6c-bc36-57914fcfe349",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "/htqfCop+zTG0DEd817sKK2OoIiPpOGDCjuMBWPtrSk=",
+          "hashType": "sha256",
+          "destinationHash": "BVT8B8vg0KINC9PRda8j8Nz2I3phdF28nZXEvIxjZQY=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\pl\\Microsoft.VisualStudio.Validation.resources.dll",
+          "destinationFileSizeInBytes": 15392,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\pl\\Microsoft.VisualStudio.Validation.resources.dll"
+        }
+      ],
+      "operationId": "90785191-65ec-41c6-a784-c063ce5c0dfb",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "MY+cxJnAP8oB0QxqjSmtFxYcvhjGrCnfBaMZw7gg1uU=",
+          "hashType": "sha256",
+          "destinationHash": "F/oWH3KGvHmVJo6e5ivBVxkwutsHZslWBVwe2ys9ofM=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Nerdbank.Streams.dll",
+          "destinationFileSizeInBytes": 213024,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Nerdbank.Streams.dll"
+        }
+      ],
+      "operationId": "a3d3519b-0537-4597-95d9-bfad25565961",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "vFqQpDURydWrm7bLuu9MfTpGEAL+zi6dzEHWrldP1RU=",
+          "hashType": "sha256",
+          "destinationHash": "3Kzf2JoqG51rWlZlRKNtZqnCrmY2DobrLOPQehHWGHk=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\ru\\StreamJsonRpc.resources.dll",
+          "destinationFileSizeInBytes": 28704,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\ru\\StreamJsonRpc.resources.dll"
+        }
+      ],
+      "operationId": "89e5666b-62ff-4383-988d-717fce892ae0",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "PBHVWbllVP8ziXJUElMcrgf/nI/LOb9MQAoWlf+lPbk=",
+          "hashType": "sha256",
+          "destinationHash": "O//JL0/aOOTxomRRv5E8aQBV5Ot/uGUsiPdPA7qF8B8=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\MessagePack.Annotations.dll",
+          "destinationFileSizeInBytes": 22048,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\MessagePack.Annotations.dll"
+        }
+      ],
+      "operationId": "3200505a-7982-41d0-8d3c-cba0325354ba",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "fW2jAmJmv8YHFxjx4YJKAoPatRZucamydE5137aZOcE=",
+          "hashType": "sha256",
+          "destinationHash": "s60Ok82aFulJgyeqoXfKxWU29WBoTDVpFu31nK5ki5c=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Azure.Core.dll",
+          "destinationFileSizeInBytes": 206368,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Azure.Core.dll"
+        }
+      ],
+      "operationId": "64301ea7-3bd6-4379-858b-0754a50635c0",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "no+2qwplYHnZ5ZfUxmi6ds1XmcVFjqUOYoz+i1v4Yo8=",
+          "hashType": "sha256",
+          "destinationHash": "opRz/9tx/xurycfzDBDtiaOMUOawKWTBHsc5Hbr5caM=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\MessagePack.dll",
+          "destinationFileSizeInBytes": 336304,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\MessagePack.dll"
+        }
+      ],
+      "operationId": "fa54fa25-2f15-4ad2-8b31-a680e73e3f17",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "MNru0pVmCpT3XFDe6GBolgripJKWPJ1kVNJruZ7IQiw=",
+          "hashType": "sha256",
+          "destinationHash": "V+X7lHvOGJIaH4YuNH6R0r9YSigXK0TetFKzi5861w0=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\es\\StreamJsonRpc.resources.dll",
+          "destinationFileSizeInBytes": 25520,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\es\\StreamJsonRpc.resources.dll"
+        }
+      ],
+      "operationId": "69320208-1706-4624-84be-1c60aa5def63",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "nfUAsNCTkL8icrx4C0z/NxHNcrrFMT0LA8tAn1ru7B0=",
+          "hashType": "sha256",
+          "destinationHash": "NUAT/93qpAJq0SULNAKcBHpBR+JrVPAmTA1/KWONvOQ=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\Microsoft.VisualStudio.Threading.dll",
+          "destinationFileSizeInBytes": 420408,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\Microsoft.VisualStudio.Threading.dll"
+        }
+      ],
+      "operationId": "63a8e9f2-eb15-4d18-9b55-e048993a1ddf",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "inDpYqx5fky0Xpol8SI2fyaOlqGFjk+asSkbYLa64C8=",
+          "hashType": "sha256",
+          "destinationHash": "l+l0givtFc8+m9VjqD6RrPFf6cFYB0iNO4qlFQZMxac=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\ru\\Microsoft.VisualStudio.Threading.resources.dll",
+          "destinationFileSizeInBytes": 19376,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\ru\\Microsoft.VisualStudio.Threading.resources.dll"
+        }
+      ],
+      "operationId": "56272922-812f-420b-9141-06bc87eb091e",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "k3s7nUmFiE8CGGayUwvREGmCon6JNvEiVhLhi6+QQNg=",
+          "hashType": "sha256",
+          "destinationHash": "Ggqtcmo2rr150+vyxjIFQ/zGN9uMBth2xh+7ambNBwY=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\tr\\Microsoft.VisualStudio.Validation.resources.dll",
+          "destinationFileSizeInBytes": 14880,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\tr\\Microsoft.VisualStudio.Validation.resources.dll"
+        }
+      ],
+      "operationId": "82677ab4-e647-4104-9553-f65c41f625f5",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "mQG/UfiXk2x7QciU4ylFQxtsQrbl7GiuxCte3Yz8ETY=",
+          "hashType": "sha256",
+          "destinationHash": "bOo385k+QxhQst0FAGZVtih8L57VubY3YHYFEGouL68=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\runtimes\\win-x64\\native\\Cosmos.CRTCompat.dll",
+          "destinationFileSizeInBytes": 115232,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\runtimes\\win-x64\\native\\Cosmos.CRTCompat.dll"
+        }
+      ],
+      "operationId": "ba914dc6-25fb-4ba8-aa65-949277801798",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "UaNj3Nd6VQ5WmPneoY/Ri3FFJhofHprL85KAhyA22Q8=",
+          "hashType": "sha256",
+          "destinationHash": "J0A9zjjxKGGPsbkCA0fOl94Xprbe+gHRekPVp4U3ftM=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\runtimes\\win-x64\\native\\vcruntime140_1.dll",
+          "destinationFileSizeInBytes": 38328,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\runtimes\\win-x64\\native\\vcruntime140_1.dll"
+        }
+      ],
+      "operationId": "aadd1901-4379-4aae-95a1-bebd28c0cec3",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "TTABaX31DMpU8y7S270fP0FbSNXXVrG/lQCkOum2jaA=",
+          "hashType": "sha256",
+          "destinationHash": "LgJxQHih/GnJf14Bz2LktroJxZSkIUILAedDN1PLWfs=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\runtimes\\win\\lib\\net6.0\\System.Drawing.Common.dll",
+          "destinationFileSizeInBytes": 455200,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\runtimes\\win\\lib\\net6.0\\System.Drawing.Common.dll"
+        }
+      ],
+      "operationId": "a590fa3a-3d2e-427d-b303-bf9eb4bd89be",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "SyZcn69Ju8196bOWd6jbATVgq2B2BRWvy5adNMTwGUE=",
+          "hashType": "sha256",
+          "destinationHash": "bd17iYrf0lzQM/nsZGBuOi0OSf5RFEL/0xSy69Egk8M=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\System.Configuration.ConfigurationManager.dll",
+          "destinationFileSizeInBytes": 396344,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\System.Configuration.ConfigurationManager.dll"
+        }
+      ],
+      "operationId": "2ac86ec0-5959-420b-82d9-33c378b28cc8",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    }
+  ],
+  "esrpClientSessionGuid": "6b7018c4-12f6-474c-a1c8-152af656abdf",
+  "version": "1.0.0"
+}

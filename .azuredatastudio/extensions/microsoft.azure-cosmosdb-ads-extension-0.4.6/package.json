@@ -1,0 +1,631 @@
+{
+	"name": "azure-cosmosdb-ads-extension",
+	"displayName": "Cosmos DB ADS Extension",
+	"description": "Cosmos DB Azure Data Studio extension",
+	"publisher": "Microsoft",
+	"version": "0.4.6",
+	"icon": "resources/catalog/CosmosDBExtension.png",
+	"aiKey": "29a207bb14f84905966a8f22524cb730-25407f35-11b6-4d4e-8114-ab9e843cb52f-7380",
+	"preview": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Azure/azure-cosmosdb-ads-extension"
+	},
+	"engines": {
+		"vscode": "*",
+		"azdata": "^1.39.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"main": "./dist/main.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "cosmosdb-ads-extension.createMongoDatabase",
+				"title": "Create Database...",
+				"category": "Cosmos DB Mongo"
+			},
+			{
+				"command": "cosmosdb-ads-extension.createMongoCollection",
+				"title": "Create Collection...",
+				"category": "Cosmos DB Mongo"
+			},
+			{
+				"command": "cosmosdb-ads-extension.deleteMongoCollection",
+				"title": "Delete Collection",
+				"category": "Cosmos DB Mongo"
+			},
+			{
+				"command": "cosmosdb-ads-extension.deleteMongoDatabase",
+				"title": "Delete Database",
+				"category": "Cosmos DB Mongo"
+			},
+			{
+				"command": "cosmosdb-ads-extension.openMongoDatabaseDashboard",
+				"title": "Open Database",
+				"category": "Cosmos DB Mongo"
+			},
+			{
+				"command": "cosmosdb-ads-extension.openMongoQuery",
+				"title": "Open Query",
+				"category": "Cosmos DB Mongo"
+			},
+			{
+				"command": "cosmosdb-ads-extension.createNoSqlDatabase",
+				"title": "Create Database",
+				"category": "Cosmos DB NoSql"
+			},
+			{
+				"command": "cosmosdb-ads-extension.openNoSqlDatabaseDashboard",
+				"title": "Open Database",
+				"category": "Cosmos DB NoSql"
+			},
+			{
+				"command": "cosmosdb-ads-extension.createNoSqlContainer",
+				"title": "Create Container",
+				"category": "Cosmos DB NoSql"
+			},
+			{
+				"command": "cosmosdb-ads-extension.deleteNoSqlDatabase",
+				"title": "Delete Database",
+				"category": "Cosmos DB NoSql"
+			},
+			{
+				"command": "cosmosdb-ads-extension.deleteNoSqlContainer",
+				"title": "Delete Container",
+				"category": "Cosmos DB NoSql"
+			},
+			{
+				"command": "cosmosdb-ads-extension.openMongoShell",
+				"title": "Open Mongo Shell",
+				"category": "Cosmos DB Mongo"
+			},
+			{
+				"command": "cosmosdb-ads-extension.importDocuments",
+				"title": "Import Documents",
+				"category": "Cosmos DB Mongo"
+			},
+			{
+				"command": "cosmosdb-ads-extension.exportContainer",
+				"title": "Export Documents",
+				"category": "Cosmos DB Mongo"
+			},
+			{
+				"command": "cosmosdb-ads-extension.openNoSqlQuery",
+				"title": "Open Query",
+				"category": "Cosmos DB NoSql"
+			},
+			{
+				"command": "cosmosdb-ads-extension.importDocuments",
+				"title": "Import Documents",
+				"category": "Cosmos DB NoSql"
+			},
+			{
+				"command": "cosmosdb-ads-extension.exportContainer",
+				"title": "Export Documents",
+				"category": "Cosmos DB NoSql"
+			},
+			{
+				"command": "cosmosdb-ads-extension.saveToCosmosDb",
+				"title": "Save",
+				"category": "Cosmos DB NoSql"
+			}
+		],
+		"menus": {
+			"editor/title": [
+				{
+					"command": "cosmosdb-ads-extension.saveToCosmosDb",
+					"group": "navigation",
+					"when": "resourceScheme == cdbnosql"
+				}
+			],
+			"editor/title/context": [
+				{
+					"command": "cosmosdb-ads-extension.saveToCosmosDb",
+					"group": "navigation",
+					"when": "resourceScheme == cdbnosql"
+				}
+			],
+			"editor/context": [
+				{
+					"command": "cosmosdb-ads-extension.saveToCosmosDb",
+					"group": "navigation",
+					"when": "resourceScheme == cdbnosql"
+				}
+			],
+			"objectExplorer/item/context": [
+				{
+					"command": "cosmosdb-ads-extension.createMongoDatabase",
+					"when": "connectionProvider == COSMOSDB_MONGO && nodeType == Server",
+					"group": "cosmosdb"
+				},
+				{
+					"command": "cosmosdb-ads-extension.openMongoShell",
+					"when": "connectionProvider == COSMOSDB_MONGO && nodeType == Server",
+					"group": "cosmosdb"
+				},
+				{
+					"command": "cosmosdb-ads-extension.openMongoDatabaseDashboard",
+					"when": "connectionProvider == COSMOSDB_MONGO && nodeType == CosmosDbDatabase",
+					"group": "cosmosdb"
+				},
+				{
+					"command": "cosmosdb-ads-extension.createMongoCollection",
+					"when": "connectionProvider == COSMOSDB_MONGO && nodeType == CosmosDbDatabase",
+					"group": "cosmosdb"
+				},
+				{
+					"command": "cosmosdb-ads-extension.deleteMongoDatabase",
+					"when": "connectionProvider == COSMOSDB_MONGO && nodeType == CosmosDbDatabase",
+					"group": "cosmosdb"
+				},
+				{
+					"command": "cosmosdb-ads-extension.deleteMongoCollection",
+					"when": "connectionProvider == COSMOSDB_MONGO && nodeType == Queue",
+					"group": "cosmosdb"
+				},
+				{
+					"command": "cosmosdb-ads-extension.openMongoShell",
+					"when": "connectionProvider == COSMOSDB_MONGO && nodeType == Queue",
+					"group": "cosmosdb",
+					"isDefault": true
+				},
+				{
+					"command": "cosmosdb-ads-extension.openMongoQuery",
+					"when": "connectionProvider == COSMOSDB_MONGO && nodeType == Queue",
+					"group": "cosmosdb",
+					"isDefault": true
+				},
+				{
+					"command": "cosmosdb-ads-extension.importDocuments",
+					"when": "connectionProvider == COSMOSDB_MONGO && nodeType == Queue",
+					"group": "cosmosdb"
+				},
+				{
+					"command": "cosmosdb-ads-extension.exportContainer",
+					"when": "connectionProvider == COSMOSDB_MONGO && nodeType == Queue",
+					"group": "cosmosdb"
+				},
+				{
+					"command": "cosmosdb-ads-extension.createNoSqlDatabase",
+					"when": "connectionProvider == COSMOSDB_NOSQL && nodeType == Server",
+					"group": "cosmosdb"
+				},
+				{
+					"command": "cosmosdb-ads-extension.openNoSqlDatabaseDashboard",
+					"when": "connectionProvider == COSMOSDB_NOSQL && nodeType == CosmosDbDatabase",
+					"group": "cosmosdb"
+				},
+				{
+					"command": "cosmosdb-ads-extension.createNoSqlContainer",
+					"when": "connectionProvider == COSMOSDB_NOSQL && nodeType == CosmosDbDatabase",
+					"group": "cosmosdb"
+				},
+				{
+					"command": "cosmosdb-ads-extension.deleteNoSqlDatabase",
+					"when": "connectionProvider == COSMOSDB_NOSQL && nodeType == CosmosDbDatabase",
+					"group": "cosmosdb"
+				},
+				{
+					"command": "cosmosdb-ads-extension.deleteNoSqlContainer",
+					"when": "connectionProvider == COSMOSDB_NOSQL && nodeType == Queue",
+					"group": "cosmosdb"
+				},
+				{
+					"command": "cosmosdb-ads-extension.openNoSqlQuery",
+					"when": "connectionProvider == COSMOSDB_NOSQL && nodeType == Queue",
+					"group": "cosmosdb"
+				},
+				{
+					"command": "cosmosdb-ads-extension.importDocuments",
+					"when": "connectionProvider == COSMOSDB_NOSQL && nodeType == Queue",
+					"group": "cosmosdb"
+				},
+				{
+					"command": "cosmosdb-ads-extension.exportContainer",
+					"when": "connectionProvider == COSMOSDB_NOSQL && nodeType == Queue",
+					"group": "cosmosdb"
+				}
+			]
+		},
+		"dashboard.tabs": [
+			{
+				"id": "mongo-account-home",
+				"when": "connectionProvider == 'COSMOSDB_MONGO'",
+				"isHomeTab": true,
+				"description": "",
+				"title": "Home",
+				"provider": "COSMOSDB_MONGO",
+				"container": {
+					"modelview-container": null
+				}
+			},
+			{
+				"id": "mongo-databases.tab",
+				"when": "connectionProvider == 'COSMOSDB_MONGO'",
+				"title": "Databases",
+				"icon": "resources/fluent/database.svg",
+				"description": "Shows all account databases",
+				"provider": "COSMOSDB_MONGO",
+				"container": {
+					"modelview-container": null
+				}
+			},
+			{
+				"id": "nosql-account-home",
+				"when": "connectionProvider == 'COSMOSDB_NOSQL'",
+				"isHomeTab": true,
+				"description": "",
+				"title": "Home",
+				"provider": "COSMOSDB_NOSQL",
+				"container": {
+					"modelview-container": null
+				}
+			},
+			{
+				"id": "nosql-databases.tab",
+				"when": "connectionProvider == 'COSMOSDB_NOSQL'",
+				"title": "Databases",
+				"icon": "resources/fluent/database.svg",
+				"description": "Shows all account databases",
+				"provider": "COSMOSDB_NOSQL",
+				"container": {
+					"modelview-container": null
+				}
+			}
+		],
+		"connectionProvider": [
+			{
+				"providerId": "COSMOSDB_MONGO",
+				"languageMode": "cosmosdb",
+				"displayName": "Azure Cosmos DB for MongoDB",
+				"isQueryProvider": false,
+				"connectionStringOptions": {
+					"isEnabled": true,
+					"isDefault": true
+				},
+				"iconPath": [
+					{
+						"id": "cosmosdb",
+						"path": {
+							"light": "resources/light/cosmosdb.svg",
+							"dark": "resources/dark/cosmosdb-inverse.svg"
+						},
+						"default": true
+					}
+				],
+				"connectionOptions": [
+					{
+						"specialValueType": "connectionName",
+						"isIdentity": true,
+						"name": "connectionName",
+						"displayName": "",
+						"description": "",
+						"groupName": "Source",
+						"valueType": "string",
+						"defaultValue": null,
+						"objectType": null,
+						"categoryValues": null,
+						"isRequired": false,
+						"isArray": false
+					},
+					{
+						"specialValueType": "serverName",
+						"isIdentity": true,
+						"name": "server",
+						"displayName": "Hostname:port or Cosmos DB host:port",
+						"description": "Hostname(s) or Mongo Account",
+						"groupName": "Source",
+						"valueType": "string",
+						"defaultValue": null,
+						"objectType": null,
+						"categoryValues": null,
+						"isRequired": true,
+						"isArray": false
+					},
+					{
+						"specialValueType": "authType",
+						"isIdentity": true,
+						"name": "authenticationType",
+						"displayName": "Authentication type",
+						"description": "",
+						"groupName": "Security",
+						"valueType": "category",
+						"defaultValue": "SqlLogin",
+						"objectType": null,
+						"categoryValues": [
+							{
+								"displayName": "Azure Active Directory - Universal with MFA support",
+								"name": "AzureMFA"
+							},
+							{
+								"displayName": "Basic",
+								"name": "SqlLogin"
+							},
+							{
+								"displayName": "No Auth",
+								"name": "Integrated"
+							}
+						],
+						"isRequired": true,
+						"isArray": false
+					},
+					{
+						"specialValueType": "userName",
+						"isIdentity": true,
+						"name": "user",
+						"displayName": "Username",
+						"description": "",
+						"groupName": "Security",
+						"valueType": "string",
+						"defaultValue": null,
+						"objectType": null,
+						"categoryValues": null,
+						"isRequired": true,
+						"isArray": false
+					},
+					{
+						"specialValueType": "password",
+						"isIdentity": true,
+						"name": "password",
+						"displayName": "Password",
+						"description": "",
+						"groupName": "Security",
+						"valueType": "password",
+						"defaultValue": null,
+						"objectType": null,
+						"categoryValues": null,
+						"isRequired": true,
+						"isArray": false
+					},
+					{
+						"specialValueType": null,
+						"isIdentity": false,
+						"name": "pathname",
+						"displayName": "Database",
+						"description": "Database name to connect to (optional)",
+						"groupName": "Connection",
+						"valueType": "string",
+						"defaultValue": null,
+						"objectType": null,
+						"isRequired": false,
+						"isArray": false
+					},
+					{
+						"specialValueType": null,
+						"isIdentity": false,
+						"name": "search",
+						"displayName": "Options",
+						"description": "Connection string parameters. E.g. key1=value1&key2=value2",
+						"groupName": "Connection",
+						"valueType": "string",
+						"defaultValue": null,
+						"objectType": null,
+						"isRequired": false,
+						"isArray": false
+					},
+					{
+						"specialValueType": null,
+						"isIdentity": false,
+						"name": "isServer",
+						"displayName": "Cluster Server",
+						"description": "true for Mongo Cluster; false otherwise",
+						"groupName": "Connection",
+						"valueType": "boolean",
+						"defaultValue": "false",
+						"objectType": null,
+						"isRequired": false,
+						"isArray": false,
+						"showOnConnectionDialog": true
+					}
+				]
+			},
+			{
+				"providerId": "COSMOSDB_NOSQL",
+				"languageMode": "cosmosdb",
+				"displayName": "Azure Cosmos DB for NoSQL",
+				"isQueryProvider": false,
+				"connectionStringOptions": {
+					"isEnabled": true,
+					"isDefault": true
+				},
+				"iconPath": [
+					{
+						"id": "cosmosdb",
+						"path": {
+							"light": "resources/light/cosmosdb.svg",
+							"dark": "resources/dark/cosmosdb-inverse.svg"
+						},
+						"default": true
+					}
+				],
+				"connectionOptions": [
+					{
+						"specialValueType": "connectionName",
+						"isIdentity": true,
+						"name": "connectionName",
+						"displayName": "",
+						"description": "",
+						"groupName": "Source",
+						"valueType": "string",
+						"defaultValue": null,
+						"objectType": null,
+						"categoryValues": null,
+						"isRequired": false,
+						"isArray": false
+					},
+					{
+						"specialValueType": "serverName",
+						"isIdentity": true,
+						"name": "server",
+						"displayName": "Cosmos DB host:port",
+						"description": "Cosmos DB hostname and port",
+						"groupName": "Source",
+						"valueType": "string",
+						"defaultValue": null,
+						"objectType": null,
+						"categoryValues": null,
+						"isRequired": true,
+						"isArray": false
+					},
+					{
+						"specialValueType": "authType",
+						"isIdentity": true,
+						"name": "authenticationType",
+						"displayName": "Authentication type",
+						"description": "",
+						"groupName": "Security",
+						"valueType": "category",
+						"defaultValue": "SqlLogin",
+						"objectType": null,
+						"categoryValues": [
+							{
+								"displayName": "Azure Active Directory - Universal with MFA support",
+								"name": "AzureMFA"
+							},
+							{
+								"displayName": "Basic",
+								"name": "SqlLogin"
+							}
+						],
+						"isRequired": true,
+						"isArray": false
+					},
+					{
+						"specialValueType": "userName",
+						"isIdentity": true,
+						"name": "user",
+						"displayName": "Username",
+						"description": "",
+						"groupName": "Security",
+						"valueType": "string",
+						"defaultValue": null,
+						"objectType": null,
+						"categoryValues": null,
+						"isRequired": true,
+						"isArray": false
+					},
+					{
+						"specialValueType": "password",
+						"isIdentity": true,
+						"name": "password",
+						"displayName": "Password",
+						"description": "",
+						"groupName": "Security",
+						"valueType": "password",
+						"defaultValue": null,
+						"objectType": null,
+						"categoryValues": null,
+						"isRequired": true,
+						"isArray": false
+					},
+					{
+						"specialValueType": null,
+						"isIdentity": false,
+						"name": "pathname",
+						"displayName": "Database",
+						"description": "Database name to connect to (optional)",
+						"groupName": "Connection",
+						"valueType": "string",
+						"defaultValue": null,
+						"objectType": null,
+						"isRequired": false,
+						"isArray": false
+					},
+					{
+						"specialValueType": null,
+						"isIdentity": false,
+						"name": "search",
+						"displayName": "Options",
+						"description": "Connection string parameters. E.g. key1=value1&key2=value2",
+						"groupName": "Connection",
+						"valueType": "string",
+						"defaultValue": null,
+						"objectType": null,
+						"isRequired": false,
+						"isArray": false
+					}
+				]
+			}
+		]
+	},
+	"scripts": {
+		"package:manual": "yarn run pretest && yarn run clean && yarn run queryeditor:build && yarn run proxy:build && yarn run extension:build && yarn run package",
+		"compile": "tsc -p ./",
+		"extension:build": "yarn run compile && yarn run esbuild && yarn run proxy:build",
+		"queryeditor:build": "cd query-editor && npm i && npm run build",
+		"lint": "eslint src --ext ts",
+		"watch": "tsc -watch -p ./",
+		"pretest": "yarn run compile && yarn run lint && yarn run format:check",
+		"test": "node ./out/test/runTest.js",
+		"format": "prettier --write \"{src,test}/**/*.{ts,tsx,html}\" \"*.{js,html}\"",
+		"format:check": "prettier --check \"{src,test}/**/*.{ts,tsx,html}\" \"*.{js,html}\"",
+		"proposedapi": "node installTypings.js",
+		"package": "mkdirp bin/ && vsce package --out bin/",
+		"clean": "rimraf --glob ./out ./azure-cosmosdb-ads-extension-*.vsix ./query-editor/dist ./dist ./bin && yarn run proxy:clean",
+		"esbuild:base": "npx mkdirp ./dist && esbuild ./src/extension.ts --bundle --outfile=dist/main.js --external:vscode --external:azdata --format=cjs --platform=node",
+		"esbuild": "yarn run esbuild:base --sourcemap",
+		"esbuild:watch": "yarn run esbuild:base --sourcemap --watch",
+		"proxy:clean": "rimraf --glob ./CosmosDbProxy/CosmosDbProxy/bin ./CosmosDbProxy/CosmosDbProxy/obj",
+		"proxy:build": "cd CosmosDbProxy/CosmosDbProxy && dotnet restore && dotnet publish --configuration Release"
+	},
+	"dependencies": {
+		"@azure/arm-cosmosdb": "15.4.0-beta.2",
+		"@azure/arm-monitor": "7.0.0",
+		"@azure/arm-resourcegraph": "4.2.1",
+		"@azure/cosmos": "3.17.3",
+		"@microsoft/ads-extension-telemetry": "^3.0.1",
+		"@microsoft/ads-service-downloader": "1.2.2",
+		"mongodb": "6.3.0",
+		"mongodb-connection-string-url": "2.5.2",
+		"semver": "^7.5.2",
+		"vscode-nls": "5.0.0",
+		"vscode-jsonrpc": "8.1.0",
+		"yauzl": "2.10.0"
+	},
+	"devDependencies": {
+		"@microsoft/azdata-test": "4.0.0",
+		"@types/azdata": "1.46.5",
+		"@types/glob": "7.2.0",
+		"@types/mkdirp": "2.0.0",
+		"@types/mocha": "7.0.2",
+		"@types/node": "13.13.52",
+		"@types/semver": "^7.3.13",
+		"@types/sinon": "7.5.0",
+		"@types/tmp": "0.0.34",
+		"@types/uuid": "8.3.1",
+		"@types/yauzl": "2.9.2",
+		"@typescript-eslint/eslint-plugin": "6.2.0",
+		"@typescript-eslint/parser": "6.2.0",
+		"esbuild": "0.17.12",
+		"eslint": "8.45.0",
+		"glob": "7.2.0",
+		"mkdirp": "2.1.5",
+		"mocha": "7.2.0",
+		"prettier": "2.7.1",
+		"rimraf": "4.4.0",
+		"sinon": "15.0.4",
+		"typescript": "4.6.3",
+		"vsce": "2.15.0"
+	},
+	"extensionDependencies": [
+		"microsoft.net-6-runtime"
+	],
+	"prettier": {
+		"printWidth": 120,
+		"endOfLine": "auto"
+	},
+	"__metadata": {
+		"id": "92",
+		"publisherId": "Microsoft",
+		"publisherDisplayName": "Microsoft",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1730736330607
+	}
+}

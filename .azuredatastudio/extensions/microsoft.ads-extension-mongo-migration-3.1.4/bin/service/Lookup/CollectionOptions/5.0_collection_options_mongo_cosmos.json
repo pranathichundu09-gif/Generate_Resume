@@ -1,0 +1,41 @@
+{
+  "CappedCollections": {
+    "AssessmentName": "Capped collections",
+    "AssessmentSeverity": "Warning",
+    "Message": "Capped collections are not supported in Azure Cosmos DB for MongoDB vCore. This collection can be migrated as a regular (non-capped) collection. After migration, please use TTL indexes to limit the collection size instead.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/indexing#ttl-indexes",
+      "label": "TTL indexes"
+    }
+  },
+
+  "ClusteredCollections": {
+    "AssessmentName": "Clustered collections",
+    "AssessmentSeverity": "Critical",
+    "Message": "Clustered collections are not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "Timeseries": {
+    "AssessmentName": "Timeseries",
+    "AssessmentSeverity": "Critical",
+    "Message": "Timeseries collections are not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "Validator": {
+    "AssessmentName": "Json Schema Validation",
+    "AssessmentSeverity": "Critical",
+    "Message": "Json schema validation is not supported in Azure Cosmos DB for MongoDB vCore. You would need to handle the schema requirements within the application code."
+  },
+
+  "Collation": {
+    "AssessmentName": "Collation",
+    "AssessmentSeverity": "Critical",
+    "Message": "Collation is not supported in Azure Cosmos DB for MongoDB vCore."
+  },
+
+  "ChangeStreamPreAndPostImages": {
+    "AssessmentName": "ChangeStreamPreAndPostImages",
+    "AssessmentSeverity": "Critical",
+    "Message": "ChangeStreamPreAndPostImages are not supported in Azure Cosmos DB for MongoDB vCore."
+  }
+}

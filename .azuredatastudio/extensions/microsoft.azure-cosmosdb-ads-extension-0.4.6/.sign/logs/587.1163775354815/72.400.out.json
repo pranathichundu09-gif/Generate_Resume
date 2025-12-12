@@ -1,0 +1,74 @@
+{
+  "submissionResponses": [
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "/xYoPswwLB/ExbY+qSENHSO2WC/fy5rjMohJEGznjn8=",
+          "hashType": "sha256",
+          "destinationHash": "MQ4BIBZjURItbUUPwRIN96VPtBZoIIC/SOzfl+YoU8Y=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Core.dll",
+          "destinationFileSizeInBytes": 138784,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Core.dll"
+        }
+      ],
+      "operationId": "2eeeac1f-7dc9-4aa5-871f-1956fcbe5fb2",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "MaZyqZ6ixwQ+fM7QJfNJ4KPKfnUGONEmmOH+CGrZWuo=",
+          "hashType": "sha256",
+          "destinationHash": "+Yo0ldknn+hPCTHgpm/fIeIrlXMmeBYtNJTNRbg6BLw=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Serialization.HybridRow.dll",
+          "destinationFileSizeInBytes": 237112,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Serialization.HybridRow.dll"
+        }
+      ],
+      "operationId": "85049d4b-02a0-46c4-bfa5-b4bd05219c47",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "k66vceG4f7C4sFkGEocV+tyKYurBnqe3npS+WjSGjyo=",
+          "hashType": "sha256",
+          "destinationHash": "FgrUaT4Rps2Q3aFBP+B6+zW1ilpNIJQXEMTFBN7t9uA=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Direct.dll",
+          "destinationFileSizeInBytes": 1302560,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Direct.dll"
+        }
+      ],
+      "operationId": "e06dfe9a-06b6-454f-8414-a9a19795fb94",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "q/JWDhfJ+hRmt9EQ4Jjo4x7BMnxjTpTo5+5J1/YCQ5c=",
+          "hashType": "sha256",
+          "destinationHash": "r21ZyjRyEsOgDlvTMJDPToWYPJZLetzqAFSub3qES18=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Client.dll",
+          "destinationFileSizeInBytes": 2663856,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Client.dll"
+        }
+      ],
+      "operationId": "76e98b7d-23d6-466b-ba9b-346fcee07b68",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    }
+  ],
+  "esrpClientSessionGuid": "e2c8fd38-4c0d-4779-b4b7-b793f089fd65",
+  "version": "1.0.0"
+}

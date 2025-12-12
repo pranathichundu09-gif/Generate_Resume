@@ -1,0 +1,1734 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PostgresAssessmentExtensionService</name>
+    </assembly>
+    <members>
+        <member name="T:AssemblyRef">
+            <summary>
+            Defines public key string for friend assemblies.
+            </summary>
+        </member>
+        <member name="F:AssemblyRef.TestPublicKey">
+            <summary>
+            Public key of the test assemblies.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.AssessmentHandler">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentHandler.#ctor">
+            <summary>
+            Constructor to initialize common objects
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentHandler.GetAllAssessments(Microsoft.AdsPgSqlAssessment.Service.AssessmentRequestParameters)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentHandler.GetAssessmentDetails(Microsoft.AdsPgSqlAssessment.Service.AssessmentRequestParameters)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentHandler.GetServerCompatibilitySummary(Microsoft.AdsPgSqlAssessment.Service.AssessmentRequestParameters)">
+            <summary>
+            Gets the server compatibility summary.
+            </summary>
+            <param name="request">The request.</param>
+            <returns>ServerCompatibilityReport</returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentHandler.GetDatabaseCompatibilitySummary(Microsoft.AdsPgSqlAssessment.Service.AssessmentRequestParameters)">
+            <summary>
+            Gets the database compatibility summary.
+            </summary>
+            <param name="request">The request.</param>
+            <returns>DatabaseCompatibilityReport</returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentHandler.GetSkuRecommendation(Microsoft.AdsPgSqlAssessment.Service.AssessmentRequestParameters)">
+            <summary>
+            Gets the SKU recommendation.
+            </summary>
+            <param name="request">The request.</param>
+            <returns>
+            Recommended SKU
+            </returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentHandler.GetDbSourceProperties(Microsoft.AdsPgSqlAssessment.Service.AssessmentRequestParameters)">
+            <summary>
+            Gets DB Source properties
+            </summary>
+            <param name="request">The request.</param>
+            <returns>
+            <see cref="!:Task&lt;RPCReponseEntity&lt;DbSourceProperties&gt;&gt;"/>
+            </returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentHandler.StartAssessment(Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters,Microsoft.AdsPgSqlAssessment.Service.IAssessmentClient)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentHandler.ReStartAssessment(Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters,Microsoft.AdsPgSqlAssessment.Service.IAssessmentClient)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentHandler.RunAutomatedAssessment(Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters,Microsoft.AdsPgSqlAssessment.Service.IAssessmentClient)">
+            <summary>
+            For running automated assessment.
+            </summary>
+            <param name="request"> Start assessment request parameters</param>
+            <param name="client">Asessment client</param>
+            <returns>Task</returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentHandler.RunSkuAdvisor(Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters)">
+            <summary>
+            For running SKU advisor
+            </summary>
+            <param name="request"> Start assessment request parameters</param>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentHandler.CancelAssessment(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentHandler.DeleteAssessment(Microsoft.AdsPgSqlAssessment.Service.AssessmentRequestParameters)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentHandler.ExecuteWithNLogContext(System.Action,System.String,System.String,System.String)">
+            <summary>
+            Utils function that executes an Action with the NLog context. The Nlog context needs to be set in each API, hence created a common function that can set the nlog function and execute a anonymous function.
+            </summary>
+            <param name="functionToExecute">Anonymous block of function</param>
+            <param name="assessmentId">Assessment ID</param>
+            <param name="assessmentName">Assessment Name</param>
+            <param name="operation">Operation which is being performed</param>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentHandler.ExecuteWithNLogContext``1(System.Func{System.Threading.Tasks.Task{``0}},System.String,System.String,System.String)">
+            <summary>
+            Utils function that executes a Func  with the NLog context. The Nlog context needs to be set in each API, hence created a common function that can set the nlog function and execute an anonymous function.
+            </summary>
+            <param name="functionToExecute">Anonymous block of function</param>
+            <param name="assessmentId">Assessment ID</param>
+            <param name="assessmentName">Assessment Name</param>
+            <param name="operation">Operation which is being performed</param>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentHandler.CommonSetup(System.String)">
+            <summary>
+            Holds the common setup functions
+            </summary>
+            <param name="path">Path to store assessment data</param>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentHandler.AdvisorSetup(Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters,System.Boolean,System.Boolean)">
+            <summary>
+            Sets up advisor for StartAssessment
+            </summary>
+            <param name="request">Request parameters from ADS UI</param>
+            <param name="isAutomated"> Signifies if collectors for automated data collection must be added</param>
+            <param name="isRunSkuAdvisor"> Signifies if advisor for sku must be added</param>
+            <returns>An object of <see cref="T:Microsoft.DbAssessment.Common.IAdvisorOrchestrationFactory"/> which returns the appropriate <see cref="T:Microsoft.Database.Assessment.Common.IAdvisorOrchestrator"/> in assessment manager</returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentHandler.CollectorSetup(Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters,Microsoft.Database.PreMigration.Common.IProgressNotifier,System.Boolean)">
+            <summary>
+            Sets up collector for StartAssessment
+            </summary>
+            <param name="request">Request parameters from ADS UI</param>
+            <param name="collectorProgressNotifier">Progress notifier for collector</param>
+            <param name="isAutomated"> Signifoes if we are to run collectors for automated data collection</param>
+            <returns>An object of <see cref="T:Microsoft.DbAssessment.Common.ICollectionOrchestrationFactory"/> which returns the appropriate <see cref="T:Microsoft.Database.MetaCollector.Common.ICollectionOrchestrator"/> in assessment manager</returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentHandler.ValidateRequestParameters(Microsoft.AdsPgSqlAssessment.Service.AssessmentRequestParameters)">
+            <summary>
+            Validate function for <see cref="T:Microsoft.AdsPgSqlAssessment.Service.AssessmentRequestParameters"/>
+            </summary>
+            <param name="request">Request parameters to validate</param>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentHandler.ValidateRequestParameters(Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters)">
+            <summary>
+            Validate function for <see cref="T:Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters"/>
+            </summary>
+            <param name="request">Request parameters to validate</param>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.Constants">
+            <summary>
+            Constants used by Logger
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.Constants.HostId">
+            <summary>
+            Constant representing the host ID
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.Constants.AssessmentId">
+            <summary>
+            Constant representing assessment ID.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.Constants.AssessmentName">
+            <summary>
+            Constant representing assessment name.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.Constants.Operation">
+            <summary>
+            Constant representing the current operation.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.Constants.SessionId">
+            <summary>
+            Constant representing session ID.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.Constants.ExtensionVersion">
+            <summary>
+            Constant representing extension version.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.Constants.NotApplicable">
+            <summary>
+            Constant for filling NA value.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.Constants.DatabaseName">
+            <summary>
+            The database name
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.Constants.DatabaseSizeInMb">
+            <summary>
+            The size of the Database In Mb
+            </summary>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.LogFileConstants">
+            <summary>
+            Holds filename constants
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.LogFileConstants.ExtensionSettingsFileName">
+            <summary>
+            extension settings file name.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.LogFileConstants.Logs">
+            <summary>
+            Log file name
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.LogFileConstants.PostgresMigration">
+            <summary>
+            PostgreSQL Migration folder name
+            </summary>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.AssessmentData">
+            <summary>
+            Holds assessment data for GetAllAssessment.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentData.AssessmentId">
+            <summary>
+            Assessment Id
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentData.AssessmentName">
+            <summary>
+            Assessment Name
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentData.AssessmentStatus">
+            <summary>
+            Status of the Assessment
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentData.StartTime">
+            <summary>
+            Start time
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentData.TargetPlatform">
+            <summary>
+            Gets the target platform the assessment.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentData.#ctor">
+            <summary>
+            Constructor to initialize object
+            </summary>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.AssessmentDisplayDetails">
+            <summary>
+            Holds assessment data for GetAssessmentDetails
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentDisplayDetails.AssessmentId">
+            <summary>
+            Assessment Id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentDisplayDetails.AssessmentName">
+            <summary>
+            Assessment Name.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentDisplayDetails.AssessmentStatus">
+            <summary>
+            Assessment Status.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentDisplayDetails.ScaleFactor">
+            <summary>
+            Scale factor of the assessment.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentDisplayDetails.StartTime">
+            <summary>
+            Start time of the assessment.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentDisplayDetails.SourcePlatform">
+            <summary>
+            Source Platform
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentDisplayDetails.TargetPlatform">
+            <summary>
+            List of target platforms.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentDisplayDetails.AssessmentProgress">
+            <summary>
+            Gets the assessment progress for the assessment
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentDisplayDetails.#ctor">
+            <summary>
+            Assessment Display Details
+            </summary>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.AssessmentProgressAds">
+            <summary>
+            Representation of the progress of a particular assessment.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentProgressAds.AssessmentStage">
+            <summary>
+            Gets or sets the stage of the assessment.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentProgressAds.StageStatus">
+            <summary>
+            Gets or sets the status of the particular stage of the assessment.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentProgressAds.StageDuration">
+            <summary>
+            Gets or sets the duration of the particular stage of the assessment.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentProgressAds.ErrorInfo">
+            <summary>
+            Gets ErrorInfo
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentProgressAds.InnerException">
+            <summary>
+            Gets or sets inner exception code received at particular stage of assessment which shoudlnt be available to users via UI (will be availble in assessment overview file though).
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentProgressAds.WarningInfo">
+            <summary>
+            Gets warning code and its associated parameters received at particular stage of assessment.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentProgressAds.#ctor">
+            <summary>
+            Default constructor for the class.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.AssessmentRequestParameters">
+            <summary>
+            Input parameters for Get/Delete/Cancel functions
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentRequestParameters.RootPath">
+            <summary>
+            Root path of the where the assessment data is stored
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentRequestParameters.InstanceId">
+            <summary>
+            Hashed Instance Id
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentRequestParameters.AssessmentId">
+            <summary>
+            Assessment Id
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentRequestParameters.#ctor(System.String,System.String)">
+            <summary>
+            Constructor to initialize object properties
+            </summary>
+            <param name="rootPath">Path</param>
+            <param name="instanceId">Instance Id</param>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentRequestParameters.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructor to initialize object properties
+            </summary>
+            <param name="rootPath">Path</param>
+            <param name="instanceId">Instance Id</param>
+            <param name="assessmentId">Assessment Id</param>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.AssessmentResponse">
+            <summary>
+            Response class for start assessment
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentResponse.AssessmentId">
+            <summary>
+            Assessment Id of the assessment
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentResponse.StartTime">
+            <summary>
+            Start time of the assessment.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.AssessmentResponse.IsSuccessful">
+            <summary>
+            TODO Temporary variable: True, if execution was successful, else false
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentResponse.#ctor">
+            <summary>
+            Initialize the StartAssessmentResponse object.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentResponse.#ctor(System.String,System.DateTime,System.Boolean)">
+            <summary>
+            Initialize the StartAssessmentResponse object.
+            </summary>
+            <param name="assessmentId">Assessment Id</param>
+            <param name="startTime">Start time of assessment</param>
+            <param name="isSuccessful">Was StartAssessment successful</param>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.DatabaseDetails">
+            <summary>
+            Holds assessment data for GetAllAssessment.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.DatabaseDetails.DatabaseName">
+            <summary>
+            Gets or sets the name of the database.
+            </summary>
+            <value>
+            The name of the database.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.DatabaseDetails.DatabaseSizeInMb">
+            <summary>
+            Gets or sets the database size in Mb.
+            </summary>
+            <value>
+            The database size in Mb.
+            </value>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.DatabaseDetails.#ctor(System.String,System.String)">
+            <summary>
+            Constructor to initialize DatabaseDetails data members.
+            </summary>
+            <param name="databaseName">Name of the database</param>
+            <param name="databaseSizeInMb">Database size in Megabytes</param>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.AssessmentSeverityEnum">
+            <summary>
+            Defines the enumeration for Assessment Status.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.AssessmentSeverityEnum.Unknown">
+            <summary>
+            The unknown
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.AssessmentSeverityEnum.Warning">
+            <summary>
+            The warning
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.AssessmentSeverityEnum.Info">
+            <summary>
+            The information
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.AssessmentSeverityEnum.Blocker">
+            <summary>
+            The blocker
+            </summary>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.CollationsCompatibility">
+            <summary>
+            PostgreSql Collation Compatibility Class
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.CollationsCompatibility.AssessmentSeverity">
+            <summary>
+            Gets or sets the assessment severity.
+            </summary>
+            <value>
+            The assessment severity.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.CollationsCompatibility.IssueDescription">
+            <summary>
+            Gets or sets the issue description.
+            </summary>
+            <value>
+            The issue description.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.CollationsCompatibility.LocalizationKey">
+            <summary>
+            Gets or sets the localization key.
+            </summary>
+            <value>
+            The localization key.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.CollationsCompatibility.CollationName">
+            <summary>
+            Gets or sets the name of the collation.
+            </summary>
+            <value>
+            The name of the collation.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.CollationsCompatibility.SourceEncoding">
+            <summary>
+            Gets or sets the source encoding.
+            </summary>
+            <value>
+            The source encoding.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.CollationsCompatibility.TargetEncoding">
+            <summary>
+            Gets or sets the target encoding.
+            </summary>
+            <value>
+            The target encoding.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.CollationsCompatibility.CollationSourceVersion">
+            <summary>
+            Gets or sets the collation source version.
+            </summary>
+            <value>
+            The collation source version.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.CollationsCompatibility.CollationTargetVersion">
+            <summary>
+            Gets or sets the collation target version.
+            </summary>
+            <value>
+            The collation target version.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.CollationsCompatibility.Recommendation">
+            <summary>
+            Gets or sets the recommendation.
+            </summary>
+            <value>
+            The recommendation.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.CollationsCompatibility.CollationImpactedObjects">
+            <summary>
+            Gets or sets the collation impacted objects.
+            </summary>
+            <value>
+            The collation impacted objects.
+            </value>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.DatabaseCompatibilityReport">
+            <summary>
+            Database Compatibility Report
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.DatabaseCompatibilityReport.DatabaseExtensionsCompatibility">
+            <summary>
+            Gets or sets the postgreSQL database extensions compatibility.
+            </summary>
+            <value>
+            The postgreSQL database extensions compatibility.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.DatabaseCompatibilityReport.EncodingCompatibility">
+            <summary>
+            Gets or sets the encoding compatibility.
+            </summary>
+            <value>
+            The encoding compatibility.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.DatabaseCompatibilityReport.CollationsCompatibilities">
+            <summary>
+            Gets or sets the collations compatibilities.
+            </summary>
+            <value>
+            The collations compatibilities.
+            </value>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.DatabaseCompatibilityReport.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AdsPgSqlAssessment.Service.DatabaseCompatibilityReport"/> class.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.DatabaseExtensionsCompatibility">
+            <summary>
+            PostgreSql Server Settings Compatibility Class
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.DatabaseExtensionsCompatibility.AssessmentSeverity">
+            <summary>
+            Gets or sets the assessment readiness status.
+            </summary>
+            <value>
+            The assessment readiness status.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.DatabaseExtensionsCompatibility.IssueDescription">
+            <summary>
+            Gets or sets the issue description.
+            </summary>
+            <value>
+            The issue description.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.DatabaseExtensionsCompatibility.LocalizationKey">
+            <summary>
+            Gets or sets the localization key.
+            </summary>
+            <value>
+            The localization key.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.DatabaseExtensionsCompatibility.ExtensionName">
+            <summary>
+            Gets or sets the name of the extension.
+            </summary>
+            <value>
+            The name of the extension.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.DatabaseExtensionsCompatibility.ExtensionSourceVersion">
+            <summary>
+            Gets or sets the extension source version.
+            </summary>
+            <value>
+            The extension source version.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.DatabaseExtensionsCompatibility.ExtensionTargetVersion">
+            <summary>
+            Gets or sets the extension target version.
+            </summary>
+            <value>
+            The extension target version.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.DatabaseExtensionsCompatibility.ExtensionDescription">
+            <summary>
+            Gets or sets the extension description.
+            </summary>
+            <value>
+            The extension description.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.DatabaseExtensionsCompatibility.Recommendation">
+            <summary>
+            Gets or sets the recommendation.
+            </summary>
+            <value>
+            The recommendation.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.DatabaseExtensionsCompatibility.MoreInfoLink">
+            <summary>
+            Gets or sets the more information link.
+            </summary>
+            <value>
+            The more information link.
+            </value>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.DbSourceProperties">
+            <summary>
+            Database Compatibility Report
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.DbSourceProperties.LogicalCpuCount">
+            <summary>
+            Gets or sets the vcores/ cpu count.
+            </summary>
+            <value>
+            The cpu count.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.DbSourceProperties.MemoryInMb">
+            <summary>
+            Gets or sets the memory in Mb.
+            </summary>
+            <value>
+            The memory in Mb.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.DbSourceProperties.DataStorageInMb">
+            <summary>
+            Gets or sets the storage size in Mb.
+            </summary>
+            <value>
+            The storage size in Mb.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.DbSourceProperties.DataFileIOPs">
+            <summary>
+            Gets or sets the DataIOPs
+            </summary>
+            <value>
+            The IOPs
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.DbSourceProperties.SourceConfiguredVCores">
+            <summary>
+            Gets or sets the source configured VCores
+            </summary>
+            <value>
+            VCores configured on the source machine
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.DbSourceProperties.SourceConfiguredMemoryInMb">
+            <summary>
+            Gets or sets the source configured Memory in MB
+            </summary>
+            <value>
+            Memory in MB configured on the source machine
+            </value>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.EncodingCompatibility">
+            <summary>
+            PostgreSql Encoding Compatibility Class
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.EncodingCompatibility.AssessmentSeverity">
+            <summary>
+            Gets or sets the assessment severity.
+            </summary>
+            <value>
+            The assessment severity.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.EncodingCompatibility.IssueDescription">
+            <summary>
+            Gets or sets the issue description.
+            </summary>
+            <value>
+            The issue description.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.EncodingCompatibility.LocalizationKey">
+            <summary>
+            Gets or sets the localization key.
+            </summary>
+            <value>
+            The localization key.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.EncodingCompatibility.SourceEncoding">
+            <summary>
+            Gets or sets the source encoding.
+            </summary>
+            <value>
+            The source encoding.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.EncodingCompatibility.TargetEncoding">
+            <summary>
+            Gets or sets the target encoding.
+            </summary>
+            <value>
+            The target encoding.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.EncodingCompatibility.Recommendation">
+            <summary>
+            Gets or sets the recommendation.
+            </summary>
+            <value>
+            The recommendation.
+            </value>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.ErrorEntity">
+            <summary>
+            Error class for RPC response entity
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.ErrorEntity.ErrorCode">
+            <summary>
+            Gets or sets the error code.
+            </summary>
+            <value>
+            The error code.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.ErrorEntity.ErrorMessage">
+            <summary>
+            Gets or sets the error message.
+            </summary>
+            <value>
+            The error message.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.ErrorEntity.ErrorParameters">
+            <summary>
+            Gets the list of error parameters.
+            </summary>
+            <value>
+            The error parameters.
+            </value>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.ErrorEntity.#ctor">
+            <summary>
+            Initialize an object of <see cref="T:Microsoft.AdsPgSqlAssessment.Service.ErrorEntity"/>
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.ErrorEntity.#ctor(System.String,System.String,System.Collections.Generic.IList{System.String})">
+            <summary>
+            Initialize an object of <see cref="T:Microsoft.AdsPgSqlAssessment.Service.ErrorEntity"/>
+            </summary>
+            <param name="errorCode">Error Code</param>
+            <param name="errorMessage">Error Message</param>
+            <param name="errorParameters">List of Error Parameters</param>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.ExtensionInfo">
+            <summary>
+            Representation of the version.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.ExtensionInfo.Version">
+            <summary>
+            Version of the VSIX
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.ExtensionInfo.SessionId">
+            <summary>
+            Session id
+            </summary>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.RPCReponseEntity`1">
+            <summary>
+            RPC response object
+            </summary>
+            <typeparam name="T">Response type T</typeparam>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.RPCReponseEntity`1.Body">
+            <summary>
+            Holds type T object
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.RPCReponseEntity`1.Error">
+            <summary>
+            list of error parameters
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.RPCReponseEntity`1.Warnings">
+            <summary>
+            list of warnings
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.RPCReponseEntity`1.#ctor(`0)">
+            <summary>
+            Constructor to initialize object - Body
+            </summary>
+            <param name="body">Body</param>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.RPCReponseEntity`1.#ctor(`0,Microsoft.AdsPgSqlAssessment.Service.ErrorEntity)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AdsPgSqlAssessment.Service.RPCReponseEntity`1"/> class.
+            </summary>
+            <param name="body">Body of the response</param>
+            <param name="error">Error response</param>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.RPCReponseEntity`1.#ctor(`0,System.Collections.Generic.IList{Microsoft.AdsPgSqlAssessment.Service.WarningEntity})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AdsPgSqlAssessment.Service.RPCReponseEntity`1"/> class.
+            </summary>
+            <param name="body">Body of the response</param>
+            <param name="warnings">Warning response</param>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.FeaturesCompatibility">
+            <summary>
+            Class stores the format in which feature compatibility data will be stored.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.FeaturesCompatibility.FeatureName">
+            <summary>
+            Gets or sets the name of the feature.
+            </summary>
+            <value>
+            The name of the feature.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.FeaturesCompatibility.AssessmentSeverity">
+            <summary>
+            Gets or sets the assessment severity.
+            </summary>
+            <value>
+            The assessment severity.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.FeaturesCompatibility.LocalizationKey">
+            <summary>
+            Gets or sets the localization key.
+            </summary>
+            <value>
+            The localization key.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.FeaturesCompatibility.Description">
+            <summary>
+            Gets or sets the default message.
+            </summary>
+            <value>
+            The default message.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.FeaturesCompatibility.Recommendation">
+            <summary>
+            Gets or sets the recommendation.
+            </summary>
+            <value>
+            The recommendation.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.FeaturesCompatibility.MoreInfoLink">
+            <summary>
+            Gets or sets the more information link.
+            </summary>
+            <value>
+            The more information link.
+            </value>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.ServerCompatibilityReport">
+            <summary>
+            Server Compatibility Report
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.ServerCompatibilityReport.ServerVersion">
+            <summary>
+            Gets or sets the PG ServerVersion.
+            </summary>
+            <value>
+            The Server Version.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.ServerCompatibilityReport.TargetServerVersion">
+            <summary>
+            Gets or sets the Target PG Server Version.
+            </summary>
+            <value>
+            The Target Server Version.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.ServerCompatibilityReport.PostgreSqlFeaturesCompatibility">
+            <summary>
+            Gets or sets the postgreSQL SQL server settings advisor.
+            </summary>
+            <value>
+            The postgreSQL server settings advisor.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.ServerCompatibilityReport.PostgreSqlServerSettingsCompatibility">
+            <summary>
+            Gets or sets the postgreSQL server settings advisor.
+            </summary>
+            <value>
+            The postgreSQL server settings advisor.
+            </value>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.ServerCompatibilityReport.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AdsPgSqlAssessment.Service.ServerCompatibilityReport"/> class.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.ServerSettingsCompatibility">
+            <summary>
+            Class stores the format in which server settings compatibility data will be stored.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.ServerSettingsCompatibility.AssessmentSeverity">
+            <summary>
+            Gets or sets the assessment readiness status.
+            </summary>
+            <value>
+            The assessment readiness status.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.ServerSettingsCompatibility.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+            <value>
+            The description.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.ServerSettingsCompatibility.IsReadOnly">
+            <summary>
+            Gets or sets the is read only.
+            </summary>
+            <value>
+            The is read only.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.ServerSettingsCompatibility.LocalizationKey">
+            <summary>
+            Gets or sets the localization key.
+            </summary>
+            <value>
+            The localization key.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.ServerSettingsCompatibility.ParameterName">
+            <summary>
+            Gets or sets the name of the parameter.
+            </summary>
+            <value>
+            The name of the parameter.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.ServerSettingsCompatibility.ParameterSourceValue">
+            <summary>
+            Gets or sets the parameter source value.
+            </summary>
+            <value>
+            The parameter source value.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.ServerSettingsCompatibility.ParameterTargetValue">
+            <summary>
+            Gets or sets the parameter target value.
+            </summary>
+            <value>
+            The parameter target value.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.ServerSettingsCompatibility.ParameterDescription">
+            <summary>
+            Gets or sets the parameter description.
+            </summary>
+            <value>
+            The parameter description.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.ServerSettingsCompatibility.Recommendation">
+            <summary>
+            Gets or sets the recommendation.
+            </summary>
+            <value>
+            The recommendation.
+            </value>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.SkuRecommendationReport">
+            <summary>
+            SKU Recommendation Report
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.SkuRecommendationReport.ServiceTier">
+            <summary>
+            Gets or sets the service tier.
+            </summary>
+            <value>
+            The service tier.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.SkuRecommendationReport.ComputeName">
+            <summary>
+            Gets or sets the name of the compute.
+            </summary>
+            <value>
+            The name of the compute.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.SkuRecommendationReport.Vcores">
+            <summary>
+            Gets or sets the vcores.
+            </summary>
+            <value>
+            The vcores.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.SkuRecommendationReport.MemoryInGiB">
+            <summary>
+            Gets or sets the memory in GiB.
+            </summary>
+            <value>
+            The memory in GiB.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.SkuRecommendationReport.StorageSizeInGiB">
+            <summary>
+            Gets or sets the storage size in GiB.
+            </summary>
+            <value>
+            The storage size in GiB.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.SkuRecommendationReport.PositiveJustifications">
+            <summary>
+            Gets the positive justifications.
+            </summary>
+            <value>
+            The positive justifications.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.SkuRecommendationReport.NegativeJustifications">
+            <summary>
+            Gets the negative justifications.
+            The details about rule/reason why we don't recommend this SKU.
+            </summary>
+            <value>
+            The negative justifications.
+            </value>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters">
+            <summary>
+            Input parameter for start Assessment function
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters.AssessmentId">
+            <summary>
+            Assessment Id
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters.RootPath">
+            <summary>
+            Root path to store collection and assessment meta data.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters.InstanceId">
+            <summary>
+            Instance Id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters.AssessmentName">
+            <summary>
+            Assessment Name.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters.ConnectionString">
+            <summary>
+            Connection string.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters.DataUtilization">
+            <summary>
+            Percentage of data utilization for assessment.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters.ScaleFactor">
+            <summary>
+            Scale factor for assessment.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters.TargetPlatfrom">
+            <summary>
+            Target platform for assessment.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters.SelectedDatabases">
+            <summary>
+            Gets or sets the selected databases.
+            </summary>
+            <value>
+            The selected databases.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters.AdditionalContextPayload">
+            <summary>
+            Gets or sets the additional context payload.
+            </summary>
+            <value>
+            The additional context payload.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters.IsAutomated">
+            <summary>
+            Flag to represent if performance metrics collection is automated.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters.StatisticPercentile">
+            <summary>
+            gets and sets the statistics percentile for performance aggregator.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters.#ctor(System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IList{System.String},System.Double,System.String,System.Boolean)">
+            <summary>
+            Constructor to initialize object properties
+            </summary>
+            <param name="assessmentId">Assessment Id</param>
+            <param name="rootPath">Root path</param>
+            <param name="instanceId">Instance Id</param>
+            <param name="assessmentName">Assessment Name</param>
+            <param name="connectionString">Connection string</param>
+            <param name="selectedDatabases">Selected Databases</param>
+            <param name="scaleFactor">Scale Factor</param>
+            <param name="additionalContextPayload">Additional context payload</param>
+            <param name="isAutomated">Flag representing if performance metrics collection is automated</param>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.WarningEntity">
+            <summary>
+            Warning class for RPC response entity
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.WarningEntity.WarningCode">
+            <summary>
+            Gets or sets the warning code.
+            </summary>
+            <value>
+            The warning code.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.WarningEntity.WarningMessage">
+            <summary>
+            Gets or sets the warning message.
+            </summary>
+            <value>
+            The warning message.
+            </value>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.WarningEntity.WarningParameters">
+            <summary>
+            Gets the list of warning parameters.
+            </summary>
+            <value>
+            The warning parameters.
+            </value>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.WarningEntity.#ctor">
+            <summary>
+            Initialize the object of <see cref="T:Microsoft.AdsPgSqlAssessment.Service.WarningEntity"/>
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.WarningEntity.#ctor(System.String,System.String,System.Collections.Generic.IList{System.String})">
+            <summary>
+            Initialize an object of <see cref="T:Microsoft.AdsPgSqlAssessment.Service.WarningEntity"/>
+            </summary>
+            <param name="warningCode">Warning Code</param>
+            <param name="warningMessage">Warning message</param>
+            <param name="warningParameters">List of warning Parameters</param>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.AssessmentOperationEnum">
+            <summary>
+            Defines all possible values for assessment operations.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.EnumPlatformAds">
+            <summary>
+            Defines the supported database platforms.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.AssessmentOrchestrationFactory">
+            <summary>
+            Class definition of AssessmentOrchestrationFactory
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentOrchestrationFactory.#ctor(Microsoft.Database.PreMigration.Common.IConfigurationManager,Microsoft.Database.PreMigration.Common.ILogManager,Microsoft.Database.PreMigration.Common.IProgressNotifier,Microsoft.Database.PreMigration.Common.ILookupRepository,Microsoft.Database.PreMigration.Common.IMetadataStore,System.Boolean,System.Boolean,Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AdsPgSqlAssessment.Service.AssessmentOrchestrationFactory"/> class.
+            </summary>
+            <param name="configuration">The configuration manager.</param>
+            <param name="logger">The logger</param>
+            <param name="progressNotifier">The notifier</param>
+            <param name="lookupRepository"> Look up repository for advisor</param>
+            <param name="entityMetadataStore"> Metadata store</param>
+            <param name="isAutomated"> Flag for automated performance data collection</param>
+            <param name="isRunSkuAdvisor"> Flag for running Sku advisor</param>
+            <param name="request">Start assessment request parameters</param>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentOrchestrationFactory.GetAdvisorOrchestrator(Microsoft.Database.PreMigration.Common.EnumPlatform,Microsoft.Database.PreMigration.Common.EnumPlatform)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.CollectionOrchestrationFactory">
+            <summary>
+            Class definition of CollectionOrchestrationFactory
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.CollectionOrchestrationFactory.#ctor(Microsoft.Database.PreMigration.Common.IConfigurationManager,Microsoft.Database.PreMigration.Common.ILogManager,Microsoft.Database.PreMigration.Common.IProgressNotifier,Microsoft.Database.PreMigration.Common.IMetadataStore,Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AdsPgSqlAssessment.Service.CollectionOrchestrationFactory"/> class.
+            </summary>
+            <param name="configuration">The configuration manager.</param>
+            <param name="logger">The logger</param>
+            <param name="progressNotifier">The notifier</param>
+            <param name="entityMetadataStore">Collection meta data store</param>
+            <param name="request">Start assessment request parameters</param>
+            <param name="isAutomated"> Flag for automated performance data collection</param>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.CollectionOrchestrationFactory.GetCollectionOrchestrator(Microsoft.Database.PreMigration.Common.EnumPlatform)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.CollectionOrchestrationFactory.GetAutomatedCollectionOrchestrator">
+            <summary>
+            Returns an implementation of <see cref="T:Microsoft.Database.MetaCollector.Common.ICollectionOrchestrator"/>
+            </summary>
+            <returns><see cref="T:Microsoft.Database.MetaCollector.Common.ICollectionOrchestrator"/></returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.CollectionOrchestrationFactory.GetManualCollectionOrchestrator">
+            <summary>
+            Returns an implementation of <see cref="T:Microsoft.Database.MetaCollector.Common.ICollectionOrchestrator"/>
+            </summary>
+            <returns><see cref="T:Microsoft.Database.MetaCollector.Common.ICollectionOrchestrator"/></returns>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.IAssessmentClient">
+            <summary>
+            A client that requests the assessment.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.IAssessmentClient.CollectorProgressNotification(Microsoft.AdsPgSqlAssessment.Service.CollectorProgress)">
+            <summary>
+            Notifies the client about Collector progress.
+            </summary>
+            <param name="notification">Parameter for the progress notification.</param>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.IAssessmentHandler">
+            <summary>
+            Defines all the functions to be provided by RPC layer
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.IAssessmentHandler.GetAllAssessments(Microsoft.AdsPgSqlAssessment.Service.AssessmentRequestParameters)">
+            <summary>
+            Handles request to get the list of assessments in a particular path.
+            </summary>
+            <param name="request">Request information for the assessment to be retrieved.</param>
+            <returns>List of <see cref="T:Microsoft.AdsPgSqlAssessment.Service.AssessmentData"/> object </returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.IAssessmentHandler.GetAssessmentDetails(Microsoft.AdsPgSqlAssessment.Service.AssessmentRequestParameters)">
+            <summary>
+            Handles request to get the details of a particular assessment.
+            </summary>
+            <param name="request">Request information for the assessment to be retrieved.</param>
+            <returns>An <see cref="T:Microsoft.AdsPgSqlAssessment.Service.AssessmentDisplayDetails"/> object </returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.IAssessmentHandler.GetServerCompatibilitySummary(Microsoft.AdsPgSqlAssessment.Service.AssessmentRequestParameters)">
+            <summary>
+            Gets the server compatibility summary.
+            </summary>
+            <param name="request">The request.</param>
+            <returns>An <see cref="T:Microsoft.AdsPgSqlAssessment.Service.ServerCompatibilityReport"/> object </returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.IAssessmentHandler.GetDatabaseCompatibilitySummary(Microsoft.AdsPgSqlAssessment.Service.AssessmentRequestParameters)">
+            <summary>
+            Gets the database compatibility summary.
+            </summary>
+            <param name="request">The request.</param>
+            <returns>Dictionary of DatabaseCompatibilityReport </returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.IAssessmentHandler.GetSkuRecommendation(Microsoft.AdsPgSqlAssessment.Service.AssessmentRequestParameters)">
+            <summary>
+            Gets the SKU recommendation.
+            </summary>
+            <param name="request">The request.</param>
+            <returns>Recommended SKU</returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.IAssessmentHandler.GetDbSourceProperties(Microsoft.AdsPgSqlAssessment.Service.AssessmentRequestParameters)">
+            <summary>
+            Gets the DB Source properties
+            </summary>
+            <param name="request">The request.</param>
+            <returns>Recommended SKU</returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.IAssessmentHandler.StartAssessment(Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters,Microsoft.AdsPgSqlAssessment.Service.IAssessmentClient)">
+            <summary>
+            Handles request to start a new assessment.
+            </summary>
+            <param name="request">Request information for the assessment to be retrieved.</param>
+            <param name="client">Client invoking the request.</param>
+            <returns>True if successful, else false</returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.IAssessmentHandler.ReStartAssessment(Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters,Microsoft.AdsPgSqlAssessment.Service.IAssessmentClient)">
+            <summary>
+            Handles request to restart an assessment.
+            </summary>
+            <param name="request">Request information for the assessment to be retrieved.</param>
+            <param name="client">Client invoking the request.</param>
+            <returns>True if successful, else false</returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.IAssessmentHandler.DeleteAssessment(Microsoft.AdsPgSqlAssessment.Service.AssessmentRequestParameters)">
+            <summary>
+            Handles request to delete an assessment.
+            </summary>
+            <param name="request">Request information for the assessment to be retrieved.</param>
+            <returns>True if successful, else false</returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.IAssessmentHandler.CancelAssessment(System.String)">
+            <summary>
+            Handles request to cancel an assessment.
+            </summary>
+            <param name="assessmentId">Assessment id of the assessment to cancel</param>
+            <returns>True if successful, else false</returns>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.AssessmentMethods">
+            <summary>
+            Defines names of the methods implemented by the language server.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.AssessmentMethods.GetAllAssessments">
+            <summary>
+            Defines a request sent from the client to get the list of previous assessments for a particular instance.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.AssessmentMethods.GetAssessmentDetails">
+            <summary>
+            Defines a request sent from the client to get the details of a particular assessment.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.AssessmentMethods.GetServerCompatibilitySummary">
+            <summary>
+            Defines a request sent from the client to get the server compatibility summary
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.AssessmentMethods.GetDatabaseCompatibilitySummary">
+            <summary>
+            Defines a request sent from the client to get the database compatibility summary
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.AssessmentMethods.GetSkuRecommendation">
+            <summary>
+            Defines a request sent from the client to get the SKU recommendation
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.AssessmentMethods.GetDbSourceProperties">
+            <summary>
+            Defines a request sent from the client to get the SKU recommendation
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.AssessmentMethods.StartAssessment">
+            <summary>
+            Defines a request sent from the client to start a assessment for a particular instance.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.AssessmentMethods.ReStartAssessment">
+            <summary>
+            Defines a request sent from the client to restart an assessment for a particular instance.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.AssessmentMethods.CancelAssessment">
+            <summary>
+            Defines a request sent from the client to cancel a particular assessment.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.AssessmentMethods.DeleteAssessment">
+            <summary>
+            Defines a request sent from the client to delete assessment for a particular instance.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.AssessmentMethods.GetDatabaseDetails">
+            <summary>
+            Defines a request sent from the client to get the Database Details like DBName and DBSize for a particular Server.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.CollectorMethods">
+            <summary>
+            Defines names of the methods implemented by the language server.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.CollectorMethods.CollectorProgressNotification">
+            <summary>
+            Defines a notification sent to the client to provide progress notification of the collector.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.CollectorProgress">
+            <summary>
+            Representation of the progress of a particular collector.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.CollectorProgress.CollectorStage">
+            <summary>
+            Gets or sets the stage of a collector
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.CollectorProgress.StageStatus">
+            <summary>
+            Gets or sets the status of the particular stage of the collector.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.CollectorProgress.StageDuration">
+            <summary>
+            Gets or sets the duration of the particular stage of the collector.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.CollectorProgress.StatusMessage">
+            <summary>
+            Gets or sets status message
+            </summary>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.ExtensionSettingParameters">
+            <summary>
+            Model for extension config and parameters
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.ExtensionSettingParameters.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AdsPgSqlAssessment.Service.ExtensionSettingParameters"/> class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AdsPgSqlAssessment.Service.ExtensionSettingParameters.LogDirectory">
+            <summary>
+            The path of directory to which our logger should create log files.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.CancellationTokenCache">
+            <summary>
+            Cancellation token cache
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.CancellationTokenCache.GetToken(System.String,Microsoft.Database.PreMigration.Common.ILogManager)">
+            <summary>
+            Function to retrieve the cancellation token for an assessment.
+            </summary>
+            <param name="assessmentId">AssessmentId</param>
+            <param name="logger">Logger</param>
+            <returns>CancellationToken for the particular assessment</returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.CancellationTokenCache.ContainsToken(System.String,Microsoft.Database.PreMigration.Common.ILogManager)">
+            <summary>
+            Function to check if an assessment exists in the CancellationTokenCache.
+            </summary>
+            <param name="assessmentId">AssessmentId</param>
+            <param name="logger">Logger</param>
+            <returns>CancellationToken for the particular assessment</returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.CancellationTokenCache.AddToken(System.String,Microsoft.Database.PreMigration.Common.ILogManager)">
+            <summary>
+            Adds a token to the map for a new assessment.
+            </summary>
+            <param name="assessmentId">AssessmentId</param>
+            <param name="logger">Logger</param>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.CancellationTokenCache.RemoveToken(System.String,Microsoft.Database.PreMigration.Common.ILogManager)">
+            <summary>
+            Remove the token for a particular assessment from the map.
+            </summary>
+            <param name="assessmentId">AssessmentId</param>
+            <param name="logger">Logger</param>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.CollectorProgressNotifier">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.CollectorProgressNotifier.#ctor(Microsoft.AdsPgSqlAssessment.Service.IAssessmentClient,Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters,System.Action{Microsoft.AdsPgSqlAssessment.Service.StartAssessmentRequestParameters})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AdsPgSqlAssessment.Service.CollectorProgressNotifier"/> class.
+            </summary>
+            <param name="assessmentClient">Client to which notification would be sent.</param>
+            <param name="request"> Asessment request parameters</param>
+            <param name="taskToExecute">Task to execute.</param>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.CollectorProgressNotifier.NotifyProgress``1(``0)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.CollectorProgressNotifier.NotifyProgressAsync``1(``0,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.LogManager">
+            <summary>
+            LogManager implementation for logging purpose(s).
+            </summary>
+        </member>
+        <member name="F:Microsoft.AdsPgSqlAssessment.Service.LogManager.nLogManager">
+            <summary>
+            Log manager instance.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.LogManager.#ctor(System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Constructor of the <see cref="T:Microsoft.AdsPgSqlAssessment.Service.LogManager"/> class.
+            </summary>
+            <param name="logContext">Context used for logging purpose.</param>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.LogManager.GetSingletonInstance(System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Fetches Singleton instance of <see cref="T:Microsoft.AdsPgSqlAssessment.Service.LogManager"/>.
+            </summary>
+            <param name="loggingContext">Context of logging such as logging path.</param>
+            <returns>Nlog implementation for logging purpose(s).</returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.LogManager.GetLogPath(System.Exception@)">
+            <summary>
+            This method fetches log path from extension settings
+            if none is found then returns default.
+            </summary>
+            <returns> Directory of log path as a string</returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.LogManager.GetLoggerSingletonInstance">
+            <summary>
+            Fetches the Singleton instance of logger.
+            </summary>
+            <returns>Instance of <see cref="T:Microsoft.AdsPgSqlAssessment.Service.LogManager"/> to be used for logging purpose(s).</returns>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.NoOpProgressNotifier">
+            <summary>
+            no op notifier
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.NoOpProgressNotifier.NotifyProgress``1(``0)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.NoOpProgressNotifier.NotifyProgressAsync``1(``0,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.AllAssessmenDetailsTransformer">
+            <summary>
+            List of Assessment details
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AllAssessmenDetailsTransformer.TransformAssessmentData(System.Collections.Generic.IList{Microsoft.DbAssessment.Common.AssessmentMetadata})">
+            <summary>
+            Metadata transformer
+            </summary>
+            <param name="assessmentMetadata"> Metadata sent by framework</param>
+            <returns> transformed list </returns>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.AssessmentDetailsTransformer">
+            <summary>
+            Transforms assessmenDetails from back-end to UI required format
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.AssessmentDetailsTransformer.TransformAssessmentDetails(Microsoft.DbAssessment.Common.AssessmentDetails)">
+            <summary>
+            Metadata transformer
+            </summary>
+            <param name="assessmentMetadata"> Metadata sent by framework</param>
+            <returns> transformed list </returns>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.DatabaseReportTransformer">
+            <summary>
+            Database Entity Transformer
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.DatabaseReportTransformer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AdsPgSqlAssessment.Service.DatabaseReportTransformer"/> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.DatabaseReportTransformer.TransformDatabaseCompatibilityReport(Microsoft.Database.Assessment.PostgreSqlEx.DatabaseCompatibilityReport)">
+            <summary>
+            Transforms the database compatibility report.
+            </summary>
+            <param name="dbCompatibilityReport">The database compatibility report.</param>
+            <returns>DatabaseCompatibilityReport instance</returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.DatabaseReportTransformer.TransformEncodingCompatibilityData(Microsoft.Database.Assessment.PostgreSqlEx.EncodingCompatibility)">
+            <summary>
+            Transforms the encoding compatibility data.
+            </summary>
+            <param name="encodingCompatibility">The encoding compatibility.</param>
+            <returns>EncodingCompatibility</returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.DatabaseReportTransformer.TransformExtensionCompatibilityData(System.Collections.Generic.IList{Microsoft.Database.Assessment.PostgreSqlEx.PostgreSqlDatabaseExtensionsCompatibility})">
+            <summary>
+            Transforms the extension compatibility data.
+            </summary>
+            <param name="extensionsCompatibilities">The extensions compatibilities.</param>
+            <returns>DatabaseExtensionsCompatibility list</returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.DatabaseReportTransformer.TransformCollationCompatibilityData(System.Collections.Generic.IList{Microsoft.Database.Assessment.PostgreSqlEx.CollationsCompatibility})">
+            <summary>
+            Transforms the collation compatibility data.
+            </summary>
+            <param name="collationsCompatibilities">The collations compatibilities.</param>
+            <returns>CollationsCompatibility list</returns>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.DbSourcePropertiesTransformer">
+            <summary>
+            DB source properties Transformer
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.DbSourcePropertiesTransformer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AdsPgSqlAssessment.Service.DbSourcePropertiesTransformer"/> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.DbSourcePropertiesTransformer.TransformDbSourcePropertiesReportData(System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Transforms the DB source properties .
+            </summary>
+            <param name="sourceProperties">The source properties</param>
+            <returns><see cref="T:Microsoft.AdsPgSqlAssessment.Service.DbSourceProperties"/></returns>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.ServerReportTransformer">
+            <summary>
+            Server Entity Transformer
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.ServerReportTransformer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AdsPgSqlAssessment.Service.ServerReportTransformer"/> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.ServerReportTransformer.TransformServerCompatibilityReport(Microsoft.Database.Assessment.PostgreSqlEx.ServerCompatibilityReport)">
+            <summary>
+            Transforms the server compatibility report.
+            </summary>
+            <param name="serverCompatibilityReport">The server compatibility report.</param>
+            <returns>ServerCompatibilityReport</returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.ServerReportTransformer.TransformServerSettingsCompatibilityData(System.Collections.Generic.IList{Microsoft.Database.Assessment.PostgreSqlEx.PostgreSqlServerSettingsCompatibility})">
+            <summary>
+            Transforms the server settings compatibility data.
+            </summary>
+            <param name="sqlServerSettingsCompatibility">The SQL server settings compatibility.</param>
+            <returns>ServerSettingsCompatibility</returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.ServerReportTransformer.TransformFeatureCompatibilityData(System.Collections.Generic.IList{Microsoft.Database.Assessment.PostgreSqlEx.PostgreSqlFeaturesCompatibility})">
+            <summary>
+            Transforms the feature compatibility data.
+            </summary>
+            <param name="featuresCompatibility">The features compatibility.</param>
+            <returns>FeaturesCompatibility</returns>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.SkuRecommendationReportTransformer">
+            <summary>
+            Sku Recommendation Report Transformer
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.SkuRecommendationReportTransformer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.AdsPgSqlAssessment.Service.SkuRecommendationReportTransformer"/> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.SkuRecommendationReportTransformer.TransformSkuRecommendationReport(Microsoft.Database.Assessment.PostgreSql.AzurePostgreSqlSkuRecommendationReport)">
+            <summary>
+            Transforms the SKU recommendation report.
+            </summary>
+            <param name="skuRecommendationReport">The SKU recommendation report.</param>
+            <returns>ServerCompatibilityReport</returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.SkuRecommendationReportTransformer.TransformSKURecommendationReportData(Microsoft.Database.Assessment.Common.TargetSkuEvaluatorResult)">
+            <summary>
+            Transforms the SKU recommendation data.
+            </summary>
+            <param name="targetSkuEvaluatorResult">The top 1 recommended SKU</param>
+            <returns>SkuRecommendationReport</returns>
+        </member>
+        <member name="T:Microsoft.AdsPgSqlAssessment.Service.Program">
+            <summary>
+            Main application class for the Service Host executable.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.Program.Main(System.String[])">
+            <summary>
+            Main entry point into the External PG Assessment Service.
+            </summary>
+            <param name="args">Command line arguments passed into the application.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> which when completed provides application exit code.</returns>
+        </member>
+        <member name="M:Microsoft.AdsPgSqlAssessment.Service.Program.CreateRpcHostAndRunServerAsync(Azure.Data.Migrations.JsonRpc.Logging.ILogger,System.Threading.CancellationToken)">
+            <summary>
+            Runs the JSON-RPC server with an RPC host composed through MEF.
+            </summary>
+            <param name="logger">Logger to use.</param>
+            <param name="cancellation">Cancellation token.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> that represents an asynchronous server hosting operation.</returns>
+        </member>
+    </members>
+</doc>

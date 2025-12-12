@@ -1,0 +1,13 @@
+{
+  "RangedSharding": {
+    "AssessmentName": "Ranged Sharding",
+    "AssessmentSeverity": "Warning",
+    "Message": "Azure Cosmos DB for MongoDB vCore does not support Ranged sharding. We recommend you switch to a single-field shard key using hashed sharding instead."
+  },
+
+  "MultiFieldShardKey": {
+    "AssessmentName": "Multi-field Shard Key",
+    "AssessmentSeverity": "Warning",
+    "Message": "Azure Cosmos DB for MongoDB vCore does not support sharding by multiple fields. We recommend switching to a single field as a shard key instead."
+  }
+}

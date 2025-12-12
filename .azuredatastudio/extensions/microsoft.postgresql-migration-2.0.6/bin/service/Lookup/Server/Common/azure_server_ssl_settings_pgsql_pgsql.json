@@ -1,0 +1,38 @@
+[
+  {
+    "IsSSLEnabled": true,
+    "SSLMinimumVersion": "TLSv1",
+    "description": "Azure Database for PostgreSQL - Flexible Server supports encrypted connections using Transport Layer Security (TLS 1.2+) and all incoming connections with TLS 1.0 and TLS 1.1 will be denied.",
+    "recommendation": "Consult your application's documentation to learn how to enable TLS1.2 connections.",
+    "moreInfoLink": "https://learn.microsoft.com/azure/postgresql/flexible-server/how-to-connect-tls-ssl",
+    "localizationKey": "SSLEnabled.TLSv1",
+    "assessmentSeverity": "Warning"
+  },
+  {
+    "IsSSLEnabled": true,
+    "SSLMinimumVersion": "TLSv1.1",
+    "description": "Azure Database for PostgreSQL - Flexible Server supports encrypted connections using Transport Layer Security (TLS 1.2+) and all incoming connections with TLS 1.0 and TLS 1.1 will be denied.",
+    "recommendation": "Consult your application's documentation to learn how to enable TLS1.2 connections.",
+    "moreInfoLink": "https://learn.microsoft.com/azure/postgresql/flexible-server/how-to-connect-tls-ssl",
+    "localizationKey": "SSLEnabled.TLSv1.1",
+    "assessmentSeverity": "Warning"
+  },
+  {
+    "IsSSLEnabled": false,
+    "SSLMinimumVersion": "",
+    "description": "By default, secure connectivity is enforced in Azure database for PostgreSQL flexible server. SSL encryption is not being used in the source server. To have a similar setting in flexible server, TLS/SSL can be disabled by changing the server parameter require_secure_transport to OFF.",
+    "recommendation": "It is always recommended to use encryption protocols like SSL/TLS for client server communications to protect against attacks like eavesdropping, Man in the middle attack, etc.",
+    "moreInfoLink": "https://learn.microsoft.com/azure/postgresql/flexible-server/how-to-connect-tls-ssl",
+    "localizationKey": "SSLDisabled.NoSSLMinimumVersion",
+    "assessmentSeverity": "Info"
+  },
+  {
+    "IsSSLEnabled": true,
+    "SSLMinimumVersion": "",
+    "description": "Azure Database for PostgreSQL - Flexible Server supports encrypted connections using Transport Layer Security (TLS 1.2+) and all incoming connections with TLS 1.0 and TLS 1.1 will be denied.",
+    "recommendation": "Consult your application's documentation to learn how to enable TLS1.2 connections if you are using any encryption method less than TLSV1.2.",
+    "moreInfoLink": "https://learn.microsoft.com/azure/postgresql/flexible-server/how-to-connect-tls-ssl",
+    "localizationKey": "SSLEnabled.NoSSLMinimumVersion",
+    "assessmentSeverity": "Warning"
+  }
+]

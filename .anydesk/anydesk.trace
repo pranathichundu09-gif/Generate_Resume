@@ -1,0 +1,261 @@
+ * * * * * * * * * * * * * * * * * *
+   info 2025-02-19 17:25:54.804      front   main   4911 134758                                  main - * AnyDesk MAC Startup *
+   info 2025-02-19 17:25:54.805      front   main   4911 134758                                  main - * Version 9.0.0 (release/mac_9.0.x 3bb2f9ac08e65092c2023316fa553e5b3157e71e)
+   info 2025-02-19 17:25:54.805      front   main   4911 134758                                  main - * Build 20250205153009
+   info 2025-02-19 17:25:54.805      front   main   4911 134758                                  main - * Prefix ad
+   info 2025-02-19 17:25:54.806      front   main   4911 134758                                  main - * OS Version 15.3.1 (Build 24D70)
+   info 2025-02-19 17:25:54.806      front   main   4911 134758                                  main - * Arch arm64
+   info 2025-02-19 17:25:54.806      front   main   4911 134758                                  main - * Launch path /private/var/folders/1m/9hn4sy0d2jq663tn8c6r0s8c0000gn/T/AppTranslocation/27BBBA7D-974A-471A-9BFA-AFA6C6FE0527/d/AnyDesk.app
+   info 2025-02-19 17:25:54.806      front   main   4911 134758                                  main - * Copyright (C) AnyDesk Software GmbH *
+   info 2025-02-19 17:25:54.806      front   main   4911 134758                                  main - 
+   info 2025-02-19 17:25:54.806      front   main   4911 134758                                  main - pid: 4911 ppid: 1 uid: 501
+   info 2025-02-19 17:25:54.806      front   main   4911 134758                                  main - process maxfiles 2560 : -1
+   info 2025-02-19 17:25:54.806      front   main   4911 134758                                  main - raising RLIMIT_NOFILE to 10240
+   info 2025-02-19 17:25:54.807      front   main   4911 134758                         impl_selector - using neon
+  error 2025-02-19 17:25:54.938      front   main   4911 134758         mac_app.helper_tool_interface - No bundle.
+   info 2025-02-19 17:25:54.938      front   main   4911 134758                   fiber.ipc_namespace - Global: no
+   info 2025-02-19 17:25:54.938      front   main   4911 134758                           AppDelegate - Starting a local service.
+warning 2025-02-19 17:25:54.939      front   main   4911 134758                   fiber.ipc_namespace - Local namespace without service.
+ * * * * * * * * * * * * * * * * * *
+   info 2025-02-19 17:25:54.947       lsvc   main   4920 134947                                  main - * AnyDesk MAC Startup *
+   info 2025-02-19 17:25:54.948       lsvc   main   4920 134947                                  main - * Version 9.0.0 (release/mac_9.0.x 3bb2f9ac08e65092c2023316fa553e5b3157e71e)
+   info 2025-02-19 17:25:54.948       lsvc   main   4920 134947                                  main - * Build 20250205153009
+   info 2025-02-19 17:25:54.948       lsvc   main   4920 134947                                  main - * Prefix ad
+   info 2025-02-19 17:25:54.949       lsvc   main   4920 134947                                  main - * OS Version 15.3.1 (Build 24D70)
+   info 2025-02-19 17:25:54.949       lsvc   main   4920 134947                                  main - * Arch arm64
+   info 2025-02-19 17:25:54.949       lsvc   main   4920 134947                                  main - * Launch path /var/folders/1m/9hn4sy0d2jq663tn8c6r0s8c0000gn/T/AppTranslocation/27BBBA7D-974A-471A-9BFA-AFA6C6FE0527/d/AnyDesk.app
+   info 2025-02-19 17:25:54.949       lsvc   main   4920 134947                                  main - * Copyright (C) AnyDesk Software GmbH *
+   info 2025-02-19 17:25:54.949       lsvc   main   4920 134947                                  main - 
+   info 2025-02-19 17:25:54.949       lsvc   main   4920 134947                                  main - pid: 4920 ppid: 4911 uid: 501
+   info 2025-02-19 17:25:54.949       lsvc   main   4920 134947                                  main - process maxfiles 10240 : -1
+   info 2025-02-19 17:25:54.949       lsvc   main   4920 134947                         impl_selector - using neon
+   info 2025-02-19 17:25:54.950       lsvc   main   4920 134947                       app.common_path - initialized user = /Users/pranathichundu/.anydesk, system = /Users/pranathichundu/.anydesk
+warning 2025-02-19 17:25:54.950       lsvc   main   4920 134947                       app.common_path - Can't symlink /Users/pranathichundu/Movies/anydesk (0)
+   info 2025-02-19 17:25:54.950       lsvc   main   4920 134947                      main.run_service - Starting local service.
+   info 2025-02-19 17:25:54.950       lsvc   main   4920 134947          base.data.config_application - Adding GPO defaults layer.
+   info 2025-02-19 17:25:54.951       lsvc   main   4920 134947                               app.mdm - Loaded 0/666 MDM defaults.
+   info 2025-02-19 17:25:54.951       lsvc   main   4920 134947          base.data.config_application - Adding GPO overrides layer.
+   info 2025-02-19 17:25:54.951       lsvc   main   4920 134947                               app.mdm - Loaded 0/666 MDM overrides.
+   info 2025-02-19 17:25:54.951       lsvc   main   4920 134947            permission_profile_manager - Migrating V0 -> V1
+   info 2025-02-19 17:25:54.953       lsvc   main   4920 134947                       fiber.scheduler - Spawning root fiber 1.
+   info 2025-02-19 17:25:54.953       lsvc   main   4920 134947                       fiber.scheduler - Scheduler started.
+   info 2025-02-19 17:25:54.953       lsvc   main   4920 134947    1                      app.service - Opening the IPC namespace.
+   info 2025-02-19 17:25:54.953       lsvc   main   4920 134947    1              fiber.ipc_namespace - Global: no
+   info 2025-02-19 17:25:54.953       lsvc   main   4920 134947    1                      app.service - Logging into the IPC namespace.
+   info 2025-02-19 17:25:54.953       lsvc   main   4920 134947    1                  fiber.scheduler - Spawning child fiber 2 (parent: 1).
+   info 2025-02-19 17:25:54.953       lsvc   main   4920 134947    1                  fiber.scheduler - Spawning child fiber 3 'notifications' (parent: 1).
+   info 2025-02-19 17:25:54.953       lsvc   main   4920 134947    1                  fiber.scheduler - Spawning child fiber 4 (parent: 1).
+   info 2025-02-19 17:25:54.953       lsvc   main   4920 134947    1                  fiber.scheduler - Spawning child fiber 5 'license_adapter' (parent: 1).
+   info 2025-02-19 17:25:54.953       lsvc   main   4920 134947    1                  fiber.scheduler - Spawning child fiber 6 'device_id' (parent: 1).
+   info 2025-02-19 17:25:54.953       lsvc   main   4920 134947    1                      app.service - Starting to supervise the IPC namespace.
+   info 2025-02-19 17:25:54.953       lsvc   main   4920 134947    1                      app.service - Starting the connector.
+   info 2025-02-19 17:25:54.953       lsvc   main   4920 134947    1            anynet.connection_mgr - Generating a new certificate and key.
+   info 2025-02-19 17:25:55.040      front   main   4911 134758                       app.common_path - initialized user = /Users/pranathichundu/.anydesk, system = /Users/pranathichundu/.anydesk
+   info 2025-02-19 17:25:55.040      front   main   4911 134758                           AppDelegate - Starting frontend (6).
+   info 2025-02-19 17:25:55.041      front   main   4911 134758          base.data.config_application - Adding GPO defaults layer.
+   info 2025-02-19 17:25:55.041      front   main   4911 134758                               app.mdm - Loaded 0/666 MDM defaults.
+   info 2025-02-19 17:25:55.041      front   main   4911 134758          base.data.config_application - Adding GPO overrides layer.
+   info 2025-02-19 17:25:55.041      front   main   4911 134758                               app.mdm - Loaded 0/666 MDM overrides.
+   info 2025-02-19 17:25:55.042      front   main   4911 134758                           gui.gui_app - DPI scaling: 2.00 / 2.00
+   info 2025-02-19 17:25:55.042      front   main   4911 134758                           gui.gui_app - Using high-resolution bitmaps.
+   info 2025-02-19 17:25:55.042      front   main   4911 134758                       base.signal.hub - 4 threads.
+   info 2025-02-19 17:25:55.060      front   timr   4911 134955          base.signal.local.timer_impl - Initialized master timer.
+   info 2025-02-19 17:25:55.060      front   ctrl   4911 134957                      mac_app.frontend - Frontend startup.
+   info 2025-02-19 17:25:55.060      front   ctrl   4911 134957                      mac_app.frontend - Logging the frontend in.
+   info 2025-02-19 17:25:55.064       lsvc   main   4920 134947    1            anynet.connection_mgr - 2 CA certificate(s) loaded.
+   info 2025-02-19 17:25:55.064       lsvc   main   4920 134947    1                  fiber.scheduler - Spawning root fiber 7 'connection_mgr'.
+   info 2025-02-19 17:25:55.064       lsvc   main   4920 134947    1                  fiber.scheduler - Spawning root fiber 8 'main_relay_conn'.
+   info 2025-02-19 17:25:55.064       lsvc   main   4920 134947    1                  fiber.scheduler - Spawning root fiber 9 'tcp_acceptor'.
+   info 2025-02-19 17:25:55.064       lsvc   main   4920 134947    1                  fiber.scheduler - Spawning root fiber 10 'tcp_acceptor'.
+   info 2025-02-19 17:25:55.064       lsvc   main   4920 134947    1                      app.service - Setting up the listen sockets.
+   info 2025-02-19 17:25:55.065      front   ctrl   4911 134957                     base.monitor_info - 2 active monitor(s) found.
+   info 2025-02-19 17:25:55.065       lsvc   main   4920 134947    1                  fiber.scheduler - Spawning root fiber 11.
+   info 2025-02-19 17:25:55.065       lsvc   main   4920 134947    1                      app.service - Service startup completed.
+   info 2025-02-19 17:25:55.065       lsvc   main   4920 134947    1      anynet.connectivity_monitor - connectivity_monitor osx create
+   info 2025-02-19 17:25:55.068       lsvc   main   4920 134947    1            app.discovery_manager - Updated Discovery settings: repeat interval (1000), repeat limit (10), buffer interval (5000), port range (3)
+   info 2025-02-19 17:25:55.068       lsvc   main   4920 134947    1            app.discovery_manager - Starting Discovery.
+   info 2025-02-19 17:25:55.068       lsvc   main   4920 134947    1                   ad.wol_service - Starting WOL service.
+   info 2025-02-19 17:25:55.068       lsvc   main   4920 134947    1                  fiber.scheduler - Spawning child fiber 12 'wol_service' (parent: 1).
+   info 2025-02-19 17:25:55.068       lsvc   main   4920 134947    1                  fiber.scheduler - Spawning child fiber 13 'invitation_service' (parent: 1).
+   info 2025-02-19 17:25:55.068       lsvc   main   4920 134947    1                  fiber.scheduler - Spawning child fiber 14 'ancl' (parent: 1).
+   info 2025-02-19 17:25:55.068       lsvc   main   4920 134947    1                  fiber.scheduler - Spawning child fiber 15 'quiver_anynet_service' (parent: 1).
+   info 2025-02-19 17:25:55.068       lsvc   main   4920 134947    1                      app.service - Waiting for messages.
+   info 2025-02-19 17:25:55.068       lsvc   main   4920 134947    1                      app.service - Process start: 4911 (frontend).
+   info 2025-02-19 17:25:55.068       lsvc   main   4920 134947    1           anynet.relay_connector - Short timeouts enabled.
+   info 2025-02-19 17:25:55.068       lsvc   main   4920 134947    1                      app.service - New IPC connection.
+   info 2025-02-19 17:25:55.068       lsvc   main   4920 134947    1                  fiber.scheduler - Spawning child fiber 16 'ipc_connection' (parent: 1).
+   info 2025-02-19 17:25:55.069       lsvc   main   4920 134947    6                        device_id - device id service started.
+   info 2025-02-19 17:25:55.069       lsvc   main   4920 134947    7            anynet.connection_mgr - Starting connection manager fiber.
+   info 2025-02-19 17:25:55.069       lsvc   main   4920 134947    8           anynet.main_relay_conn - Starting main relay connection.
+   info 2025-02-19 17:25:55.069       lsvc   main   4920 134947    8      anynet.connectivity_monitor - connectivity_monitor osx create
+   info 2025-02-19 17:25:55.069       lsvc   main   4920 134947    8                  fiber.scheduler - Spawning child fiber 17 'relay_connector' (parent: 8 'main_relay_conn').
+   info 2025-02-19 17:25:55.069       lsvc   main   4920 134947    9              anynet.tcp_acceptor - Listening on TCP port 7070 with IPv4.
+   info 2025-02-19 17:25:55.069       lsvc   main   4920 134947   10              anynet.tcp_acceptor - Listening on TCP port 7070 with IPv6.
+   info 2025-02-19 17:25:55.069       lsvc   main   4920 134947   11                anynet.any_socket - Listen fiber started.
+   info 2025-02-19 17:25:55.070       lsvc   main   4920 134947   12                      anynet.conn - Request before connect. Queueing.
+   info 2025-02-19 17:25:55.070       lsvc   main   4920 134947   16                      app.service - Creating an IPC accept socket.
+   info 2025-02-19 17:25:55.071       lsvc   main   4920 134947   16                      app.service - Connected to 4911 (frontend).
+   info 2025-02-19 17:25:55.071       lsvc   main   4920 134947   17           anynet.relay_connector - Relay connector started.
+   info 2025-02-19 17:25:55.071       lsvc   main   4920 134947   17           anynet.relay_connector - Start proxy search.
+   info 2025-02-19 17:25:55.071       lsvc   main   4920 134947   17           anynet.relay_connector - Connecting to relay boot.net.anydesk.com (1/1)
+   info 2025-02-19 17:25:55.071       lsvc   main   4920 134947   17           anynet.relay_connector - Skipping connect method connect_proxy_443 (1/6) (no proxy found)
+   info 2025-02-19 17:25:55.071       lsvc   main   4920 134947   17           anynet.relay_connector - Skipping connect method connect_proxy_80 (2/6) (no proxy found)
+   info 2025-02-19 17:25:55.071       lsvc   main   4920 134947   17           anynet.relay_connector - Skipping connect method socks_proxy_443 (3/6) (no proxy found)
+   info 2025-02-19 17:25:55.074       lsvc   main   4920 134947   16                      app.service - Process login detected.
+  error 2025-02-19 17:25:55.074       lsvc   main   4920 134947   16         base.prot.packet_factory - Invalid packet received (type=100, 10 bytes).
+warning 2025-02-19 17:25:55.074       lsvc   main   4920 134947   16                      app.service - Unexpected message. packet_msg_t
+  error 2025-02-19 17:25:55.074       lsvc   main   4920 134947   16         base.prot.packet_factory - Invalid packet received (type=100, 10 bytes).
+warning 2025-02-19 17:25:55.074       lsvc   main   4920 134947   16                      app.service - Unexpected message. data_msg_t
+warning 2025-02-19 17:25:55.074       lsvc   main   4920 134947   16                      app.service - Unexpected message. packet_msg_t
+   info 2025-02-19 17:25:55.074       lsvc   main   4920 134947   16                  fiber.scheduler - Spawning root fiber 18 'account_adapter'.
+   info 2025-02-19 17:25:55.076       lsvc   main   4920 134947   18                  account_adapter - Starting for session 501
+   info 2025-02-19 17:25:55.076       lsvc   main   4920 134947   18                  account_adapter - Preparing quiver based account service for os-session 501
+warning 2025-02-19 17:25:55.081      front   wrk1   4911 134959                                   sif - Dropping out of date license response.
+   info 2025-02-19 17:25:55.082       lsvc   main   4920 134947   18                      anynet.conn - Request before connect. Queueing.
+   info 2025-02-19 17:25:55.082       lsvc   main   4920 134947   16                      app.service - 5 Unexpected: signal_msg_t.
+   info 2025-02-19 17:25:55.082      front   wrk2   4911 134960                               app.mdm - Loaded 0/666 MDM overrides.
+   info 2025-02-19 17:25:55.083      front   wrk2   4911 134960                               app.mdm - Loaded 0/666 MDM defaults.
+   info 2025-02-19 17:25:55.083      front          4911 134956                   anymessage.provider - User Logged-out. Requesting messages update.
+   info 2025-02-19 17:25:55.148       lsvc   main   4920 134947   17           anynet.relay_connector - Using IPv4: 57.129.37.75
+  error 2025-02-19 17:25:55.237      front   main   4911 134758         mac_app.helper_tool_interface - No bundle.
+   info 2025-02-19 17:25:55.286       lsvc   main   4920 134947   17                  fiber.scheduler - Spawning root fiber 19.
+   info 2025-02-19 17:25:55.566       lsvc   main   4920 134947   17           anynet.relay_connector - Cipher: ECDHE-ECDSA-AES256-GCM-SHA384 TLSv1.2 Kx=ECDH Au=ECDSA Enc=AESGCM(256) Mac=AEAD
+   info 2025-02-19 17:25:55.566       lsvc   main   4920 134947   17                  fiber.scheduler - Spawning root fiber 20.
+   info 2025-02-19 17:25:55.566       lsvc   main   4920 134947   17                        handshake - Using protocol version 3.
+   info 2025-02-19 17:25:55.701       lsvc   main   4920 134947                       fiber.scheduler - Fiber 17 'relay_connector' (parent: 8 'main_relay_conn') requested quit of fiber 20.
+   info 2025-02-19 17:25:55.701       lsvc   main   4920 134947   20                      fiber.fiber - Received quit.
+   info 2025-02-19 17:25:55.701       lsvc   main   4920 134947                       fiber.scheduler - Fiber 20 terminated.
+   info 2025-02-19 17:25:55.701       lsvc   main   4920 134947                       fiber.scheduler - Fiber 17 'relay_connector' (parent: 8 'main_relay_conn') requested quit of fiber 19.
+   info 2025-02-19 17:25:55.701       lsvc   main   4920 134947   19                      fiber.fiber - Received quit.
+   info 2025-02-19 17:25:55.701       lsvc   main   4920 134947                       fiber.scheduler - Fiber 19 terminated.
+   info 2025-02-19 17:25:55.701       lsvc   main   4920 134947   17           anynet.relay_connector - Connection terminated: anynet_invalid_zone
+   info 2025-02-19 17:25:55.701       lsvc   main   4920 134947   17           anynet.relay_connector - Received a new server list (2 servers)
+   info 2025-02-19 17:25:55.701       lsvc   main   4920 134947   17           anynet.relay_connector - Connecting to relay relay-dafa4c5b.net.anydesk.com (1/2)
+   info 2025-02-19 17:25:55.701       lsvc   main   4920 134947   17           anynet.relay_connector - Skipping connect method connect_proxy_443 (1/6) (no proxy found)
+   info 2025-02-19 17:25:55.701       lsvc   main   4920 134947   17           anynet.relay_connector - Skipping connect method connect_proxy_80 (2/6) (no proxy found)
+   info 2025-02-19 17:25:55.701       lsvc   main   4920 134947   17           anynet.relay_connector - Skipping connect method socks_proxy_443 (3/6) (no proxy found)
+   info 2025-02-19 17:25:55.733       lsvc   main   4920 134947   17           anynet.relay_connector - Using IPv4: 212.102.40.162
+   info 2025-02-19 17:25:55.760       lsvc   main   4920 134947   17                  fiber.scheduler - Spawning root fiber 21.
+   info 2025-02-19 17:25:55.830       lsvc   main   4920 134947   17           anynet.relay_connector - Cipher: ECDHE-ECDSA-AES256-GCM-SHA384 TLSv1.2 Kx=ECDH Au=ECDSA Enc=AESGCM(256) Mac=AEAD
+   info 2025-02-19 17:25:55.830       lsvc   main   4920 134947   17                  fiber.scheduler - Spawning root fiber 22.
+   info 2025-02-19 17:25:55.832       lsvc   main   4920 134947   17                        handshake - Using protocol version 3.
+   info 2025-02-19 17:25:56.046       lsvc   main   4920 134947   17           anynet.relay_connector - Connection established.
+   info 2025-02-19 17:25:56.046       lsvc   main   4920 134947   17           anynet.relay_connector - Relay connector stopped.
+   info 2025-02-19 17:25:56.046       lsvc   main   4920 134947                       fiber.scheduler - Fiber 17 'relay_connector' (parent: 8 'main_relay_conn') terminated.
+   info 2025-02-19 17:25:56.052       lsvc   main   4920 134947    8           anynet.main_relay_conn - Network ID: main
+   info 2025-02-19 17:25:56.054       lsvc   main   4920 134947    8                anynet.relay_conn - External address: 73.6.205.202:51647.
+   info 2025-02-19 17:25:56.055       lsvc   main   4920 134947    8           anynet.main_relay_conn - Reporting system information.
+   info 2025-02-19 17:25:56.055       lsvc   main   4920 134947    8           anynet.main_relay_conn - Main relay ID: dafa4c5b
+   info 2025-02-19 17:25:56.144       lsvc   main   4920 134947    8           anynet.main_relay_conn - Detected 2 new networks.
+   info 2025-02-19 17:25:56.144       lsvc   main   4920 134947   15                   anynet_service - Relay connection state changed: Connected.
+   info 2025-02-19 17:25:56.146       lsvc   main   4920 134947    7            anynet.connection_mgr - Main relay connection established.
+   info 2025-02-19 17:25:56.146       lsvc   main   4920 134947    7            anynet.connection_mgr - New user data. Client-ID: 1659090165.
+   info 2025-02-19 17:25:56.148       lsvc   main   4920 134947    6                        device_id - Forcing device id update.
+   info 2025-02-19 17:25:56.148       lsvc   main   4920 134947    6                        device_id - Requesting device id update.
+   info 2025-02-19 17:25:56.156      front   wrk1   4911 134959                   anymessage.provider - CID changed. Requesting messages update.
+warning 2025-02-19 17:25:56.330       lsvc   main   4920 134947   18          account_relay_interface - Could not logout. (anynet_unknown)
+   info 2025-02-19 17:25:56.374       lsvc   main   4920 134947    1                    app.discovery - Starting.
+   info 2025-02-19 17:25:56.374       lsvc   main   4920 134947    1                  fiber.scheduler - Spawning root fiber 23 'discovery'.
+   info 2025-02-19 17:25:56.374       lsvc   main   4920 134947    1                             ancl - Skipping ANCL update. No public key configured.
+   info 2025-02-19 17:25:56.374       lsvc   main   4920 134947    1                  fiber.scheduler - Spawning root fiber 24.
+   info 2025-02-19 17:25:56.374       lsvc   main   4920 134947    1                      app.service - Account backend service status changed (0->1)
+   info 2025-02-19 17:25:56.375      front   wrk1   4911 134959            app.session_queue_frontend - Received service ready.
+   info 2025-02-19 17:25:56.375       lsvc   main   4920 134947   23                    app.discovery - Current Discovery revision: 0
+   info 2025-02-19 17:25:56.376       lsvc   main   4920 134947   23                    app.discovery - Joined multicast group 239.255.102.18:50001.
+   info 2025-02-19 17:25:56.376       lsvc   main   4920 134947   23                    app.discovery - Bound to port: 50001
+   info 2025-02-19 17:25:56.376       lsvc   main   4920 134947   23                anynet.udp_socket - Multicast loop option set to 0
+  error 2025-02-19 17:25:56.376       lsvc   main   4920 134947   23                anynet.udp_socket - send failed (65, No route to host).
+  error 2025-02-19 17:25:56.376       lsvc   main   4920 134947   23                    app.discovery - Could not send fragmented Discovery client info.
+  error 2025-02-19 17:25:56.376       lsvc   main   4920 134947   23                anynet.udp_socket - send failed (65, No route to host).
+  error 2025-02-19 17:25:56.376       lsvc   main   4920 134947   23                    app.discovery - Could not send fragmented Discovery client info.
+  error 2025-02-19 17:25:56.377       lsvc   main   4920 134947   23                anynet.udp_socket - send failed (65, No route to host).
+  error 2025-02-19 17:25:56.377       lsvc   main   4920 134947   23                    app.discovery - Could not send fragmented Discovery client info.
+  error 2025-02-19 17:25:56.377       lsvc   main   4920 134947   23                anynet.udp_socket - send failed (65, No route to host).
+  error 2025-02-19 17:25:56.377       lsvc   main   4920 134947   23                    app.discovery - Could not send fragmented Discovery client info.
+  error 2025-02-19 17:25:56.377       lsvc   main   4920 134947   23                anynet.udp_socket - send failed (65, No route to host).
+  error 2025-02-19 17:25:56.377       lsvc   main   4920 134947   23                    app.discovery - Could not send fragmented Discovery client info.
+  error 2025-02-19 17:25:56.377       lsvc   main   4920 134947   23                anynet.udp_socket - send failed (65, No route to host).
+  error 2025-02-19 17:25:56.377       lsvc   main   4920 134947   23                    app.discovery - Could not send fragmented Discovery client info.
+   info 2025-02-19 17:25:56.377       lsvc   main   4920 134947   23                    app.discovery - Discovery fiber started.
+  error 2025-02-19 17:25:56.386      front   ctrl   4911 134957         mac_app.helper_tool_interface - No bundle.
+warning 2025-02-19 17:25:56.573       lsvc   main   4920 134947    8                      anynet.conn - Response to request 44163 ignored.
+  error 2025-02-19 17:25:58.380       lsvc   main   4920 134947   23                anynet.udp_socket - send failed (65, No route to host).
+  error 2025-02-19 17:25:58.380       lsvc   main   4920 134947   23                    app.discovery - Could not send fragmented Discovery client info.
+  error 2025-02-19 17:25:58.380       lsvc   main   4920 134947   23                anynet.udp_socket - send failed (65, No route to host).
+  error 2025-02-19 17:25:58.380       lsvc   main   4920 134947   23                    app.discovery - Could not send fragmented Discovery client info.
+  error 2025-02-19 17:25:58.381       lsvc   main   4920 134947   23                anynet.udp_socket - send failed (65, No route to host).
+  error 2025-02-19 17:25:58.381       lsvc   main   4920 134947   23                    app.discovery - Could not send fragmented Discovery client info.
+  error 2025-02-19 17:25:58.381       lsvc   main   4920 134947   23                anynet.udp_socket - send failed (65, No route to host).
+  error 2025-02-19 17:25:58.381       lsvc   main   4920 134947   23                    app.discovery - Could not send fragmented Discovery client info.
+  error 2025-02-19 17:25:58.381       lsvc   main   4920 134947   23                anynet.udp_socket - send failed (65, No route to host).
+  error 2025-02-19 17:25:58.381       lsvc   main   4920 134947   23                    app.discovery - Could not send fragmented Discovery client info.
+  error 2025-02-19 17:25:58.381       lsvc   main   4920 134947   23                anynet.udp_socket - send failed (65, No route to host).
+  error 2025-02-19 17:25:58.381       lsvc   main   4920 134947   23                    app.discovery - Could not send fragmented Discovery client info.
+   info 2025-02-19 17:26:07.758      front   main   4911 134758                           AppDelegate - Installation started.
+  error 2025-02-19 17:26:07.758      front   main   4911 134758         mac_app.helper_tool_interface - Can't connect to helper
+   info 2025-02-19 17:26:07.758      front   main   4911 134758                           AppDelegate - Helper existing: required:2.19
+warning 2025-02-19 17:26:07.758      front   main   4911 134758         mac_app.helper_tool_interface - removing incompatible helper..
+   info 2025-02-19 17:26:12.613      front   main   4911 134758         mac_app.helper_tool_interface - Can't remove helper w/ applescript
+   info 2025-02-19 17:26:12.613      front   main   4911 134758         mac_app.helper_tool_interface - *** Installing helper tool... ***
+   info 2025-02-19 17:26:18.809      front   main   4911 134758         mac_app.helper_tool_interface - Helper tool installation successeded
+   info 2025-02-19 17:26:18.810      front   main   4911 134758                           AppDelegate - Installing AnyDesk..
+   info 2025-02-19 17:26:19.317      front   main   4911 134758         mac_app.helper_tool_interface - Try to install anydesk
+   info 2025-02-19 17:26:19.317      front   main   4911 134758         mac_app.helper_tool_interface - Install anyDesk Bundle: /private/var/folders/1m/9hn4sy0d2jq663tn8c6r0s8c0000gn/T/AppTranslocation/27BBBA7D-974A-471A-9BFA-AFA6C6FE0527/d/AnyDesk.app, sysconfig : /Users/pranathichundu/.anydesk, ad_namespace : anydesk - 
+   info 2025-02-19 17:26:19.564       lsvc   main   4920 134947                       fiber.scheduler - Quitting scheduler (1).
+   info 2025-02-19 17:26:19.564       lsvc   main   4920 134947                       fiber.scheduler - Quitting all fibers.
+   info 2025-02-19 17:26:19.564       lsvc   main   4920 134947                       fiber.scheduler - Fiber 1 requested quit of fiber 4 (parent: 1).
+   info 2025-02-19 17:26:19.565       lsvc   main   4920 134947                       fiber.scheduler - Fiber 4 (parent: 1) terminated.
+   info 2025-02-19 17:26:19.565       lsvc   main   4920 134947    7            anynet.connection_mgr - Connection manager fiber quit.
+   info 2025-02-19 17:26:19.565       lsvc   main   4920 134947                       fiber.scheduler - Fiber 7 'connection_mgr' terminated.
+   info 2025-02-19 17:26:19.565       lsvc   main   4920 134947    8           anynet.main_relay_conn - Main relay connection closed.
+   info 2025-02-19 17:26:19.567       lsvc   main   4920 134947    8            anynet.connection_mgr - Forcing cleanup.
+   info 2025-02-19 17:26:19.567       lsvc   main   4920 134947                       fiber.scheduler - Fiber 8 'main_relay_conn' requested quit of fiber 22.
+   info 2025-02-19 17:26:19.567       lsvc   main   4920 134947    9              anynet.tcp_acceptor - Received quit.
+   info 2025-02-19 17:26:19.567       lsvc   main   4920 134947                       fiber.scheduler - Fiber 9 'tcp_acceptor' terminated.
+   info 2025-02-19 17:26:19.567       lsvc   main   4920 134947   10              anynet.tcp_acceptor - Received quit.
+   info 2025-02-19 17:26:19.567       lsvc   main   4920 134947                       fiber.scheduler - Fiber 10 'tcp_acceptor' terminated.
+   info 2025-02-19 17:26:19.567       lsvc   main   4920 134947   11                anynet.any_socket - Listen fiber stopped.
+   info 2025-02-19 17:26:19.567       lsvc   main   4920 134947                       fiber.scheduler - Fiber 11 terminated.
+   info 2025-02-19 17:26:19.567       lsvc   main   4920 134947   18                      fiber.fiber - Received quit.
+   info 2025-02-19 17:26:19.567       lsvc   main   4920 134947                       fiber.scheduler - Fiber 18 'account_adapter' terminated.
+   info 2025-02-19 17:26:19.568       lsvc   main   4920 134947   21                      fiber.fiber - Received quit.
+   info 2025-02-19 17:26:19.568       lsvc   main   4920 134947                       fiber.scheduler - Fiber 21 terminated.
+   info 2025-02-19 17:26:19.568       lsvc   main   4920 134947   22                      fiber.fiber - Received quit.
+   info 2025-02-19 17:26:19.568       lsvc   main   4920 134947                       fiber.scheduler - Fiber 22 terminated.
+   info 2025-02-19 17:26:19.569       lsvc   main   4920 134947   23                    app.discovery - Left multicast group 239.255.102.18:50001.
+   info 2025-02-19 17:26:19.569       lsvc   main   4920 134947   23                    app.discovery - Discovery fiber stopped.
+   info 2025-02-19 17:26:19.569       lsvc   main   4920 134947                       fiber.scheduler - Fiber 23 'discovery' terminated.
+   info 2025-02-19 17:26:19.569       lsvc   main   4920 134947                       fiber.scheduler - Fiber 24 terminated.
+   info 2025-02-19 17:26:19.569       lsvc   main   4920 134947                       fiber.scheduler - Fiber 1 requested quit of fiber 5 'license_adapter' (parent: 1).
+   info 2025-02-19 17:26:19.573       lsvc   main   4920 134947                       fiber.scheduler - Fiber 8 'main_relay_conn' terminated.
+   info 2025-02-19 17:26:19.574       lsvc   main   4920 134947    5                      fib_service - Caught exception. quitting.
+   info 2025-02-19 17:26:19.574       lsvc   main   4920 134947                       fiber.scheduler - Fiber 5 'license_adapter' (parent: 1) terminated.
+   info 2025-02-19 17:26:19.575       lsvc   main   4920 134947                       fiber.scheduler - Fiber 1 requested quit of fiber 6 'device_id' (parent: 1).
+   info 2025-02-19 17:26:19.575       lsvc   main   4920 134947    6                      fib_service - Caught exception. quitting.
+   info 2025-02-19 17:26:19.575       lsvc   main   4920 134947    6                        device_id - device id service stopped.
+   info 2025-02-19 17:26:19.575       lsvc   main   4920 134947                       fiber.scheduler - Fiber 6 'device_id' (parent: 1) terminated.
+   info 2025-02-19 17:26:19.575       lsvc   main   4920 134947                       fiber.scheduler - Fiber 1 requested quit of fiber 3 'notifications' (parent: 1).
+   info 2025-02-19 17:26:19.575       lsvc   main   4920 134947    3                      fib_service - Caught exception. quitting.
+   info 2025-02-19 17:26:19.575       lsvc   main   4920 134947                       fiber.scheduler - Fiber 3 'notifications' (parent: 1) terminated.
+   info 2025-02-19 17:26:19.575       lsvc   main   4920 134947                       fiber.scheduler - Fiber 1 requested quit of fiber 2 (parent: 1).
+   info 2025-02-19 17:26:19.575       lsvc   main   4920 134947                       fiber.scheduler - Fiber 2 (parent: 1) terminated.
+   info 2025-02-19 17:26:19.575       lsvc   main   4920 134947                       fiber.scheduler - Fiber 1 requested quit of fiber 14 'ancl' (parent: 1).
+   info 2025-02-19 17:26:19.575       lsvc   main   4920 134947   14                      fib_service - Caught exception. quitting.
+   info 2025-02-19 17:26:19.575       lsvc   main   4920 134947                       fiber.scheduler - Fiber 14 'ancl' (parent: 1) terminated.
+   info 2025-02-19 17:26:19.575       lsvc   main   4920 134947    1                      app.service - Service shutdown.
+   info 2025-02-19 17:26:19.575       lsvc   main   4920 134947                       fiber.scheduler - Fiber 1 requested quit of fiber 12 'wol_service' (parent: 1).
+   info 2025-02-19 17:26:19.576       lsvc   main   4920 134947   12                      fiber.fiber - Received quit.
+   info 2025-02-19 17:26:19.576       lsvc   main   4920 134947                       fiber.scheduler - Fiber 12 'wol_service' (parent: 1) terminated.
+   info 2025-02-19 17:26:19.576       lsvc   main   4920 134947                       fiber.scheduler - Fiber 1 requested quit of fiber 13 'invitation_service' (parent: 1).
+   info 2025-02-19 17:26:19.576       lsvc   main   4920 134947   13                      fib_service - Caught exception. quitting.
+   info 2025-02-19 17:26:19.576       lsvc   main   4920 134947                       fiber.scheduler - Fiber 13 'invitation_service' (parent: 1) terminated.
+   info 2025-02-19 17:26:19.576       lsvc   main   4920 134947                       fiber.scheduler - Fiber 1 requested quit of fiber 15 'quiver_anynet_service' (parent: 1).
+   info 2025-02-19 17:26:19.576       lsvc   main   4920 134947                       fiber.scheduler - Fiber 15 'quiver_anynet_service' (parent: 1) terminated.
+   info 2025-02-19 17:26:19.576       lsvc   main   4920 134947                       fiber.scheduler - Fiber 1 requested quit of fiber 16 'ipc_connection' (parent: 1).
+   info 2025-02-19 17:26:19.576       lsvc   main   4920 134947   16                      app.service - Fiber exit (ipc).
+   info 2025-02-19 17:26:19.576       lsvc   main   4920 134947                       fiber.scheduler - Fiber 16 'ipc_connection' (parent: 1) terminated.
+   info 2025-02-19 17:26:19.576       lsvc   main   4920 134947    1            anynet.connection_mgr - Connection manager shutdown.
+   info 2025-02-19 17:26:21.122       lsvc   main   4920 134947                       fiber.scheduler - Fiber 1 terminated.
+   info 2025-02-19 17:26:21.122       lsvc   main   4920 134947                       fiber.scheduler - All fibers terminated.
+   info 2025-02-19 17:26:21.122       lsvc   main   4920 134947                       fiber.scheduler - Scheduler stopped (1).
+   info 2025-02-19 17:26:21.123       lsvc   main   4920 134947                      main.run_service - Exiting

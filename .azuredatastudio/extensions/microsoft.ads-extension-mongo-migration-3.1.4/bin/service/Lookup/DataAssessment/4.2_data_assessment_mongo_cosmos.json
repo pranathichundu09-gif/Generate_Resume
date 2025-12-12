@@ -1,0 +1,31 @@
+{
+  "duplicateId": {
+    "AssessmentName": "Duplicate Id",
+    "AssessmentSeverity": "Critical",
+    "Message": "In Azure Cosmos DB for MongoDB RU, the \"_id\" field value is stored as a string data type. There are multiple documents in the collection with different data types but the same value after conversion to a string. Since Azure Cosmos DB for MongoDB RU does not support duplicate IDs, please review the documents, and update their \"_id\" field values accordingly."
+  },
+
+  "idTypeNonCompatibleShardKey": {
+    "AssessmentName": "Non-Compatible Id Field Shard Key",
+    "AssessmentSeverity": "Warning",
+    "Message": "In Azure Cosmos DB for MongoDB RU, shard key cannot be of object data type. If you plan to use \"_id\" field as a shard key in Azure Cosmos DB for MongoDB RU, please review the documents for \"_id\" field value."
+  },
+
+  "unsupportedFieldsForTTLIndex": {
+    "AssessmentName": "Non-supported fields for TTL Index",
+    "AssessmentSeverity": "Critical",
+    "Message": "Azure Cosmos DB for MongoDB RU provides the ability to set a custom TTL (Time to Live) index on any one custom field in a collection after enabling \"EnableTtlOnCustomPath\" capability. TTL index on custom path only supports numeric datatype as value of indexed field. Please reconsider the TTL index."
+  },
+
+  "unsupportedFieldsForUniqueIndex": {
+    "AssessmentName": "Non-supported fields for Unique Index",
+    "AssessmentSeverity": "Critical",
+    "Message": "Azure Cosmos DB for MongoDB RU doesn’t support unique index field value as sub documents, arrays, or regular expression. Reconsider the unique index."
+  },
+
+  "unsupportedDocumentSize": {
+    "AssessmentName": "Max document size",
+    "AssessmentSeverity": "Informational",
+    "Message": "By default, Azure Cosmos DB for MongoDB RU allows documents up to 2 MB in size. To enable support for inserting larger documents, use the \"EnableMongo16MBDocumentSupport\" capability. This will allow you to work with documents up to 16 MB in size within your Azure Cosmos DB for MongoDB RU account."
+  }
+}

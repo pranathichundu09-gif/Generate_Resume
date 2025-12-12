@@ -1,0 +1,77 @@
+{
+    "ContextData":  {
+
+                    },
+    "SignBatches":  [
+                        {
+                            "Version":  "1.0.0",
+                            "GroupId":  "Azure",
+                            "SourceLocationType":  "UNC",
+                            "SourceRootDirectory":  null,
+                            "DestinationLocationType":  "UNC",
+                            "DestinationRootDirectory":  null,
+                            "SigningInfo":  {
+                                                "Operations":  [
+                                                                   {
+                                                                       "KeyCode":  "CP-233863-SN",
+                                                                       "OperationCode":  "StrongNameSign",
+                                                                       "Parameters":  {
+
+                                                                                      },
+                                                                       "ToolName":  "sign",
+                                                                       "ToolVersion":  "1.0"
+                                                                   },
+                                                                   {
+                                                                       "KeyCode":  "CP-233863-SN",
+                                                                       "OperationCode":  "StrongNameVerify",
+                                                                       "Parameters":  {
+
+                                                                                      },
+                                                                       "ToolName":  "sign",
+                                                                       "ToolVersion":  "1.0"
+                                                                   },
+                                                                   {
+                                                                       "KeyCode":  "CP-230012",
+                                                                       "OperationCode":  "SigntoolSign",
+                                                                       "Parameters":  {
+                                                                                          "OpusName":  "Microsoft",
+                                                                                          "OpusInfo":  "http://www.microsoft.com",
+                                                                                          "FileDigest":  "/fd \"SHA256\"",
+                                                                                          "PageHash":  "/NPH",
+                                                                                          "TimeStamp":  "/tr \"http://rfc3161.gtm.corp.microsoft.com/TSS/HttpTspServer\" /td sha256"
+                                                                                      },
+                                                                       "ToolName":  "sign",
+                                                                       "ToolVersion":  "1.0"
+                                                                   },
+                                                                   {
+                                                                       "KeyCode":  "CP-230012",
+                                                                       "OperationCode":  "SigntoolVerify",
+                                                                       "Parameters":  {
+
+                                                                                      },
+                                                                       "ToolName":  "sign",
+                                                                       "ToolVersion":  "1.0"
+                                                                   }
+                                                               ]
+                                            },
+                            "SignRequestFiles":  [
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Serialization.HybridRow.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Client.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Core.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Direct.dll"
+                                                     }
+                                                 ]
+                        }
+                    ]
+}

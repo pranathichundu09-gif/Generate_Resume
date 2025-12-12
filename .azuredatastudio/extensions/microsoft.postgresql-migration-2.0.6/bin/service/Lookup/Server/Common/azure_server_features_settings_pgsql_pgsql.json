@@ -1,0 +1,34 @@
+[
+  {
+    "featureName": "Read Replica",
+    "description": "The read replica feature allows you to replicate data from an Azure Database for PostgreSQL server to a read-only replica. Replicas are updated asynchronously with the PostgreSQL engine native physical replication technology.",
+    "localizationKey": "pgsql.NoReadReplica",
+    "assessmentSeverity": "Info",
+    "recommendation": "As part of best practices, It is recommended to enable Read-Replica when designing read- intensive applications using Azure Database for PostgreSQL -  Flexible server. The read replica feature helps to improve the performance and scale of read-intensive workloads. Currently, Read-Replica is in a preview phase and we allow any customers to evaluate the new feature. Microsoft will supply support services during this phase, but normal service level agreements do not apply.",
+    "moreInfoLink": "https://learn.microsoft.com/azure/postgresql/flexible-server/concepts-read-replicas"
+  },
+  {
+    "featureName": "PgBouncer",
+    "description": "In PostgreSQL, establishing a connection is an expensive operation. Transactional applications frequently opening and closing the connections at the end of transactions can experience higher connection latency, resulting in lower database throughput and overall higher application latency. The purpose of connection pooling is to make it efficient for applications to connect to Postgres servers to enable high database throughput.",
+    "localizationKey": "pgsql.NoPgBouncer",
+    "assessmentSeverity": "Info",
+    "recommendation": "As part of best practices, It is recommended to leverage connection pooling when designing applications using Azure Database for PostgreSQL - Flexible server using built-in PGBouncer. This significantly reduces connection latency by reusing existing connections and enables higher database throughput (transactions per second) on the server.",
+    "moreInfoLink": "https://docs.microsoft.com/azure/postgresql/flexible-server/concepts-pgbouncer"
+  },
+  {
+    "featureName": "Customer Managed Keys",
+    "description": "Many organizations require full control of access to the data using a customer-managed key. It also allows organizations to implement separation of duties in the management of keys and data. With customer-managed encryption, you're responsible for, and in full control of, a key's lifecycle, key usage permissions, and auditing of operations on keys.",
+    "localizationKey": "pgsql.CustomerManagedKeys",
+    "assessmentSeverity": "Info",
+    "recommendation": "Customer Managed Key is in preview phase. We allow any customers to evaluate the new feature. Microsoft will supply support services during this phase, but normal service level agreements do not apply.",
+    "moreInfoLink": "https://learn.microsoft.com/azure/postgresql/flexible-server/concepts-data-encryption"
+  },
+  {
+    "featureName": "High Availability",
+    "description": "Flexible server has one active primary server(read/write) and one passive standby server as a failover target if HA option is chosen during its provisioning. HA configuration enables automatic failover capability with zero data loss during planned / unplanned events.",
+    "localizationKey": "pgsql.HighAvailability",
+    "assessmentSeverity": "Info",
+    "recommendation": "As part of best practices, we recommend to enable High availability that enables automatic failover capability with zero data loss during planned events such as user-initiated scale compute operation, and also during unplanned events such as underlying hardware and software faults, network failures, and availability zone failures.",
+    "moreInfoLink": "https://learn.microsoft.com/azure/postgresql/flexible-server/concepts-high-availability"
+  }
+]

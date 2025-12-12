@@ -1,0 +1,23 @@
+{
+  "CompoundIndexLimit": {
+    "AssessmentName": "Compound index fields size",
+    "AssessmentSeverity": "Warning",
+    "Message": "vCore based Azure Cosmos DB for MongoDB supports a maximum of 32 fields in a compound index. You would need to reduce the number of fields in the compound index.",
+    "MoreInfo": null
+  },
+  "Geospatial2dIndex": {
+    "AssessmentName": "Geospatial 2d Index",
+    "AssessmentSeverity": "Warning",
+    "Message": "Set up preview features in Azure subscription are not enabled by default on vCore based Azure Cosmos DB for MongoDB. Please enable the capability on your account before migration.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/preview-features",
+      "label": "Set up preview features in Azure subscription"
+    }
+  },
+  "GeoHaystackIndex": {
+    "AssessmentName": "GeoHaystack Index",
+    "AssessmentSeverity": "Warning",
+    "Message": "GeoHaystack indexes are deprecated and are not supported in vCore based Azure Cosmos DB for MongoDB.",
+    "MoreInfo": null
+  }
+}

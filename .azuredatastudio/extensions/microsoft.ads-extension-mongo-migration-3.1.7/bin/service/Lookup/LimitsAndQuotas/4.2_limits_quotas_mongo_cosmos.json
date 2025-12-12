@@ -1,0 +1,47 @@
+{
+  "NumberOfDatabases": {
+    "AssessmentName": "Number of Databases per account",
+    "AssessmentSeverity": "Warning",
+    "LimitValue": 500,
+    "Message": "RU based Azure Cosmos DB for MongoDB supports a maximum of 500 databases per account. You may need to reduce the number of databases or split them among different Cosmos DB accounts.",
+    "MoreInfo": null
+  },
+  "NumberOfCollectionsPerAccount": {
+    "AssessmentName": "Number of Collections per account",
+    "AssessmentSeverity": "Warning",
+    "LimitValue": 500,
+    "Message": "RU based Azure Cosmos DB for MongoDB supports a maximum of 500 collections per account. You may need to reduce the number of collections or split them among different Cosmos DB accounts.",
+    "MoreInfo": null
+  },
+  "NumberOfCollectionsPerSharedThroughputDatabase": {
+    "AssessmentName": "Number of Collections per shared throughput database",
+    "AssessmentSeverity": "Informational",
+    "LimitValue": 25,
+    "Message": "We recommend a maximum of 25 collections per database if you are planning to use Shared database throughput. This allows for better throughput sharing across collections. You can have up to 500 collections per database when the throughput is provisioned on the collections. Up to 25 collections under a database can share the throughput provisioned on the database.",
+    "MoreInfo": null
+  },
+  "UnshardedCollectionSizeInBytes": {
+    "AssessmentName": "Size of unsharded collection",
+    "AssessmentSeverity": "Warning",
+    "LimitValue": 18790481920,
+    "Message": "The maximum size of a fixed (unsharded) collection in RU based Azure Cosmos DB for MongoDB is 20 GB. You would either need to limit the data size of the unsharded collection to \u003C 20GB or use sharded collection type.",
+    "MoreInfo": null
+  },
+  "ShardKeyValueLengthInByte": {
+    "AssessmentName": "Length of Shard Key Value",
+    "AssessmentSeverity": "Informational",
+    "LimitValue": 2048,
+    "Message": "RU based Azure Cosmos DB for MongoDB has a limit of 2048 bytes for the shard key value. Please ensure all the values for the chosen shard key are shorter than 2048 bytes.",
+    "MoreInfo": null
+  },
+  "NumberOfPartitions": {
+    "AssessmentName": "Number of partitions per account",
+    "AssessmentSeverity": "Warning",
+    "LimitValue": 900,
+    "Message": "The maximum number of partitions allowed per account in RU based Azure Cosmos DB for MongoDB are 1000. Based on your data size, there is a possibility that your cluster might need more than 1000 partitions when moved to RU based Azure Cosmos DB for MongoDB. We recommend you to raise a support ticket to request increasing the limit for allowed number of partitions in an account, or spread data across multiple Cosmos DB accounts.",
+    "MoreInfo": {
+      "href": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/create-support-request-quota-increase",
+      "label": "Increase partition limit for an account"
+    }
+  }
+}

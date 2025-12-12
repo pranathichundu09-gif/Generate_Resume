@@ -1,0 +1,16 @@
+{
+	"downloadUrl": "https://github.com/microsoft/mysqltoolsservice/releases/download/{#version#}/mysqltoolsservice-{#fileName#}",
+	"version": "v0.1.2",
+	"downloadFileNames": {
+		"Windows_64": "win-x64.zip",
+		"OSX": "osx.tar.gz",
+		"OSX_ARM64": "osx-arm64.tar.gz",
+		"Linux": "linux-x64.tar.gz",
+		"Ubuntu_22": "ubuntu22-x64.tar.gz"
+	},
+	"installDirectory": "bin/{#platform#}/{#version#}",
+	"executableFiles": [
+		"mysqltoolsservice/ossdbtoolsservice_main",
+		"mysqltoolsservice/ossdbtoolsservice_main.exe"
+	]
+}

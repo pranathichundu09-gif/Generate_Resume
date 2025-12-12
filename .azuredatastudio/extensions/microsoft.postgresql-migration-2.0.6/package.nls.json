@@ -1,0 +1,19 @@
+{
+    "constants.extensionName": "Azure PostgreSQL migration",
+    "constants.description":"Provides a tool to assess and migrate PostgreSQL database(s) to Azure database for PostgreSQL",
+    "constants.dashboadTitle": "Azure PostgreSQL migration",
+    "constants.tabName": "Migration Assessment",
+    "constants.serviceName": "PostgreSQL Discovery and Assessment Service",
+    "constants.okButtonCaption": "OK",
+    "constants.assessmentPath": "Local path to store your assessment and performance statistics",
+    "constants.performanceQueryDuration": "Specifies duration in hours for gathering automated performance metrics data",
+    "constants.expandAssessmentDetails": "Expand Assessment Details",
+    "extension.serviceCrashMessage": "{0} component exited unexpectedly. Please restart Azure Data Studio.",
+    "extension.missingDependency.netcore6runtime": ".NET 6 Runtime extension is not found. Please install the extension and try again.",
+    "extension.configuration.logLevel.description": "Specifies minimum severity of the messages to output in the log",
+    "commands.discovery.assessment.title": "Discover and Assess PostgreSQL Server",
+    "PostgreSQL-command-category": "Database Migration Assessment for PostgreSQL",
+    "send-feedback-command": "Feedback",
+    "help-support-command": "Help + Support",
+    "settings-command": "Settings"
+  }

@@ -1,0 +1,11 @@
+{
+	"messages": [
+		"View Known Issues",
+		"{0} component exited unexpectedly. Please restart Azure Data Studio."
+	],
+	"keys": [
+		"viewKnownIssuesText",
+		"serviceCrashMessage"
+	],
+	"filePath": "telemetry"
+}

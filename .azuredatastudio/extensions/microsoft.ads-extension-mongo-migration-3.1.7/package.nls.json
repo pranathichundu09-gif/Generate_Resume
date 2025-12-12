@@ -1,0 +1,12 @@
+{
+  "constants.extensionName": "Azure Cosmos DB Migration for MongoDB",
+  "constants.tabName": "Azure CosmosDB Migration",
+  "constants.serviceName": "MongoDB Migration Service",
+  "constants.okButtonCaption": "OK",
+  "extension.serviceCrashMessage": "{0} component exited unexpectedly. Please restart Azure Data Studio.",
+  "extension.missingDependency.netcore6runtime": ".NET 6 Runtime extension is not found. Please install the extension and try again.",
+  "extension.configuration.logLevel.description": "Specifies minimum severity of the messages to output in the log",
+  "send-feedback-command": "Feedback",
+  "help-support-command": "Help + Support",
+  "settings-command": "Settings"
+}

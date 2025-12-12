@@ -1,0 +1,19 @@
+{
+  "extensionVersionMismatchIssueDescription": "Azure database for PostgreSQL - Flexible server supports a higher version of the extension {0} used in your source server.",
+  "extensionNotAvailableIssueDescription": "Extension {0} is not supported in Azure database for PostgreSQL - flexible server.",
+  "extensionVersionMismatchRecommendation": "In general, extensions supported in Azure database for PostgreSQL flexible server are backward compatible with lower versions. There is no change needed to your application or database to tackle the version difference.",
+  "extensionNotAvailableRecommendation": "Azure Database for PostgreSQL supports a subset of key extensions. This information is also available by running SHOW azure.extensions;. Extensions not listed are not supported on Azure Database for PostgreSQL - Flexible Server. You cannot create or load your own extension in Azure Database for PostgreSQL. Extension {0} is not supported in Azure database for flexible server and hence the utility of the extension will not be available in flexible server.",
+  "collationVersionMismatchIssueDescription": "The version of the collation {0} used in the source is different from the version supported in flexible server.",
+  "collationNotAvailableIssueDescription": "Collation {0} is not supported in Azure Database for PostgreSQL - Flexible server.",
+  "collationVersionMismatchRecommendation": "If you are using logical migration to perform migration to Azure database for PostgreSQL - Flexible server, then version mismatch for collations should not be a problem. If you are performing a physical migration of files to Flexible server, then you need to rebuild all the relevant indexes which uses the collation {0} to avoid any problems related to version mismatch.",
+  "collationNotAvailableRecommendation": "The collation {0} is not supported in Azure Database for PostgreSQL - Flexible server. We will try to automatically match the collation used on your source database with a collation in Azure Database for PostgreSQL - Flexible server before performing migration.",
+  "collationEquivalentMatchRecommendation": "The collation {0} is not supported in Azure Database for PostgreSQL - Flexible server. We have found a similar collation {1} with encoding {2} available in PostgreSQL - Flexible server and can be used",
+  "serverSettingEditableIssueDescription": "The value in your source server for this parameter is {0}. This is different from the default value for this parameter in flexible server - {1}.",
+  "serverSettingReadOnlyIssueDescription": "The value in your source server for this parameter is {0}. This is different from the default value for this parameter in flexible server - {1} and this cannot be changed.",
+  "serverSettingValueMismatchReadOnlyRecommendation": "Azure Database for PostgreSQL flexible server is pre-configured with optimal default values for each parameter on creation. This parameter requires superuser access and can't be modified by the user.",
+  "serverSettingValueMismatchEditableRecommendation": "Please update the value of this parameter to match the source by going to the server parameters blade on Azure Database for PostgreSQL - Flexible server.",
+  "encodingBlockerRecommendation": "The encoding {0} is not supported in flexible server. The database migration for this database will not be successful. We recommend you to use a encoding that is supported in flexible server on your source.",
+  "encodingNotAvailableDescription": "Encoding {0} is not supported in Azure database for PostgreSQL - flexible server.",
+  "collationEncodingNotAvailableRecommendation": "The encoding {0} for the collation {1} is not supported in flexible server. UTF8 will be used for encoding data in Azure Database for PostgreSQL - Flexible server",
+  "collationEncodingNotAvailableDescription": "Collation {0} for the encoding {1} is used on your source databases. This encoding is not supported in flexible server."
+}

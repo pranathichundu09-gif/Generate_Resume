@@ -1,0 +1,282 @@
+{
+  "address_standardizer": {
+    "defaultVersion": "3.2.3",
+    "extensionDescription": "Used to parse an address into constituent elements. Generally used to support geocoding address normalization step.",
+    "moreInfoLink": "http://postgis.net/docs/manual-2.5/Address_Standardizer.html"
+  },
+  "address_standardizer_data_us": {
+    "defaultVersion": "3.2.3",
+    "extensionDescription": "Address Standardizer US dataset example",
+    "moreInfoLink": "http://postgis.net/docs/manual-2.5/Address_Standardizer.html"
+  },
+  "amcheck": {
+    "defaultVersion": "1.3",
+    "extensionDescription": "functions for verifying relation integrity",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/amcheck.html"
+  },
+  "bloom": {
+    "defaultVersion": "1.0",
+    "extensionDescription": "bloom access method - signature file based index",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/bloom.html"
+  },
+  "btree_gin": {
+    "defaultVersion": "1.3",
+    "extensionDescription": "support for indexing common datatypes in GIN",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/btree-gin.html"
+  },
+  "btree_gist": {
+    "defaultVersion": "1.6",
+    "extensionDescription": "support for indexing common datatypes in GiST",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/btree-gist.html"
+  },
+  "citext": {
+    "defaultVersion": "1.6",
+    "extensionDescription": "data type for case-insensitive character strings",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/citext.html"
+  },
+  "cube": {
+    "defaultVersion": "1.5",
+    "extensionDescription": "data type for multidimensional cubes",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/cube.html"
+  },
+  "dblink": {
+    "defaultVersion": "1.2",
+    "extensionDescription": "connect to other PostgreSQL databases from within a database",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/dblink.html"
+  },
+  "dict_int": {
+    "defaultVersion": "1.0",
+    "extensionDescription": "text search dictionary template for integers",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/dict-int.html"
+  },
+  "dict_xsyn": {
+    "defaultVersion": "1.0",
+    "extensionDescription": "text search dictionary template for extended synonym processing",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/dict-xsyn.html"
+  },
+  "earthdistance": {
+    "defaultVersion": "1.1",
+    "extensionDescription": "calculate great-circle distances on the surface of the Earth",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/earthdistance.html"
+  },
+  "fuzzystrmatch": {
+    "defaultVersion": "1.1",
+    "extensionDescription": "determine similarities and distance between strings",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/fuzzystrmatch.html"
+  },
+  "hstore": {
+    "defaultVersion": "1.8",
+    "extensionDescription": "data type for storing sets of (key, value) pairs",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/hstore.html"
+  },
+  "hypopg": {
+    "defaultVersion": "1.3.1",
+    "extensionDescription": "Hypothetical indexes for PostgreSQL",
+    "moreInfoLink": "https://github.com/HypoPG/hypopg"
+  },
+  "intagg": {
+    "defaultVersion": "1.1",
+    "extensionDescription": "integer aggregator and enumerator (obsolete)",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/intagg.html"
+  },
+  "intarray": {
+    "defaultVersion": "1.5",
+    "extensionDescription": "functions, operators, and index support for 1-D arrays of integers",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/intarray.html"
+  },
+  "isn": {
+    "defaultVersion": "1.2",
+    "extensionDescription": "data types for international product numbering standards",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/isn.html"
+  },
+  "lo": {
+    "defaultVersion": "1.1",
+    "extensionDescription": "Large Object maintenance",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/lo.html"
+  },
+  "ltree": {
+    "defaultVersion": "1.2",
+    "extensionDescription": "data type for hierarchical tree-like structures",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/ltree.html"
+  },
+  "orafce": {
+    "defaultVersion": "3.18",
+    "extensionDescription": "Functions and operators that emulate a subset of functions and packages from the Oracle RDBMS",
+    "moreInfoLink": "https://github.com/orafce/orafce"
+  },
+  "pageinspect": {
+    "defaultVersion": "1.9",
+    "extensionDescription": "inspect the contents of database pages at a low level",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/pageinspect.html"
+  },
+  "pg_buffercache": {
+    "defaultVersion": "1.3",
+    "extensionDescription": "examine the shared buffer cache",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/pgbuffercache.html"
+  },
+  "pg_cron": {
+    "defaultVersion": "1.4-1",
+    "extensionDescription": "Job scheduler for PostgreSQL",
+    "moreInfoLink": "https://github.com/citusdata/pg_cron"
+  },
+  "pg_freespacemap": {
+    "defaultVersion": "1.2",
+    "extensionDescription": "examine the free space map (FSM)",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/pgfreespacemap.html"
+  },
+  "pg_hint_plan": {
+    "defaultVersion": "1.4",
+    "extensionDescription": "Give PostgreSQL ability to manually force some decisions in execution plans.",
+    "moreInfoLink": "https://github.com/ossc-db/pg_hint_plan"
+  },
+  "pg_partman": {
+    "defaultVersion": "4.6.1",
+    "extensionDescription": "Extension to manage partitioned tables by time or ID",
+    "moreInfoLink": "https://github.com/pgpartman/pg_partman"
+  },
+  "pg_prewarm": {
+    "defaultVersion": "1.2",
+    "extensionDescription": "prewarm relation data",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/pgprewarm.html"
+  },
+  "pg_repack": {
+    "defaultVersion": "1.4.7",
+    "extensionDescription": "Reorganize tables in PostgreSQL databases with minimal locks",
+    "moreInfoLink": "https://reorg.github.io/pg_repack/"
+  },
+  "pg_stat_statements": {
+    "defaultVersion": "1.9",
+    "extensionDescription": "track planning and execution statistics of all SQL statements executed",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/pgstatstatements.html"
+  },
+  "pg_trgm": {
+    "defaultVersion": "1.6",
+    "extensionDescription": "text similarity measurement and index searching based on trigrams",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/pgtrgm.html"
+  },
+  "pg_visibility": {
+    "defaultVersion": "1.2",
+    "extensionDescription": "examine the visibility map (VM) and page-level visibility info",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/pgvisibility.html"
+  },
+  "pgaudit": {
+    "defaultVersion": "1.6.2",
+    "extensionDescription": "provides auditing functionality",
+    "moreInfoLink": "https://www.pgaudit.org/"
+  },
+  "pgcrypto": {
+    "defaultVersion": "1.3",
+    "extensionDescription": "cryptographic functions",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/pgcrypto.html"
+  },
+  "pglogical": {
+    "defaultVersion": "2.4.1",
+    "extensionDescription": "PostgreSQL Logical Replication",
+    "moreInfoLink": "https://github.com/2ndQuadrant/pglogical"
+  },
+  "pgrouting": {
+    "defaultVersion": "3.3.0",
+    "extensionDescription": "pgRouting Extension",
+    "moreInfoLink": "https://pgrouting.org/"
+  },
+  "pgrowlocks": {
+    "defaultVersion": "1.2",
+    "extensionDescription": "show row-level locking information",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/pgrowlocks.html"
+  },
+  "pgstattuple": {
+    "defaultVersion": "1.5",
+    "extensionDescription": "show tuple-level statistics",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/pgstattuple.html"
+  },
+  "plpgsql": {
+    "defaultVersion": "1.0",
+    "extensionDescription": "PL/pgSQL procedural language",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/plpgsql.html"
+  },
+  "plv8": {
+    "defaultVersion": "3.0.0",
+    "extensionDescription": "PL/JavaScript (v8) trusted procedural language",
+    "moreInfoLink": "https://plv8.github.io/"
+  },
+  "postgis": {
+    "defaultVersion": "3.2.3",
+    "extensionDescription": "PostGIS geometry and geography spatial types and functions",
+    "moreInfoLink": "https://www.postgis.net/"
+  },
+  "postgis_raster": {
+    "defaultVersion": "3.2.3",
+    "extensionDescription": "PostGIS raster types and functions",
+    "moreInfoLink": "https://www.postgis.net/"
+  },
+  "postgis_sfcgal": {
+    "defaultVersion": "3.2.3",
+    "extensionDescription": "PostGIS SFCGAL functions",
+    "moreInfoLink": "https://www.postgis.net/"
+  },
+  "postgis_tiger_geocoder": {
+    "defaultVersion": "3.2.3",
+    "extensionDescription": "PostGIS tiger geocoder and reverse geocoder",
+    "moreInfoLink": "https://www.postgis.net/"
+  },
+  "postgis_topology": {
+    "defaultVersion": "3.2.3",
+    "extensionDescription": "PostGIS topology spatial types and functions",
+    "moreInfoLink": "https://postgis.net/docs/Topology.html"
+  },
+  "postgres_fdw": {
+    "defaultVersion": "1.1",
+    "extensionDescription": "foreign-data wrapper for remote PostgreSQL servers",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/postgres-fdw.html"
+  },
+  "semver": {
+    "defaultVersion": "0.32.0",
+    "extensionDescription": "Semantic version data type",
+    "moreInfoLink": "NA"
+  },
+  "sslinfo": {
+    "defaultVersion": "1.2",
+    "extensionDescription": "information about SSL certificates",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/sslinfo.html"
+  },
+  "tablefunc": {
+    "defaultVersion": "1.0",
+    "extensionDescription": "functions that manipulate whole tables, including crosstab",
+    "moreInfoLink": "https://www.postgresql.org/docs/15/tablefunc.html"
+  },
+  "timescaledb": {
+    "defaultVersion": "2.5.1",
+    "extensionDescription": "Enables scalable inserts and complex queries for time-series data",
+    "moreInfoLink": "https://github.com/timescale/timescaledb"
+  },
+  "tsm_system_rows": {
+    "defaultVersion": "1.0",
+    "extensionDescription": "TABLESAMPLE method which accepts number of rows as a limit",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/tsm-system-rows.html"
+  },
+  "tsm_system_time": {
+    "defaultVersion": "1.0",
+    "extensionDescription": "TABLESAMPLE method which accepts time in milliseconds as a limit",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/tsm-system-time.html"
+  },
+  "unaccent": {
+    "defaultVersion": "1.1",
+    "extensionDescription": "text search dictionary that removes accents",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/unaccent.html"
+  },
+  "uuid-ossp": {
+    "defaultVersion": "1.1",
+    "extensionDescription": "generate universally unique identifiers (UUIDs)",
+    "moreInfoLink": "https://www.postgresql.org/docs/13/uuid-ossp.html"
+  },
+  "vector": {
+    "defaultVersion": "0.4.1",
+    "extensionDescription": "vector data type and ivfflat access method",
+    "moreInfoLink": "https://github.com/pgvector/pgvector"
+  },
+  "ExtensionNotAvailable": {
+    "defaultVersion": null,
+    "extensionDescription": null,
+    "moreInfoLink": null
+  }
+}

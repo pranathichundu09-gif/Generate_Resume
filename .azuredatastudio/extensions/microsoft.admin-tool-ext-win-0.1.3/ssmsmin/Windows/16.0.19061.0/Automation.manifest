@@ -1,0 +1,6 @@
+<!-- An empty version of the Automation.manifest that SSMS uses - the file is required by VS assemblies to exist but we don't
+     actually need anything in here and having the normal entries causes more assemblies to need to exist so to keep SsmsMin 
+     small we just use this empty version instead -->
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" processorArchitecture="X86" name="Automation" type="win32"></assemblyIdentity>
+</assembly>

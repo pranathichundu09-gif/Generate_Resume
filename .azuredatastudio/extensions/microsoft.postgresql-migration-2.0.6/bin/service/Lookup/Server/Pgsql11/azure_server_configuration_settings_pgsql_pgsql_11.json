@@ -1,0 +1,2771 @@
+{
+  "allow_in_place_tablespaces": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Allows tablespaces directly inside pg_tblspc, for testing.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "allow_system_table_mods": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Allows modifications of the structure of system tables.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "application_name": {
+    "value": "pgAdmin 4 - CONN:7778053",
+    "unit": "NA",
+    "parameterDescription": "Sets the application name to be reported in statistics and logs.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "archive_command": {
+    "value": "BlobLogUpload.sh %f %p",
+    "unit": "NA",
+    "parameterDescription": "Sets the shell command that will be called to archive a WAL file.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "archive_mode": {
+    "value": "always",
+    "unit": "NA",
+    "parameterDescription": "Allows archiving of WAL files using archive_command.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "archive_timeout": {
+    "value": "300",
+    "unit": "s",
+    "parameterDescription": "Forces a switch to the next WAL file if a new file has not been started within N seconds.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "array_nulls": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Enable input of NULL elements in arrays.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "authentication_timeout": {
+    "value": "30",
+    "unit": "s",
+    "parameterDescription": "Sets the maximum allowed time to complete client authentication.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "autovacuum": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Starts the autovacuum subprocess.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "autovacuum_analyze_scale_factor": {
+    "value": "0.1",
+    "unit": "NA",
+    "parameterDescription": "Number of tuple inserts, updates, or deletes prior to analyze as a fraction of reltuples.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "autovacuum_analyze_threshold": {
+    "value": "50",
+    "unit": "NA",
+    "parameterDescription": "Minimum number of tuple inserts, updates, or deletes prior to analyze.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "autovacuum_freeze_max_age": {
+    "value": "200000000",
+    "unit": "NA",
+    "parameterDescription": "Age at which to autovacuum a table to prevent transaction ID wraparound.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "autovacuum_max_workers": {
+    "value": "3",
+    "unit": "NA",
+    "parameterDescription": "Sets the maximum number of simultaneously running autovacuum worker processes.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "autovacuum_multixact_freeze_max_age": {
+    "value": "400000000",
+    "unit": "NA",
+    "parameterDescription": "Multixact age at which to autovacuum a table to prevent multixact wraparound.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "autovacuum_naptime": {
+    "value": "60",
+    "unit": "s",
+    "parameterDescription": "Time to sleep between autovacuum runs.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "autovacuum_vacuum_cost_delay": {
+    "value": "20",
+    "unit": "ms",
+    "parameterDescription": "Vacuum cost delay in milliseconds, for autovacuum.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "autovacuum_vacuum_cost_limit": {
+    "value": "-1",
+    "unit": "NA",
+    "parameterDescription": "Vacuum cost amount available before napping, for autovacuum.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "autovacuum_vacuum_scale_factor": {
+    "value": "0.2",
+    "unit": "NA",
+    "parameterDescription": "Number of tuple updates or deletes prior to vacuum as a fraction of reltuples.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "autovacuum_vacuum_threshold": {
+    "value": "50",
+    "unit": "NA",
+    "parameterDescription": "Minimum number of tuple updates or deletes prior to vacuum.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "autovacuum_work_mem": {
+    "value": "-1",
+    "unit": "kB",
+    "parameterDescription": "Sets the maximum memory to be used by each autovacuum worker process.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "azure.accepted_password_auth_method": {
+    "value": "md5",
+    "unit": "NA",
+    "parameterDescription": "Defined accepted password authentication methods",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "azure.allowed_error_codes": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "Defines allowed error codes to emit logs to the telemetry systems.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "azure.custom_path": {
+    "value": "/datadrive/pg/data",
+    "unit": "NA",
+    "parameterDescription": "Directory where to load custom scripts from",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "azure.customer_resource_group": {
+    "value": "NA",
+    "unit": "NA",
+    "parameterDescription": "Defines the customer resource group",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "azure.customer_subscription_id": {
+    "value": "NA",
+    "unit": "NA",
+    "parameterDescription": "Defines the customer subscription id",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "azure.enable_is_db_alive": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Enable is-db-alive background worker",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "azure.enable_temp_tablespaces_on_local_ssd": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Defines the temp_tablespaces location. If turned ON then the temp objects are placed on local SSD.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "azure.enable_threat_protection": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Enables threat protection service.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "azure.enforce_ha_quorom": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Enforces the quorom acknowledgement from replicas for HA enabled server(s)",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "azure.extensions": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "List of extensions that are allowlisted",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "azure.threat_protection_app_type_name": {
+    "value": "PostgreSQL.Flexible",
+    "unit": "NA",
+    "parameterDescription": "Defines the app type name for Threat Protection",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "azure.waittime_is_db_alive": {
+    "value": "10000",
+    "unit": "NA",
+    "parameterDescription": "set latch wait time for is_db_alive background worker",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "backend_flush_after": {
+    "value": "256",
+    "unit": "8kB",
+    "parameterDescription": "Number of pages after which previously performed writes are flushed to disk.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "backslash_quote": {
+    "value": "safe_encoding",
+    "unit": "NA",
+    "parameterDescription": "Sets whether '\\' is allowed in string literals.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "bgwriter_delay": {
+    "value": "20",
+    "unit": "ms",
+    "parameterDescription": "Background writer sleep time between rounds.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "bgwriter_flush_after": {
+    "value": "64",
+    "unit": "8kB",
+    "parameterDescription": "Number of pages after which previously performed writes are flushed to disk.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "bgwriter_lru_maxpages": {
+    "value": "100",
+    "unit": "NA",
+    "parameterDescription": "Background writer maximum number of LRU pages to flush per round.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "bgwriter_lru_multiplier": {
+    "value": "2",
+    "unit": "NA",
+    "parameterDescription": "Multiple of the average buffer usage to free per round.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "block_size": {
+    "value": "8192",
+    "unit": "NA",
+    "parameterDescription": "Shows the size of a disk block.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "bonjour": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Enables advertising the server via Bonjour.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "bonjour_name": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "Sets the Bonjour service name.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "bytea_output": {
+    "value": "hex",
+    "unit": "NA",
+    "parameterDescription": "Sets the output format for bytea.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "check_function_bodies": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Check function bodies during CREATE FUNCTION.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "checkpoint_completion_target": {
+    "value": "0.9",
+    "unit": "NA",
+    "parameterDescription": "Time spent flushing dirty buffers during checkpoint, as fraction of checkpoint interval.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "checkpoint_flush_after": {
+    "value": "32",
+    "unit": "8kB",
+    "parameterDescription": "Number of pages after which previously performed writes are flushed to disk.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "checkpoint_timeout": {
+    "value": "600",
+    "unit": "s",
+    "parameterDescription": "Sets the maximum time between automatic WAL checkpoints.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "checkpoint_warning": {
+    "value": "30",
+    "unit": "s",
+    "parameterDescription": "Enables warnings if checkpoint segments are filled more frequently than this.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "client_encoding": {
+    "value": "UNICODE",
+    "unit": "NA",
+    "parameterDescription": "Sets the client's character set encoding.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "client_min_messages": {
+    "value": "notice",
+    "unit": "NA",
+    "parameterDescription": "Sets the message levels that are sent to the client.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "cluster_name": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "Sets the name of the cluster, which is included in the process title.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "commit_delay": {
+    "value": "0",
+    "unit": "NA",
+    "parameterDescription": "Sets the delay in microseconds between transaction commit and flushing WAL to disk.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "commit_siblings": {
+    "value": "5",
+    "unit": "NA",
+    "parameterDescription": "Sets the minimum concurrent open transactions before performing commit_delay.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "config_file": {
+    "value": "/datadrive/pg/data/postgresql.conf",
+    "unit": "NA",
+    "parameterDescription": "Sets the server's main configuration file.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "constraint_exclusion": {
+    "value": "partition",
+    "unit": "NA",
+    "parameterDescription": "Enables the planner to use constraints to optimize queries.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "cpu_index_tuple_cost": {
+    "value": "0.005",
+    "unit": "NA",
+    "parameterDescription": "Sets the planner's estimate of the cost of processing each index entry during an index scan.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "cpu_operator_cost": {
+    "value": "0.0025",
+    "unit": "NA",
+    "parameterDescription": "Sets the planner's estimate of the cost of processing each operator or function call.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "cpu_tuple_cost": {
+    "value": "0.01",
+    "unit": "NA",
+    "parameterDescription": "Sets the planner's estimate of the cost of processing each tuple (row).",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "cron.database_name": {
+    "value": "postgres",
+    "unit": "NA",
+    "parameterDescription": "Database in which pg_cron metadata is kept.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "cron.enable_superuser_jobs": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Allow jobs to be scheduled as superuser",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "cron.host": {
+    "value": "/tmp",
+    "unit": "NA",
+    "parameterDescription": "Hostname to connect to postgres.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "cron.log_min_messages": {
+    "value": "warning",
+    "unit": "NA",
+    "parameterDescription": "log_min_messages for the launcher bgworker.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "cron.log_run": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Log all jobs runs into the job_run_details table",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "cron.log_statement": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Log all cron statements prior to execution.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "cron.max_running_jobs": {
+    "value": "32",
+    "unit": "NA",
+    "parameterDescription": "Maximum number of jobs that can run concurrently.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "cron.use_background_workers": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Use background workers instead of client sessions.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "cursor_tuple_fraction": {
+    "value": "0.1",
+    "unit": "NA",
+    "parameterDescription": "Sets the planner's estimate of the fraction of a cursor's rows that will be retrieved.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "data_checksums": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Shows whether data checksums are turned on for this cluster.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "data_directory": {
+    "value": "/datadrive/pg/data",
+    "unit": "NA",
+    "parameterDescription": "Sets the server's data directory.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "data_directory_mode": {
+    "value": "700",
+    "unit": "NA",
+    "parameterDescription": "Mode of the data directory.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "data_sync_retry": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Whether to continue running after a failure to sync data files.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "DateStyle": {
+    "value": "ISO, MDY",
+    "unit": "NA",
+    "parameterDescription": "Sets the display format for date and time values.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "db_user_namespace": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Enables per-database user names.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "deadlock_timeout": {
+    "value": "1000",
+    "unit": "ms",
+    "parameterDescription": "Sets the time to wait on a lock before checking for deadlock.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "debug_assertions": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Shows whether the running server has assertion checks enabled.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "debug_pretty_print": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Indents parse and plan tree displays.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "debug_print_parse": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Logs each query's parse tree.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "debug_print_plan": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Logs each query's execution plan.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "debug_print_rewritten": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Logs each query's rewritten parse tree.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "default_statistics_target": {
+    "value": "100",
+    "unit": "NA",
+    "parameterDescription": "Sets the default statistics target.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "default_tablespace": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "Sets the default tablespace to create tables and indexes in.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "default_text_search_config": {
+    "value": "pg_catalog.english",
+    "unit": "NA",
+    "parameterDescription": "Sets default text search configuration.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "default_transaction_deferrable": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Sets the default deferrable status of new transactions.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "default_transaction_isolation": {
+    "value": "read committed",
+    "unit": "NA",
+    "parameterDescription": "Sets the transaction isolation level of each new transaction.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "default_transaction_read_only": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Sets the default read-only status of new transactions.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "default_with_oids": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Create new tables with OIDs by default.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "dynamic_library_path": {
+    "value": "$libdir",
+    "unit": "NA",
+    "parameterDescription": "Sets the path for dynamically loadable modules.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "dynamic_shared_memory_type": {
+    "value": "posix",
+    "unit": "NA",
+    "parameterDescription": "Selects the dynamic shared memory implementation used.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "effective_cache_size": {
+    "value": "229376",
+    "unit": "8kB",
+    "parameterDescription": "Sets the planner's assumption about the total size of the data caches.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "effective_io_concurrency": {
+    "value": "1",
+    "unit": "NA",
+    "parameterDescription": "Number of simultaneous requests that can be handled efficiently by the disk subsystem.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "enable_bitmapscan": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Enables the planner's use of bitmap-scan plans.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "enable_gathermerge": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Enables the planner's use of gather merge plans.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "enable_hashagg": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Enables the planner's use of hashed aggregation plans.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "enable_hashjoin": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Enables the planner's use of hash join plans.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "enable_indexonlyscan": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Enables the planner's use of index-only-scan plans.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "enable_indexscan": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Enables the planner's use of index-scan plans.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "enable_material": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Enables the planner's use of materialization.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "enable_mergejoin": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Enables the planner's use of merge join plans.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "enable_nestloop": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Enables the planner's use of nested-loop join plans.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "enable_parallel_append": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Enables the planner's use of parallel append plans.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "enable_parallel_hash": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Enables the planner's use of parallel hash plans.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "enable_partition_pruning": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Enable plan-time and run-time partition pruning.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "enable_partitionwise_aggregate": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Enables partitionwise aggregation and grouping.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "enable_partitionwise_join": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Enables partitionwise join.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "enable_seqscan": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Enables the planner's use of sequential-scan plans.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "enable_sort": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Enables the planner's use of explicit sort steps.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "enable_tidscan": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Enables the planner's use of TID scan plans.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "escape_string_warning": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Warn about backslash escapes in ordinary string literals.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "event_source": {
+    "value": "PostgreSQL",
+    "unit": "NA",
+    "parameterDescription": "Sets the application name used to identify PostgreSQL messages in the event log.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "exit_on_error": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Terminate session on any error.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "external_pid_file": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "Writes the postmaster PID to the specified file.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "extra_float_digits": {
+    "value": "0",
+    "unit": "NA",
+    "parameterDescription": "Sets the number of digits displayed for floating-point values.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "force_parallel_mode": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Forces use of parallel query facilities.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "from_collapse_limit": {
+    "value": "8",
+    "unit": "NA",
+    "parameterDescription": "Sets the FROM-list size beyond which subqueries are not collapsed.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "fsync": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Forces synchronization of updates to disk.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "full_page_writes": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Writes full pages to WAL when first modified after a checkpoint.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "geqo": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Enables genetic query optimization.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "geqo_effort": {
+    "value": "5",
+    "unit": "NA",
+    "parameterDescription": "GEQO: effort is used to set the default for other GEQO parameters.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "geqo_generations": {
+    "value": "0",
+    "unit": "NA",
+    "parameterDescription": "GEQO: number of iterations of the algorithm.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "geqo_pool_size": {
+    "value": "0",
+    "unit": "NA",
+    "parameterDescription": "GEQO: number of individuals in the population.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "geqo_seed": {
+    "value": "0",
+    "unit": "NA",
+    "parameterDescription": "GEQO: seed for random path selection.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "geqo_selection_bias": {
+    "value": "2",
+    "unit": "NA",
+    "parameterDescription": "GEQO: selective pressure within the population.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "geqo_threshold": {
+    "value": "12",
+    "unit": "NA",
+    "parameterDescription": "Sets the threshold of FROM items beyond which GEQO is used.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "gin_fuzzy_search_limit": {
+    "value": "0",
+    "unit": "NA",
+    "parameterDescription": "Sets the maximum allowed result for exact search by GIN.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "gin_pending_list_limit": {
+    "value": "4096",
+    "unit": "kB",
+    "parameterDescription": "Sets the maximum size of the pending list for GIN index.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "hba_file": {
+    "value": "/datadrive/pg/data/pg_hba.conf",
+    "unit": "NA",
+    "parameterDescription": "Sets the server's \"hba\" configuration file.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "hot_standby": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Allows connections and queries during recovery.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "hot_standby_feedback": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Allows feedback from a hot standby to the primary that will avoid query conflicts.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "huge_pages": {
+    "value": "try",
+    "unit": "NA",
+    "parameterDescription": "Use of huge pages on Linux or Windows.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "ident_file": {
+    "value": "/datadrive/pg/data/pg_ident.conf",
+    "unit": "NA",
+    "parameterDescription": "Sets the server's \"ident\" configuration file.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "idle_in_transaction_session_timeout": {
+    "value": "0",
+    "unit": "ms",
+    "parameterDescription": "Sets the maximum allowed duration of any idling transaction.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "ignore_checksum_failure": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Continues processing after a checksum failure.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "ignore_system_indexes": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Disables reading from system indexes.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "integer_datetimes": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Datetimes are integer based.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "IntervalStyle": {
+    "value": "postgres",
+    "unit": "NA",
+    "parameterDescription": "Sets the display format for interval values.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "jit": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Allow JIT compilation.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "jit_above_cost": {
+    "value": "100000",
+    "unit": "NA",
+    "parameterDescription": "Perform JIT compilation if query is more expensive.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "jit_debugging_support": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Register JIT compiled function with debugger.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "jit_dump_bitcode": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Write out LLVM bitcode to facilitate JIT debugging.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "jit_expressions": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Allow JIT compilation of expressions.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "jit_inline_above_cost": {
+    "value": "500000",
+    "unit": "NA",
+    "parameterDescription": "Perform JIT inlining if query is more expensive.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "jit_optimize_above_cost": {
+    "value": "500000",
+    "unit": "NA",
+    "parameterDescription": "Optimize JITed functions if query is more expensive.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "jit_profiling_support": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Register JIT compiled function with perf profiler.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "jit_provider": {
+    "value": "llvmjit",
+    "unit": "NA",
+    "parameterDescription": "JIT provider to use.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "jit_tuple_deforming": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Allow JIT compilation of tuple deforming.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "join_collapse_limit": {
+    "value": "8",
+    "unit": "NA",
+    "parameterDescription": "Sets the FROM-list size beyond which JOIN constructs are not flattened.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "krb_caseins_users": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Sets whether Kerberos and GSSAPI user names should be treated as case-insensitive.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "krb_server_keyfile": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "Sets the location of the Kerberos server key file.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "lc_collate": {
+    "value": "NA",
+    "unit": "NA",
+    "parameterDescription": "Shows the collation order locale.",
+    "isReadOnly": true,
+    "criticality": 1,
+    "isEnabledUI": true
+  },
+  "lc_ctype": {
+    "value": "NA",
+    "unit": "NA",
+    "parameterDescription": "Shows the character classification and case conversion locale.",
+    "isReadOnly": true,
+    "criticality": 1,
+    "isEnabledUI": true
+  },
+  "lc_messages": {
+    "value": "en_US.utf8",
+    "unit": "NA",
+    "parameterDescription": "Sets the language in which messages are displayed.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "lc_monetary": {
+    "value": "en_US.utf-8",
+    "unit": "NA",
+    "parameterDescription": "Sets the locale for formatting monetary amounts.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "lc_numeric": {
+    "value": "en_US.utf-8",
+    "unit": "NA",
+    "parameterDescription": "Sets the locale for formatting numbers.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "lc_time": {
+    "value": "en_US.utf8",
+    "unit": "NA",
+    "parameterDescription": "Sets the locale for formatting date and time values.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "listen_addresses": {
+    "value": "*",
+    "unit": "NA",
+    "parameterDescription": "Sets the host name or IP address(es) to listen to.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "lo_compat_privileges": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Enables backward compatibility mode for privilege checks on large objects.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "local_preload_libraries": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "Lists unprivileged shared libraries to preload into each backend.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "lock_timeout": {
+    "value": "0",
+    "unit": "ms",
+    "parameterDescription": "Sets the maximum allowed duration of any wait for a lock.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "log_autovacuum_min_duration": {
+    "value": "-1",
+    "unit": "ms",
+    "parameterDescription": "Sets the minimum execution time above which autovacuum actions will be logged.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "log_checkpoints": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Logs each checkpoint.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "log_connections": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Logs each successful connection.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "log_destination": {
+    "value": "stderr",
+    "unit": "NA",
+    "parameterDescription": "Sets the destination for server log output.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "log_directory": {
+    "value": "log",
+    "unit": "NA",
+    "parameterDescription": "Sets the destination directory for log files.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "log_disconnections": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Logs end of a session, including duration.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "log_duration": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Logs the duration of each completed SQL statement.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "log_error_verbosity": {
+    "value": "default",
+    "unit": "NA",
+    "parameterDescription": "Sets the verbosity of logged messages.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "log_executor_stats": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Writes executor performance statistics to the server log.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "log_file_mode": {
+    "value": "600",
+    "unit": "NA",
+    "parameterDescription": "Sets the file permissions for log files.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "log_filename": {
+    "value": "postgresql-%Y-%m-%d_%H%M%S.log",
+    "unit": "NA",
+    "parameterDescription": "Sets the file name pattern for log files.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "log_hostname": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Logs the host name in the connection logs.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "log_line_prefix": {
+    "value": "%t-%c-",
+    "unit": "NA",
+    "parameterDescription": "Controls information prefixed to each log line.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "log_lock_waits": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Logs long lock waits.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "log_min_duration_statement": {
+    "value": "-1",
+    "unit": "ms",
+    "parameterDescription": "Sets the minimum execution time above which statements will be logged.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "log_min_error_statement": {
+    "value": "error",
+    "unit": "NA",
+    "parameterDescription": "Causes all statements generating error at or above this level to be logged.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "log_min_messages": {
+    "value": "warning",
+    "unit": "NA",
+    "parameterDescription": "Sets the message levels that are logged.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "log_parser_stats": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Writes parser performance statistics to the server log.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "log_planner_stats": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Writes planner performance statistics to the server log.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "log_replication_commands": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Logs each replication command.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "log_rotation_age": {
+    "value": "60",
+    "unit": "min",
+    "parameterDescription": "Automatic log file rotation will occur after N minutes.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "log_rotation_size": {
+    "value": "102400",
+    "unit": "kB",
+    "parameterDescription": "Automatic log file rotation will occur after N kilobytes.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "log_statement": {
+    "value": "none",
+    "unit": "NA",
+    "parameterDescription": "Sets the type of statements logged.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "log_statement_stats": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Writes cumulative performance statistics to the server log.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "log_temp_files": {
+    "value": "-1",
+    "unit": "kB",
+    "parameterDescription": "Log the use of temporary files larger than this number of kilobytes.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "log_timezone": {
+    "value": "UTC",
+    "unit": "NA",
+    "parameterDescription": "Sets the time zone to use in log messages.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "log_truncate_on_rotation": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Truncate existing log files of same name during log rotation.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "logging_collector": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Start a subprocess to capture stderr output and/or csvlogs into log files.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "maintenance_work_mem": {
+    "value": "99328",
+    "unit": "kB",
+    "parameterDescription": "Sets the maximum memory to be used for maintenance operations.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "max_connections": {
+    "value": "50",
+    "unit": "NA",
+    "parameterDescription": "Sets the maximum number of concurrent connections.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "max_files_per_process": {
+    "value": "1000",
+    "unit": "NA",
+    "parameterDescription": "Sets the maximum number of simultaneously open files for each server process.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "max_function_args": {
+    "value": "100",
+    "unit": "NA",
+    "parameterDescription": "Shows the maximum number of function arguments.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "max_identifier_length": {
+    "value": "63",
+    "unit": "NA",
+    "parameterDescription": "Shows the maximum identifier length.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "max_index_keys": {
+    "value": "32",
+    "unit": "NA",
+    "parameterDescription": "Shows the maximum number of index keys.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "max_locks_per_transaction": {
+    "value": "64",
+    "unit": "NA",
+    "parameterDescription": "Sets the maximum number of locks per transaction.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "max_logical_replication_workers": {
+    "value": "4",
+    "unit": "NA",
+    "parameterDescription": "Maximum number of logical replication worker processes.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "max_parallel_maintenance_workers": {
+    "value": "64",
+    "unit": "NA",
+    "parameterDescription": "Sets the maximum number of parallel processes per maintenance operation.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "max_parallel_workers": {
+    "value": "8",
+    "unit": "NA",
+    "parameterDescription": "Sets the maximum number of parallel workers that can be active at one time.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "max_parallel_workers_per_gather": {
+    "value": "2",
+    "unit": "NA",
+    "parameterDescription": "Sets the maximum number of parallel processes per executor node.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "max_pred_locks_per_page": {
+    "value": "2",
+    "unit": "NA",
+    "parameterDescription": "Sets the maximum number of predicate-locked tuples per page.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "max_pred_locks_per_relation": {
+    "value": "-2",
+    "unit": "NA",
+    "parameterDescription": "Sets the maximum number of predicate-locked pages and tuples per relation.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "max_pred_locks_per_transaction": {
+    "value": "64",
+    "unit": "NA",
+    "parameterDescription": "Sets the maximum number of predicate locks per transaction.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "max_prepared_transactions": {
+    "value": "0",
+    "unit": "NA",
+    "parameterDescription": "Sets the maximum number of simultaneously prepared transactions.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "max_replication_slots": {
+    "value": "10",
+    "unit": "NA",
+    "parameterDescription": "Sets the maximum number of simultaneously defined replication slots.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "max_stack_depth": {
+    "value": "2048",
+    "unit": "kB",
+    "parameterDescription": "Sets the maximum stack depth, in kilobytes.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "max_standby_archive_delay": {
+    "value": "30000",
+    "unit": "ms",
+    "parameterDescription": "Sets the maximum delay before canceling queries when a hot standby server is processing archived WAL data.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "max_standby_streaming_delay": {
+    "value": "30000",
+    "unit": "ms",
+    "parameterDescription": "Sets the maximum delay before canceling queries when a hot standby server is processing streamed WAL data.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "max_sync_workers_per_subscription": {
+    "value": "2",
+    "unit": "NA",
+    "parameterDescription": "Maximum number of table synchronization workers per subscription.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "max_wal_senders": {
+    "value": "10",
+    "unit": "NA",
+    "parameterDescription": "Sets the maximum number of simultaneously running WAL sender processes.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "max_wal_size": {
+    "value": "1024",
+    "unit": "MB",
+    "parameterDescription": "Sets the WAL size that triggers a checkpoint.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "max_worker_processes": {
+    "value": "8",
+    "unit": "NA",
+    "parameterDescription": "Maximum number of concurrent worker processes.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "min_parallel_index_scan_size": {
+    "value": "64",
+    "unit": "8kB",
+    "parameterDescription": "Sets the minimum amount of index data for a parallel scan.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "min_parallel_table_scan_size": {
+    "value": "1024",
+    "unit": "8kB",
+    "parameterDescription": "Sets the minimum amount of table data for a parallel scan.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "min_wal_size": {
+    "value": "80",
+    "unit": "MB",
+    "parameterDescription": "Sets the minimum size to shrink the WAL to.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "old_snapshot_threshold": {
+    "value": "-1",
+    "unit": "min",
+    "parameterDescription": "Time before a snapshot is too old to read pages changed after the snapshot was taken.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "operator_precedence_warning": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Emit a warning for constructs that changed meaning since PostgreSQL 9.4.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "parallel_leader_participation": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Controls whether Gather and Gather Merge also run subplans.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "parallel_setup_cost": {
+    "value": "1000",
+    "unit": "NA",
+    "parameterDescription": "Sets the planner's estimate of the cost of starting up worker processes for parallel query.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "parallel_tuple_cost": {
+    "value": "0.1",
+    "unit": "NA",
+    "parameterDescription": "Sets the planner's estimate of the cost of passing each tuple (row) from worker to master backend.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "password_encryption": {
+    "value": "md5",
+    "unit": "NA",
+    "parameterDescription": "Chooses the algorithm for encrypting passwords.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pg_qs.host_database": {
+    "value": "azure_sys",
+    "unit": "NA",
+    "parameterDescription": "Specifies host database name for qs. Need to restart the server to make change take effect.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pg_qs.index_generation_interval": {
+    "value": "15",
+    "unit": "NA",
+    "parameterDescription": "Sets the auto-index-generation interval in minutes. Need to reload the config to make change take effect.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pg_qs.interval_length_minutes": {
+    "value": "15",
+    "unit": "NA",
+    "parameterDescription": "Sets the aggregration window in minutes. Need to restart the server to make change take effect.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pg_qs.is_enabled_fs": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Selects the feature switch override for enabling pg_qs. Need to reload the config to make change take effect.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pg_qs.max_plan_size": {
+    "value": "7500",
+    "unit": "NA",
+    "parameterDescription": "Sets the maximum number of bytes that will be saved for query plan text; longer plans will be truncated. Need to reload the config for this change to take effect.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pg_qs.max_queries": {
+    "value": "500",
+    "unit": "NA",
+    "parameterDescription": "Sets the maximum number of unique queries tracked by pg_qs during each aggregation window. Need to restart the server to make change take effect.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pg_qs.max_query_text_length": {
+    "value": "6000",
+    "unit": "NA",
+    "parameterDescription": "Sets the maximum query text length that will be saved; longer queries will be truncated. Need to reload the config to make change take effect.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pg_qs.query_capture_mode": {
+    "value": "none",
+    "unit": "NA",
+    "parameterDescription": "Selects which statements are tracked by pg_qs. Need to reload the config to make change take effect.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pg_qs.retention_period_in_days": {
+    "value": "7",
+    "unit": "NA",
+    "parameterDescription": "Sets the retention period window in days for pg_qs - after this time data will be deleted. Need to restart the server to make change take effect.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pg_qs.store_query_plans": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Turns saving query plans on or off. Need to reload the config for the change to take effect.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pg_qs.track_utility": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Selects whether utility commands are tracked by pg_qs. Need to reload the config to make change take effect.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pg_stat_statements.max": {
+    "value": "5000",
+    "unit": "NA",
+    "parameterDescription": "Sets the maximum number of statements tracked by pg_stat_statements.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pg_stat_statements.save": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Save pg_stat_statements statistics across server shutdowns.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pg_stat_statements.track": {
+    "value": "top",
+    "unit": "NA",
+    "parameterDescription": "Selects which statements are tracked by pg_stat_statements.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pg_stat_statements.track_utility": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Selects whether utility commands are tracked by pg_stat_statements.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pgaadauth.aad_auth_connection_healthcheck_client_id": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "The client id used for performing aad connection health check.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pgaadauth.aad_auth_connection_healthcheck_database_name": {
+    "value": "azure_maintenance",
+    "unit": "NA",
+    "parameterDescription": "The database used for performing aad connection health check.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pgaadauth.aad_auth_connection_healthcheck_role_name": {
+    "value": "aad_auth_connection_health_check",
+    "unit": "NA",
+    "parameterDescription": "The role used for performing aad connection health check.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pgaadauth.audience": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "The AAD audience.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pgaadauth.authentication_endpoint": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "The AAD authentication endpoint.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pgaadauth.federation_metadata_endpoint": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "The AAD federation metadata endpoint.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pgaadauth.graph_access_token": {
+    "value": "****",
+    "unit": "NA",
+    "parameterDescription": "The AAD Graph client access token.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pgaadauth.graph_access_token_expires_on": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "The AAD Graph client access token expiration time.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pgaadauth.graph_api_endpoint": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "The AAD Graph API endpoint.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pgaadauth.issuer_prefix": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "The AAD issuer prefix.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pgaadauth.log_min_messages": {
+    "value": "warning",
+    "unit": "NA",
+    "parameterDescription": "The message level at which AAD messages are logged.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pgaadauth.min_fetch_signature_sec": {
+    "value": "1800",
+    "unit": "NA",
+    "parameterDescription": "The number of seconds during which signing certs are not refetched.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pgaadauth.password_auth_enabled": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Enable fallback to password authentication ( md5, scram-sha-256 and password) for non-aad users, except for superusers and replication.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pgaadauth.sid_cache_retain_sec": {
+    "value": "60",
+    "unit": "NA",
+    "parameterDescription": "The number of seconds user to group mappings are retained.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pgaadauth.tenant_id": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "The AAD tenant ID.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pgaadauth.validation_mode": {
+    "value": "default",
+    "unit": "NA",
+    "parameterDescription": "Mode of validating PostgreSQL role metadata against Aad/MsGraph API.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pgms_stats.is_enabled_fs": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Selects the feature switch override for enabling pgms_stats. Need to reload the config to make change take effect.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pgms_wait_sampling.history_period": {
+    "value": "100",
+    "unit": "NA",
+    "parameterDescription": "Sets the the frequency, in milliseconds, at which wait events are sampled.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pgms_wait_sampling.is_enabled_fs": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Selects the feature switch override for enabling pgms_wait_sampling. Need to reload the config to make change take effect.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pgms_wait_sampling.query_capture_mode": {
+    "value": "none",
+    "unit": "NA",
+    "parameterDescription": "Selects types of wait events are tracked by this extension. Need to reload the config to make change take effect.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "port": {
+    "value": "5432",
+    "unit": "NA",
+    "parameterDescription": "Sets the TCP port the server listens on.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "post_auth_delay": {
+    "value": "0",
+    "unit": "s",
+    "parameterDescription": "Waits N seconds on connection startup after authentication.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "pre_auth_delay": {
+    "value": "0",
+    "unit": "s",
+    "parameterDescription": "Waits N seconds on connection startup before authentication.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "quote_all_identifiers": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "When generating SQL fragments, quote all identifiers.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "random_page_cost": {
+    "value": "2",
+    "unit": "NA",
+    "parameterDescription": "Sets the planner's estimate of the cost of a nonsequentially fetched disk page.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "restart_after_crash": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Reinitialize server after backend crash.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "row_security": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Enable row security.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "search_path": {
+    "value": "\"$user\", public",
+    "unit": "NA",
+    "parameterDescription": "Sets the schema search order for names that are not schema-qualified.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "segment_size": {
+    "value": "131072",
+    "unit": "8kB",
+    "parameterDescription": "Shows the number of pages per disk file.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "seq_page_cost": {
+    "value": "1",
+    "unit": "NA",
+    "parameterDescription": "Sets the planner's estimate of the cost of a sequentially fetched disk page.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "server_encoding": {
+    "value": "UTF8",
+    "unit": "NA",
+    "parameterDescription": "Sets the server (database) character set encoding.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "server_version": {
+    "value": "11.19",
+    "unit": "NA",
+    "parameterDescription": "Shows the server version.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "server_version_num": {
+    "value": "110019",
+    "unit": "NA",
+    "parameterDescription": "Shows the server version as an integer.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "session_preload_libraries": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "Lists shared libraries to preload into each backend.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "session_replication_role": {
+    "value": "origin",
+    "unit": "NA",
+    "parameterDescription": "Sets the session's behavior for triggers and rewrite rules.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "shared_buffers": {
+    "value": "32768",
+    "unit": "8kB",
+    "parameterDescription": "Sets the number of shared memory buffers used by the server.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "shared_preload_libraries": {
+    "value": "azure,pg_cron,pg_qs,pg_stat_statements,pgaadauth,pgms_stats,pgms_wait_sampling",
+    "unit": "NA",
+    "parameterDescription": "Lists shared libraries to preload into server.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "ssl": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Enables SSL connections.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "ssl_ca_file": {
+    "value": "/datadrive/certs/ca.pem",
+    "unit": "NA",
+    "parameterDescription": "Location of the SSL certificate authority file.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "ssl_cert_file": {
+    "value": "/datadrive/certs/cert.pem",
+    "unit": "NA",
+    "parameterDescription": "Location of the SSL server certificate file.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "ssl_ciphers": {
+    "value": "ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256",
+    "unit": "NA",
+    "parameterDescription": "Sets the list of allowed SSL ciphers.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "ssl_crl_file": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "Location of the SSL certificate revocation list file.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "ssl_dh_params_file": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "Location of the SSL DH parameters file.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "ssl_ecdh_curve": {
+    "value": "prime256v1",
+    "unit": "NA",
+    "parameterDescription": "Sets the curve to use for ECDH.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "ssl_key_file": {
+    "value": "/datadrive/certs/key.pem",
+    "unit": "NA",
+    "parameterDescription": "Location of the SSL server private key file.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "ssl_passphrase_command": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "Command to obtain passphrases for SSL.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "ssl_passphrase_command_supports_reload": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Also use ssl_passphrase_command during server reload.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "ssl_prefer_server_ciphers": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Give priority to server ciphersuite order.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "standard_conforming_strings": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Causes '...' strings to treat backslashes literally.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "statement_timeout": {
+    "value": "0",
+    "unit": "ms",
+    "parameterDescription": "Sets the maximum allowed duration of any statement.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "stats_temp_directory": {
+    "value": "pg_stat_tmp",
+    "unit": "NA",
+    "parameterDescription": "Writes temporary statistics files to the specified directory.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "superuser_reserved_connections": {
+    "value": "3",
+    "unit": "NA",
+    "parameterDescription": "Sets the number of connection slots reserved for superusers.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "synchronize_seqscans": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Enable synchronized sequential scans.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "synchronous_commit": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Sets the current transaction's synchronization level.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "synchronous_standby_names": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "Number of synchronous standbys and list of names of potential synchronous ones.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "syslog_facility": {
+    "value": "local0",
+    "unit": "NA",
+    "parameterDescription": "Sets the syslog \"facility\" to be used when syslog enabled.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "syslog_ident": {
+    "value": "postgres",
+    "unit": "NA",
+    "parameterDescription": "Sets the program name used to identify PostgreSQL messages in syslog.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "syslog_sequence_numbers": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Add sequence number to syslog messages to avoid duplicate suppression.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "syslog_split_messages": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Split messages sent to syslog by lines and to fit into 1024 bytes.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "tcp_keepalives_count": {
+    "value": "9",
+    "unit": "NA",
+    "parameterDescription": "Maximum number of TCP keepalive retransmits.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "tcp_keepalives_idle": {
+    "value": "120",
+    "unit": "s",
+    "parameterDescription": "Time between issuing TCP keepalives.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "tcp_keepalives_interval": {
+    "value": "30",
+    "unit": "s",
+    "parameterDescription": "Time between TCP keepalive retransmits.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "temp_buffers": {
+    "value": "1024",
+    "unit": "8kB",
+    "parameterDescription": "Sets the maximum number of temporary buffers used by each session.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "temp_file_limit": {
+    "value": "-1",
+    "unit": "kB",
+    "parameterDescription": "Limits the total size of all temporary files used by each process.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "temp_tablespaces": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "Sets the tablespace(s) to use for temporary tables and sort files.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "TimeZone": {
+    "value": "UTC",
+    "unit": "NA",
+    "parameterDescription": "Sets the time zone for displaying and interpreting time stamps.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "timezone_abbreviations": {
+    "value": "Default",
+    "unit": "NA",
+    "parameterDescription": "Selects a file of time zone abbreviations.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "trace_notify": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Generates debugging output for LISTEN and NOTIFY.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "trace_recovery_messages": {
+    "value": "log",
+    "unit": "NA",
+    "parameterDescription": "Enables logging of recovery-related debugging information.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "trace_sort": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Emit information about resource usage in sorting.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "track_activities": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Collects information about executing commands.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "track_activity_query_size": {
+    "value": "1024",
+    "unit": "B",
+    "parameterDescription": "Sets the size reserved for pg_stat_activity.query, in bytes.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "track_commit_timestamp": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Collects transaction commit time.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "track_counts": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Collects statistics on database activity.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "track_functions": {
+    "value": "none",
+    "unit": "NA",
+    "parameterDescription": "Collects function-level statistics on database activity.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "track_io_timing": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Collects timing statistics for database I/O activity.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "transaction_deferrable": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Whether to defer a read-only serializable transaction until it can be executed with no possible serialization failures.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "transaction_isolation": {
+    "value": "read committed",
+    "unit": "NA",
+    "parameterDescription": "Sets the current transaction's isolation level.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "transaction_read_only": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Sets the current transaction's read-only status.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "transform_null_equals": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Treats \"expr=NULL\" as \"expr IS NULL\".",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "unix_socket_directories": {
+    "value": "/tmp",
+    "unit": "NA",
+    "parameterDescription": "Sets the directories where Unix-domain sockets will be created.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "unix_socket_group": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "Sets the owning group of the Unix-domain socket.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "unix_socket_permissions": {
+    "value": "777",
+    "unit": "NA",
+    "parameterDescription": "Sets the access permissions of the Unix-domain socket.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "update_process_title": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Updates the process title to show the active SQL command.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "vacuum_cleanup_index_scale_factor": {
+    "value": "0.1",
+    "unit": "NA",
+    "parameterDescription": "Number of tuple inserts prior to index cleanup as a fraction of reltuples.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "vacuum_cost_delay": {
+    "value": "0",
+    "unit": "ms",
+    "parameterDescription": "Vacuum cost delay in milliseconds.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "vacuum_cost_limit": {
+    "value": "200",
+    "unit": "NA",
+    "parameterDescription": "Vacuum cost amount available before napping.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "vacuum_cost_page_dirty": {
+    "value": "20",
+    "unit": "NA",
+    "parameterDescription": "Vacuum cost for a page dirtied by vacuum.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "vacuum_cost_page_hit": {
+    "value": "1",
+    "unit": "NA",
+    "parameterDescription": "Vacuum cost for a page found in the buffer cache.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "vacuum_cost_page_miss": {
+    "value": "10",
+    "unit": "NA",
+    "parameterDescription": "Vacuum cost for a page not found in the buffer cache.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "vacuum_defer_cleanup_age": {
+    "value": "0",
+    "unit": "NA",
+    "parameterDescription": "Number of transactions by which VACUUM and HOT cleanup should be deferred, if any.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "vacuum_freeze_min_age": {
+    "value": "50000000",
+    "unit": "NA",
+    "parameterDescription": "Minimum age at which VACUUM should freeze a table row.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "vacuum_freeze_table_age": {
+    "value": "150000000",
+    "unit": "NA",
+    "parameterDescription": "Age at which VACUUM should scan whole table to freeze tuples.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "vacuum_multixact_freeze_min_age": {
+    "value": "5000000",
+    "unit": "NA",
+    "parameterDescription": "Minimum age at which VACUUM should freeze a MultiXactId in a table row.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "vacuum_multixact_freeze_table_age": {
+    "value": "150000000",
+    "unit": "NA",
+    "parameterDescription": "Multixact age at which VACUUM should scan whole table to freeze tuples.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "wal_block_size": {
+    "value": "8192",
+    "unit": "NA",
+    "parameterDescription": "Shows the block size in the write ahead log.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "wal_buffers": {
+    "value": "2048",
+    "unit": "8kB",
+    "parameterDescription": "Sets the number of disk-page buffers in shared memory for WAL.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "wal_compression": {
+    "value": "on",
+    "unit": "NA",
+    "parameterDescription": "Compresses full-page writes written in WAL file.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "wal_consistency_checking": {
+    "value": "",
+    "unit": "NA",
+    "parameterDescription": "Sets the WAL resource managers for which WAL consistency checks are done.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "wal_keep_segments": {
+    "value": "25",
+    "unit": "NA",
+    "parameterDescription": "Sets the number of WAL files held for standby servers.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "wal_level": {
+    "value": "replica",
+    "unit": "NA",
+    "parameterDescription": "Set the level of information written to the WAL.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "wal_log_hints": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Writes full pages to WAL when first modified after a checkpoint, even for a non-critical modification.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "wal_receiver_status_interval": {
+    "value": "10",
+    "unit": "s",
+    "parameterDescription": "Sets the maximum interval between WAL receiver status reports to the primary.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "wal_receiver_timeout": {
+    "value": "60000",
+    "unit": "ms",
+    "parameterDescription": "Sets the maximum wait time to receive data from the primary.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "wal_retrieve_retry_interval": {
+    "value": "5000",
+    "unit": "ms",
+    "parameterDescription": "Sets the time to wait before retrying to retrieve WAL after a failed attempt.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "wal_segment_size": {
+    "value": "16777216",
+    "unit": "B",
+    "parameterDescription": "Shows the size of write ahead log segments.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "wal_sender_timeout": {
+    "value": "60000",
+    "unit": "ms",
+    "parameterDescription": "Sets the maximum time to wait for WAL replication.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "wal_sync_method": {
+    "value": "fdatasync",
+    "unit": "NA",
+    "parameterDescription": "Selects the method used for forcing WAL updates to disk.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "wal_writer_delay": {
+    "value": "200",
+    "unit": "ms",
+    "parameterDescription": "Time between WAL flushes performed in the WAL writer.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "wal_writer_flush_after": {
+    "value": "128",
+    "unit": "8kB",
+    "parameterDescription": "Amount of WAL written out by WAL writer that triggers a flush.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "work_mem": {
+    "value": "4096",
+    "unit": "kB",
+    "parameterDescription": "Sets the maximum memory to be used for query workspaces.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "xmlbinary": {
+    "value": "base64",
+    "unit": "NA",
+    "parameterDescription": "Sets how binary values are to be encoded in XML.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "xmloption": {
+    "value": "content",
+    "unit": "NA",
+    "parameterDescription": "Sets whether XML data in implicit parsing and serialization operations is to be considered as documents or content fragments.",
+    "isReadOnly": false,
+    "criticality": 2,
+    "isEnabledUI": true
+  },
+  "zero_damaged_pages": {
+    "value": "off",
+    "unit": "NA",
+    "parameterDescription": "Continues processing past damaged page headers.",
+    "isReadOnly": true,
+    "criticality": 2,
+    "isEnabledUI": false
+  },
+  "NotAvailableDefaultSetting": {}
+}

@@ -1,0 +1,282 @@
+﻿[
+  {
+    "family": "standardDSv3Family",
+    "familyType": "GeneralPurpose",
+    "latestInfra": false,
+    "_comment": "Dv3 Family can burst the disk performance for 30mins."
+  },
+  {
+    "family": "standardDv3Family",
+    "familyType": "GeneralPurpose",
+    "latestInfra": false,
+    "_comment": "Dv3 Family can burst the disk performance for 30mins."
+  },
+  {
+    "family": "standardDDSv4Family",
+    "familyType": "GeneralPurpose",
+    "latestInfra": false,
+    "_comment": "DDv4 Family 50% larger local storage, better local disk IOPS compare to Dv3/Dsv3."
+  },
+  {
+    "family": "standardDDv4Family",
+    "familyType": "GeneralPurpose",
+    "latestInfra": false,
+    "_comment": "DDv4 Family 50% larger local storage, better local disk IOPS compare to Dv3/Dsv3."
+  },
+  {
+    "family": "standardDSv4Family",
+    "familyType": "GeneralPurpose",
+    "latestInfra": false,
+    "_comment": "Dv4 Family no local temp disk, remote storage only."
+  },
+  {
+    "family": "standardDv4Family",
+    "familyType": "GeneralPurpose",
+    "latestInfra": false,
+    "_comment": "Dv4 Family no local temp disk, remote storage only."
+  },
+  {
+    "family": "standardDASv4Family",
+    "familyType": "GeneralPurpose",
+    "latestInfra": false,
+    "_comment": "Dav4 Family AMD CPU."
+  },
+  {
+    "family": "standardDAv4Family",
+    "familyType": "GeneralPurpose",
+    "latestInfra": false,
+    "_comment": "Dav4 Family AMD CPU."
+  },
+  {
+    "family": "standardDDSv5Family",
+    "familyType": "GeneralPurpose",
+    "latestInfra": true,
+    "_comment": "DDv5 family."
+  },
+  {
+    "family": "standardDDv5Family",
+    "familyType": "GeneralPurpose",
+    "latestInfra": true,
+    "_comment": "DDv5 family."
+  },
+  {
+    "family": "standardDSv5Family",
+    "familyType": "GeneralPurpose",
+    "latestInfra": true,
+    "_comment": "Dv5 family."
+  },
+  {
+    "family": "standardDv5Family",
+    "familyType": "GeneralPurpose",
+    "latestInfra": true,
+    "_comment": "Dv5 family."
+  },
+  {
+    "family": "standardDASv5Family",
+    "familyType": "GeneralPurpose",
+    "latestInfra": true,
+    "_comment": "DAv5 Family AMD CPU."
+  },
+  {
+    "family": "standardDADSv5Family",
+    "familyType": "GeneralPurpose",
+    "latestInfra": true,
+    "_comment": "DAv5 Family AMD CPU."
+  },
+  {
+    "family": "standardESv3Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": false,
+    "_comment": "Ev3 Family High memory 8 GiB/vCPU"
+  },
+  {
+    "family": "standardEv3Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": false,
+    "_comment": "Ev3 Family High memory 8 GiB/vCPU"
+  },
+  {
+    "family": "standardEDSv4Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": false,
+    "_comment": "EDv4 Family 50% larger local storage, better local disk IOPS compare to Ev3/Esv3."
+  },
+  {
+    "family": "standardEDv4Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": false,
+    "_comment": "EDv4 Family 50% larger local storage, better local disk IOPS compare to Ev3/Esv3."
+  },
+  {
+    "family": "standardEASv4Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": false,
+    "_comment": "EAv4 Family AMD CPU."
+  },
+  {
+    "family": "standardEAv4Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": false,
+    "_comment": "EAv4 Family AMD CPU."
+  },
+  {
+    "family": "standardESv4Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": false,
+    "_comment": "Ev4 Family without local disk."
+  },
+  {
+    "family": "standardEv4Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": false,
+    "_comment": "Ev4 Family without local disk."
+  },
+  {
+    "family": "standardEDSv5Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": true,
+    "_comment": "EDv5 family"
+  },
+  {
+    "family": "standardEDv5Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": true,
+    "_comment": "EDv5 family"
+  },
+  {
+    "family": "standardEIDSv5Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": true,
+    "_comment": "EDv5 family"
+  },
+  {
+    "family": "standardEIDv5Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": true,
+    "_comment": "EDv5 family"
+  },
+  {
+    "family": "standardEASv5Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": true,
+    "_comment": "EAv5 Family AMD process"
+  },
+  {
+    "family": "standardEADSv5Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": true,
+    "_comment": "EAv5 Family AMD process"
+  },
+  {
+    "family": "standardESv5Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": true,
+    "_comment": "Ev5 Family without local disk"
+  },
+  {
+    "family": "standardEv5Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": true,
+    "_comment": "Ev5 Family without local disk"
+  },
+  {
+    "family": "standardEISv5Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": true,
+    "_comment": "Ev5 Family without local disk"
+  },
+  {
+    "family": "standardEIv5Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": true,
+    "_comment": "Ev5 Family without local disk"
+  },
+  {
+    "family": "standardECADSv5Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": false,
+    "_comment": "ECav5 Family confidential VM"
+  },
+  {
+    "family": "standardECASv5Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": false,
+    "_comment": "ECav5 Family confidential VM"
+  },
+  {
+    "family": "standardMSFamily",
+    "familyType": "MemoryOptimized",
+    "latestInfra": true,
+    "_comment": "M Family 8 to 128 cores, 16-30 GiB/vCPU"
+  },
+  {
+    "family": "standardMSv2Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": true,
+    "_comment": "Mv2 Family 208 to 416 cores, 13-27 GiB/vCPU"
+  },
+  {
+    "family": "standardMDSMediumMemoryv2Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": true,
+    "_comment": "including msv2 and msdv2 series as its now GA (https://docs.microsoft.com/en-us/azure/virtual-machines/msv2-mdsv2-series)"
+  },
+  {
+    "family": "standardMSMediumMemoryv2Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": true,
+    "_comment": "including msv2 and msdv2 series as its now GA (https://docs.microsoft.com/en-us/azure/virtual-machines/msv2-mdsv2-series)"
+  },
+  {
+    "family": "standardMIDSMediumMemoryv2Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": true,
+    "_comment": "including msv2 and msdv2 series as its now GA (https://docs.microsoft.com/en-us/azure/virtual-machines/msv2-mdsv2-series)"
+  },
+  {
+    "family": "standardMISMediumMemoryv2Family",
+    "familyType": "MemoryOptimized",
+    "latestInfra": true,
+    "_comment": "including msv2 and msdv2 series as its now GA (https://docs.microsoft.com/en-us/azure/virtual-machines/msv2-mdsv2-series)"
+  },
+  {
+    "family": "standardFFamily",
+    "familyType": "ComputeOptimized",
+    "latestInfra": false
+  },
+  {
+    "family": "standardFSFamily",
+    "familyType": "ComputeOptimized",
+    "latestInfra": false
+  },
+  {
+    "family": "standardFSv2Family",
+    "familyType": "ComputeOptimized",
+    "latestInfra": false
+  },
+  {
+    "family": "standardLSv2Family",
+    "familyType": "StorageOptimized",
+    "latestInfra": false
+  },
+  {
+    "family": "standardNCSv3Family",
+    "familyType": "GPU",
+    "latestInfra": false
+  },
+  {
+    "family": "standardNVSv2Family",
+    "familyType": "GPU",
+    "latestInfra": false
+  },
+  {
+    "family": "standardNVSv3Family",
+    "familyType": "GPU",
+    "latestInfra": false
+  },
+  {
+    "family": "standardNVSv4Family",
+    "familyType": "GPU",
+    "latestInfra": false
+  }
+]

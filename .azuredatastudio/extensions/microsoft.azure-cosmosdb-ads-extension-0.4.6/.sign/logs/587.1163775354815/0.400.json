@@ -1,0 +1,339 @@
+{
+    "ContextData":  {
+
+                    },
+    "SignBatches":  [
+                        {
+                            "Version":  "1.0.0",
+                            "GroupId":  "Azure",
+                            "SourceLocationType":  "UNC",
+                            "SourceRootDirectory":  null,
+                            "DestinationLocationType":  "UNC",
+                            "DestinationRootDirectory":  null,
+                            "SigningInfo":  {
+                                                "Operations":  [
+                                                                   {
+                                                                       "KeyCode":  "CP-230012",
+                                                                       "OperationCode":  "SigntoolSign",
+                                                                       "Parameters":  {
+                                                                                          "OpusName":  "Microsoft",
+                                                                                          "OpusInfo":  "http://www.microsoft.com",
+                                                                                          "FileDigest":  "/fd \"SHA256\"",
+                                                                                          "PageHash":  "/NPH",
+                                                                                          "TimeStamp":  "/tr \"http://rfc3161.gtm.corp.microsoft.com/TSS/HttpTspServer\" /td sha256"
+                                                                                      },
+                                                                       "ToolName":  "sign",
+                                                                       "ToolVersion":  "1.0"
+                                                                   },
+                                                                   {
+                                                                       "KeyCode":  "CP-230012",
+                                                                       "OperationCode":  "SigntoolVerify",
+                                                                       "Parameters":  {
+
+                                                                                      },
+                                                                       "ToolName":  "sign",
+                                                                       "ToolVersion":  "1.0"
+                                                                   }
+                                                               ]
+                                            },
+                            "SignRequestFiles":  [
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\ru\\Microsoft.VisualStudio.Validation.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\runtimes\\win\\lib\\net6.0\\System.Security.Cryptography.ProtectedData.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\System.Security.Permissions.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\ja\\Microsoft.VisualStudio.Validation.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\Microsoft.Bcl.HashCode.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\ko\\Microsoft.VisualStudio.Validation.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\es\\Microsoft.VisualStudio.Threading.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\ru\\StreamJsonRpc.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\pl\\StreamJsonRpc.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\System.Diagnostics.DiagnosticSource.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\ja\\StreamJsonRpc.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\tr\\StreamJsonRpc.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\Microsoft.NET.StringTools.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\es\\Microsoft.VisualStudio.Validation.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\zh-Hans\\StreamJsonRpc.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\runtimes\\win\\lib\\net6.0\\System.Windows.Extensions.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\System.Threading.Tasks.Dataflow.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\ko\\StreamJsonRpc.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\fr\\Microsoft.VisualStudio.Threading.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\pt-BR\\Microsoft.VisualStudio.Threading.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\es\\StreamJsonRpc.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\ko\\Microsoft.VisualStudio.Threading.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\zh-Hant\\Microsoft.VisualStudio.Threading.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Azure.Core.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Newtonsoft.Json.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\MessagePack.Annotations.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\runtimes\\unix\\lib\\net6.0\\System.Drawing.Common.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\System.Windows.Extensions.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\zh-Hant\\Microsoft.VisualStudio.Validation.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\fr\\Microsoft.VisualStudio.Validation.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\System.Drawing.Common.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\CosmosDbProxy.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\pt-BR\\Microsoft.VisualStudio.Validation.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\pl\\Microsoft.VisualStudio.Threading.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\tr\\Microsoft.VisualStudio.Threading.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\zh-Hant\\StreamJsonRpc.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\Microsoft.VisualStudio.Threading.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\MessagePack.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\fr\\StreamJsonRpc.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\runtimes\\win\\lib\\net6.0\\Microsoft.Win32.SystemEvents.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\tr\\Microsoft.VisualStudio.Validation.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\pl\\Microsoft.VisualStudio.Validation.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\pt-BR\\StreamJsonRpc.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\System.IO.Pipelines.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\Microsoft.VisualStudio.Validation.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\it\\Microsoft.VisualStudio.Threading.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\ru\\Microsoft.VisualStudio.Threading.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\System.Memory.Data.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\Microsoft.Win32.SystemEvents.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\runtimes\\win\\lib\\net6.0\\System.Drawing.Common.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\it\\Microsoft.VisualStudio.Validation.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\System.Security.Cryptography.ProtectedData.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\it\\StreamJsonRpc.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\ja\\Microsoft.VisualStudio.Threading.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\zh-Hans\\Microsoft.VisualStudio.Threading.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\cs\\Microsoft.VisualStudio.Threading.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\zh-Hans\\Microsoft.VisualStudio.Validation.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\cs\\Microsoft.VisualStudio.Validation.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\cs\\StreamJsonRpc.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\de\\Microsoft.VisualStudio.Threading.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\de\\Microsoft.VisualStudio.Validation.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\de\\StreamJsonRpc.resources.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\obj\\Release\\net6.0\\refint\\CosmosDbProxy.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\publish\\runtimes\\win-x64\\native\\Cosmos.CRTCompat.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.ServiceInterop.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\msvcp140.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\runtimes\\win-x64\\native\\vcruntime140.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\obj\\Release\\net6.0\\apphost.exe"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\runtimes\\win-x64\\native\\vcruntime140_1.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Bcl.AsyncInterfaces.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Nerdbank.Streams.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\StreamJsonRpc.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\System.Collections.Immutable.dll"
+                                                     },
+                                                     {
+                                                         "CustomerCorrelationId":  "00000000-0000-0000-0000-000000000000",
+                                                         "SourceLocation":  "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\System.Configuration.ConfigurationManager.dll"
+                                                     }
+                                                 ]
+                        }
+                    ]
+}

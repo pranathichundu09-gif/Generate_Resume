@@ -1,0 +1,17 @@
+{
+  "constants.extensionName": ".NET 6 Runtime",
+
+  "extension.configuration.dotnetPath.description": "Full path to the 'dotnet' executable",
+  "extension.configuration.logLevel.description": "Specifies minimum severity of the messages to output in the log",
+
+  "task.prepareRuntime.title": "Preparing .NET Runtime",
+
+  "task.prepareRuntime.progress.download": "Downloading...",
+  "task.prepareRuntime.progress.downloadFormat": "Downloaded {0} of {1}",
+  "task.prepareRuntime.progress.extract": "Extracting...",
+  "task.prepareRuntime.progress.cleanup": "Removing temporary files...",
+
+  "task.prepareRuntime.error.missingDotnet": "Runtime package is missing 'dotnet' executable",
+  "task.prepareRuntime.error.tooManyRedirects": "Too many redirects",
+  "task.prepareRuntime.error.missingRedirectLocation": "No 'location' header provided for redirection"
+}

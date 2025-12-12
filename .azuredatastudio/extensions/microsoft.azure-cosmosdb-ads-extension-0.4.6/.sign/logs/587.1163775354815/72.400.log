@@ -1,0 +1,619 @@
+******************************************************************************
+Machine Information
+Machine Name: E1DEDA7E702E
+Machine Ip: 172.18.53.155
+Operating System: Microsoft Windows NT 10.0.17763.0
+User Name: ContainerAdministrator
+Processor Count: 16
+Process Name: EsrpClient
+Process Id: 12016
+Caller Program: EsrpClient.exe
+Identity: User Manager\ContainerAdministrator
+Process Version: 1.2.87+Branch.master.Sha.5b31305b6eb726f8c4dd81f5537da21ce42effcb
+Process Bitness: 64 bit
+******************************************************************************
+Commandline received: sign | -a | C:\obtools_container\onebranch.sign\3.0.2817669\x64\ESRP\Templates\Session\azure-ado\Auth.json | -c | C:\obtools_container\onebranch.sign\3.0.2817669\x64\ESRP\Templates\Session\azure-ado\Config.json | -p | C:\obtools_container\onebranch.sign\3.0.2817669\x64\ESRP\Templates\Session\azure-ado\Policy.json | -i | C:\__w\1\s\.sign\logs\587.1163775354815\72.400.json | -f | C:\__w\1\s\.sign\logs\587.1163775354815\72.400.log | -o | C:\__w\1\s\.sign\logs\587.1163775354815\72.400.out.json | -l | verbose ESRP session Id is: e2c8fd38-4c0d-4779-b4b7-b793f089fd65
+2024-09-20T13:34:45.9663531Z:Command you are trying to use is: sign
+2024-09-20T13:34:45.9819513Z:Warning: Correlation Vector for this run is empty
+2024-09-20T13:34:45.9819513Z:Warning: Created new Correlation Vector: b2NqZ9nmdUWVjnvlOZ6HXw.0
+2024-09-20T13:34:45.9819513Z:Groupid for this run is empty
+2024-09-20T13:34:46.0133212Z:request signing cert being used is this thumbprint: E9728EB0D7343C960BEDDF674082136B07E4DFC8  in store LocalMachine\My
+2024-09-20T13:34:46.0133212Z:Both certificates validation passed.
+2024-09-20T13:34:46.0133212Z:The auth cert we choose to use, subject name is: CN=0957f203-cb20-4270-be97-44e03a28e52f.microsoft.com, thumbprint is: 7A7E8F210DD5DE2C891162DA4235F937D3BE6377
+2024-09-20T13:34:46.0446085Z:MSAL logging: False MSAL 4.40.0.0 MSAL.Desktop 4.8 or later Windows Server 2019 Datacenter [2024-09-20 13:34:46Z] ConfidentialClientApplication 60665573 created
+2024-09-20T13:34:46.0446085Z:Gateway Client: Enter AuthenticationProvider, no calls to AAD yet, client id is 0957f203-cb20-4270-be97-44e03a28e52f, and resource url is https://api.esrp.microsoft.com, tenant id is 72f988bf-86f1-41af-91ab-2d7cd011db47
+2024-09-20T13:34:46.0446085Z:There is no memory mapped file accociated with this name: api.esrp.microsoft.com_0957f203-cb20-4270-be97-44e03a28e52f_72f988bf-86f1-41af-91ab-2d7cd011db47
+2024-09-20T13:34:46.0446085Z:AAD auth caching is in use with this name: api.esrp.microsoft.com_0957f203-cb20-4270-be97-44e03a28e52f_72f988bf-86f1-41af-91ab-2d7cd011db47
+2024-09-20T13:34:46.1869996Z:Validate and Renew Token if necessary finished: 00:00:00.1296475
+2024-09-20T13:34:46.2651688Z:Session request is: {
+  "expiresAfter": "3.00:00:00",
+  "partitionCount": 0,
+  "isProvisionStorage": true,
+  "isLegacyCopsModel": false,
+  "commandName": "sign",
+  "intent": "ProductRelease",
+  "contentType": "",
+  "contentOrigin": "",
+  "productState": "",
+  "audience": ""
+}
+2024-09-20T13:34:46.4839156Z:MSAL logging: False MSAL 4.40.0.0 MSAL.Desktop 4.8 or later Windows Server 2019 Datacenter [2024-09-20 13:34:46Z] ConfidentialClientApplication 59182880 created
+2024-09-20T13:34:46.4839156Z:Gateway Client: Enter AuthenticationProvider, no calls to AAD yet, client id is 0957f203-cb20-4270-be97-44e03a28e52f, and resource url is https://api.esrp.microsoft.com, tenant id is 72f988bf-86f1-41af-91ab-2d7cd011db47
+2024-09-20T13:34:46.4839156Z:Gateway Client: a new client and client id is created:  ea7bf67e-29ef-4fcd-851c-1c764ec1858a
+2024-09-20T13:34:48.0710082Z:token expire time is: 9/20/2024 2:29:47 PM +00:00
+2024-09-20T13:34:48.0710082Z:Existing Token (Already Renewed) Acquisition Time: 00:00:01.5751174
+2024-09-20T13:34:48.0866393Z:Gateway Client: the client id that is sending a request is:  ea7bf67e-29ef-4fcd-851c-1c764ec1858a
+2024-09-20T13:34:48.6817143Z:Gateway Client: response send time from cloud gateway:  2024-09-20T13:34:48.6299132+00:00
+2024-09-20T13:34:48.6817143Z:Gateway Client: response receive time from client SendAsync:  2024-09-20T13:34:48.6817143+00:00
+2024-09-20T13:34:48.6817143Z:Gateway Client: response duration time between cloud gateway and client SendAsync:  00:00:00.0518011
+2024-09-20T13:34:48.7598384Z:Session request requestid: 19fee6c6-b4e5-4d20-9395-2b8dc5097e64, and submission status is: Pass
+2024-09-20T13:34:48.7910891Z:Provision storage complete. Total shards: 100
+2024-09-20T13:34:48.8066908Z:Warning: Warning: Setting it to use empty digest sign mapping because session result is empty
+2024-09-20T13:34:48.8066908Z:Loading DigestSignErrorMappingCache mapping info
+2024-09-20T13:34:48.8066908Z:DigestSignErrorMappingCache from server, # of DigestSignOperationErrorPatterns object we get is :: 
+2024-09-20T13:34:48.8066908Z:Consolidate DigestSignErrorMappingCache, # of DigestSignOperationErrorPatterns object we get is  :: 34
+2024-09-20T13:34:48.8066908Z:Successfully retrieved policy: policy is  {"policy":{"id":"0957f203-cb20-4270-be97-44e03a28e52f-d3","workflowExecutionType":0}}
+2024-09-20T13:34:48.8223389Z:Successfully get telemetry connection string: Endpo......
+2024-09-20T13:34:48.8223389Z:Warning: 
+2024-09-20T13:34:48.8223389Z:IAuthInfo constructed: {
+  "authenticationType": "AAD_CERT",
+  "clientId": "0957f203-cb20-4270-be97-44e03a28e52f",
+  "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+  "aadAuthorityBaseUri": "https://login.microsoftonline.com/",
+  "authCert": {
+    "storeLocation": "LocalMachine",
+    "storeName": "My",
+    "subjectName": "CN=0957f203-cb20-4270-be97-44e03a28e52f.microsoft.com",
+    "sendX5c": true,
+    "withAzureRegion": false
+  },
+  "requestSigningCert": {
+    "storeLocation": "LocalMachine",
+    "storeName": "My",
+    "subjectName": "CN=0957f203-cb20-4270-be97-44e03a28e52f",
+    "sendX5c": false,
+    "withAzureRegion": false
+  },
+  "oAuthToken": null,
+  "version": "1.0.0"
+}
+2024-09-20T13:34:48.8223389Z:IPolicyInfo constructed: {
+  "intent": "ProductRelease",
+  "contentType": "",
+  "contentOrigin": "",
+  "productState": "",
+  "audience": "",
+  "version": "1.0.0"
+}
+2024-09-20T13:34:48.8223389Z:IConfigInfo constructed: {
+  "esrpApiBaseUri": "https://api.esrp.microsoft.com/api/v2/",
+  "esrpSessionTimeoutInSec": 14400,
+  "minThreadPoolThreads": 64,
+  "maxDegreeOfParallelism": 64,
+  "exponentialFirstFastRetry": true,
+  "exponentialRetryCount": 5,
+  "exponentialRetryDeltaBackOff": "00:00:05",
+  "exponentialRetryMaxBackOff": "00:01:00",
+  "exponentialRetryMinBackOff": "00:00:03",
+  "appDataFolder": "C:\\__w\\_temp\\sign\\esrp",
+  "certificateCacheFolder": "C:\\EsrpClient\\Certificates",
+  "version": "1.0.0",
+  "exitOnFlaggedFile": false,
+  "flaggedFileClientWaitTimeout": "1.00:00:00",
+  "servicePointManagerDefaultConnectionLimit": 64,
+  "isOnPremGateway": false,
+  "diagnosticListeners": null,
+  "securityProtocolType": "Tls12",
+  "parallelOperationsInFileUploadDownload": 300,
+  "maxTelemetryBuffer": 200000,
+  "telemetryTimeoutInSec": 0
+}
+2024-09-20T13:34:51.2281125Z:Client Telemetry: Xpert agent is not running on the machine. Using events hub for processing client telemetry.
+2024-09-20T13:34:51.5718591Z:Start Time:9/20/2024 1:34:51 PM, Starting the sign workflow...
+2024-09-20T13:34:51.5718591Z:some input info: {
+  "contextData": {
+    "build_buildid": "142064812",
+    "build_buildnumber": "20240920.1",
+    "build_queuedby": "Laurent Nguyen",
+    "build_reason": "Manual",
+    "build_requestedforemail": "languye@microsoft.com",
+    "system_teamfoundationcollectionuri": "https://msdata.visualstudio.com/",
+    "agent_name": "OneBranchPipelines 189"
+  },
+  "sourceDirectory": null,
+  "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Serialization.HybridRow.dll",
+  "destinationDirectory": null,
+  "destinationLocation": null,
+  "sizeInBytes": 0,
+  "name": null,
+  "isSuccess": null,
+  "operationStartedAt": "0001-01-01T00:00:00+00:00",
+  "operationEndedAt": "0001-01-01T00:00:00+00:00",
+  "operationDurationMS": 0,
+  "processName": "EsrpClient",
+  "processId": 12016,
+  "processVersion": "1.2.87+Branch.master.Sha.5b31305b6eb726f8c4dd81f5537da21ce42effcb",
+  "customerCorrelationId": null,
+  "esrpClientSessionGuid": "e2c8fd38-4c0d-4779-b4b7-b793f089fd65",
+  "callerProgram": "EsrpClient",
+  "indentity": "User Manager\\ContainerAdministrator",
+  "clientId": "0957f203-cb20-4270-be97-44e03a28e52f",
+  "exceptionData": null,
+  "apiBaseUrl": "https://api.esrp.microsoft.com/api/v2/",
+  "handlerWorkflow": "sign",
+  "submissionRequest": {
+    "contextData": {
+      "build_buildid": "142064812",
+      "build_buildnumber": "20240920.1",
+      "build_queuedby": "Laurent Nguyen",
+      "build_reason": "Manual",
+      "build_requestedforemail": "languye@microsoft.com",
+      "system_teamfoundationcollectionuri": "https://msdata.visualstudio.com/",
+      "agent_name": "OneBranchPipelines 189"
+    },
+    "groupId": null,
+    "correlationVector": "b2NqZ9nmdUWVjnvlOZ6HXw.0",
+    "driEmail": null,
+    "version": null
+  },
+  "policyInfo": {
+    "intent": "ProductRelease",
+    "contentType": "",
+    "contentOrigin": "",
+    "productState": "",
+    "audience": "",
+    "version": "1.0.0"
+  },
+  "osVersion": "Microsoft Windows NT 10.0.17763.0",
+  "executingMachineIPAddress": "172.18.53.155"
+}
+2024-09-20T13:34:51.5874873Z:some input info: {
+  "contextData": {
+    "build_buildid": "142064812",
+    "build_buildnumber": "20240920.1",
+    "build_queuedby": "Laurent Nguyen",
+    "build_reason": "Manual",
+    "build_requestedforemail": "languye@microsoft.com",
+    "system_teamfoundationcollectionuri": "https://msdata.visualstudio.com/",
+    "agent_name": "OneBranchPipelines 189"
+  },
+  "sourceDirectory": null,
+  "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Client.dll",
+  "destinationDirectory": null,
+  "destinationLocation": null,
+  "sizeInBytes": 0,
+  "name": null,
+  "isSuccess": null,
+  "operationStartedAt": "0001-01-01T00:00:00+00:00",
+  "operationEndedAt": "0001-01-01T00:00:00+00:00",
+  "operationDurationMS": 0,
+  "processName": "EsrpClient",
+  "processId": 12016,
+  "processVersion": "1.2.87+Branch.master.Sha.5b31305b6eb726f8c4dd81f5537da21ce42effcb",
+  "customerCorrelationId": null,
+  "esrpClientSessionGuid": "e2c8fd38-4c0d-4779-b4b7-b793f089fd65",
+  "callerProgram": "EsrpClient",
+  "indentity": "User Manager\\ContainerAdministrator",
+  "clientId": "0957f203-cb20-4270-be97-44e03a28e52f",
+  "exceptionData": null,
+  "apiBaseUrl": "https://api.esrp.microsoft.com/api/v2/",
+  "handlerWorkflow": "sign",
+  "submissionRequest": {
+    "contextData": {
+      "build_buildid": "142064812",
+      "build_buildnumber": "20240920.1",
+      "build_queuedby": "Laurent Nguyen",
+      "build_reason": "Manual",
+      "build_requestedforemail": "languye@microsoft.com",
+      "system_teamfoundationcollectionuri": "https://msdata.visualstudio.com/",
+      "agent_name": "OneBranchPipelines 189"
+    },
+    "groupId": null,
+    "correlationVector": "b2NqZ9nmdUWVjnvlOZ6HXw.0",
+    "driEmail": null,
+    "version": null
+  },
+  "policyInfo": {
+    "intent": "ProductRelease",
+    "contentType": "",
+    "contentOrigin": "",
+    "productState": "",
+    "audience": "",
+    "version": "1.0.0"
+  },
+  "osVersion": "Microsoft Windows NT 10.0.17763.0",
+  "executingMachineIPAddress": "172.18.53.155"
+}
+2024-09-20T13:34:51.5874873Z:some input info: {
+  "contextData": {
+    "build_buildid": "142064812",
+    "build_buildnumber": "20240920.1",
+    "build_queuedby": "Laurent Nguyen",
+    "build_reason": "Manual",
+    "build_requestedforemail": "languye@microsoft.com",
+    "system_teamfoundationcollectionuri": "https://msdata.visualstudio.com/",
+    "agent_name": "OneBranchPipelines 189"
+  },
+  "sourceDirectory": null,
+  "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Core.dll",
+  "destinationDirectory": null,
+  "destinationLocation": null,
+  "sizeInBytes": 0,
+  "name": null,
+  "isSuccess": null,
+  "operationStartedAt": "0001-01-01T00:00:00+00:00",
+  "operationEndedAt": "0001-01-01T00:00:00+00:00",
+  "operationDurationMS": 0,
+  "processName": "EsrpClient",
+  "processId": 12016,
+  "processVersion": "1.2.87+Branch.master.Sha.5b31305b6eb726f8c4dd81f5537da21ce42effcb",
+  "customerCorrelationId": null,
+  "esrpClientSessionGuid": "e2c8fd38-4c0d-4779-b4b7-b793f089fd65",
+  "callerProgram": "EsrpClient",
+  "indentity": "User Manager\\ContainerAdministrator",
+  "clientId": "0957f203-cb20-4270-be97-44e03a28e52f",
+  "exceptionData": null,
+  "apiBaseUrl": "https://api.esrp.microsoft.com/api/v2/",
+  "handlerWorkflow": "sign",
+  "submissionRequest": {
+    "contextData": {
+      "build_buildid": "142064812",
+      "build_buildnumber": "20240920.1",
+      "build_queuedby": "Laurent Nguyen",
+      "build_reason": "Manual",
+      "build_requestedforemail": "languye@microsoft.com",
+      "system_teamfoundationcollectionuri": "https://msdata.visualstudio.com/",
+      "agent_name": "OneBranchPipelines 189"
+    },
+    "groupId": null,
+    "correlationVector": "b2NqZ9nmdUWVjnvlOZ6HXw.0",
+    "driEmail": null,
+    "version": null
+  },
+  "policyInfo": {
+    "intent": "ProductRelease",
+    "contentType": "",
+    "contentOrigin": "",
+    "productState": "",
+    "audience": "",
+    "version": "1.0.0"
+  },
+  "osVersion": "Microsoft Windows NT 10.0.17763.0",
+  "executingMachineIPAddress": "172.18.53.155"
+}
+2024-09-20T13:34:51.5874873Z:some input info: {
+  "contextData": {
+    "build_buildid": "142064812",
+    "build_buildnumber": "20240920.1",
+    "build_queuedby": "Laurent Nguyen",
+    "build_reason": "Manual",
+    "build_requestedforemail": "languye@microsoft.com",
+    "system_teamfoundationcollectionuri": "https://msdata.visualstudio.com/",
+    "agent_name": "OneBranchPipelines 189"
+  },
+  "sourceDirectory": null,
+  "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Direct.dll",
+  "destinationDirectory": null,
+  "destinationLocation": null,
+  "sizeInBytes": 0,
+  "name": null,
+  "isSuccess": null,
+  "operationStartedAt": "0001-01-01T00:00:00+00:00",
+  "operationEndedAt": "0001-01-01T00:00:00+00:00",
+  "operationDurationMS": 0,
+  "processName": "EsrpClient",
+  "processId": 12016,
+  "processVersion": "1.2.87+Branch.master.Sha.5b31305b6eb726f8c4dd81f5537da21ce42effcb",
+  "customerCorrelationId": null,
+  "esrpClientSessionGuid": "e2c8fd38-4c0d-4779-b4b7-b793f089fd65",
+  "callerProgram": "EsrpClient",
+  "indentity": "User Manager\\ContainerAdministrator",
+  "clientId": "0957f203-cb20-4270-be97-44e03a28e52f",
+  "exceptionData": null,
+  "apiBaseUrl": "https://api.esrp.microsoft.com/api/v2/",
+  "handlerWorkflow": "sign",
+  "submissionRequest": {
+    "contextData": {
+      "build_buildid": "142064812",
+      "build_buildnumber": "20240920.1",
+      "build_queuedby": "Laurent Nguyen",
+      "build_reason": "Manual",
+      "build_requestedforemail": "languye@microsoft.com",
+      "system_teamfoundationcollectionuri": "https://msdata.visualstudio.com/",
+      "agent_name": "OneBranchPipelines 189"
+    },
+    "groupId": null,
+    "correlationVector": "b2NqZ9nmdUWVjnvlOZ6HXw.0",
+    "driEmail": null,
+    "version": null
+  },
+  "policyInfo": {
+    "intent": "ProductRelease",
+    "contentType": "",
+    "contentOrigin": "",
+    "productState": "",
+    "audience": "",
+    "version": "1.0.0"
+  },
+  "osVersion": "Microsoft Windows NT 10.0.17763.0",
+  "executingMachineIPAddress": "172.18.53.155"
+}
+2024-09-20T13:34:51.6031128Z:Start constructing ExecutionParameter object
+2024-09-20T13:34:51.6031128Z:Created executionInput object
+2024-09-20T13:34:51.6187283Z:Retrieving storage shard information....
+2024-09-20T13:34:51.9021384Z:Invoke the TPL workflow..
+2024-09-20T13:34:51.9646299Z:Pushing input files to the InputBlock...
+2024-09-20T13:34:51.9646299Z:Completed Pushing 4 input files to the InputBlock
+2024-09-20T13:34:52.0766433Z:Attempting upload of "C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Direct.dll" to prodgatewayv2west43.blob.core.windows.net
+2024-09-20T13:34:52.0766433Z:Attempting upload of "C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Core.dll" to prodgatewayv2west41.blob.core.windows.net
+2024-09-20T13:34:52.0766433Z:Attempting upload of "C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Client.dll" to prodgatewayv2west31.blob.core.windows.net
+2024-09-20T13:34:52.0766433Z:Attempting upload of "C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Serialization.HybridRow.dll" to prodgatewayv2west43.blob.core.windows.net
+2024-09-20T13:34:52.0922625Z:Uploading C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Direct.dll to destinationUrl prodgatewayv2westp224.blob.core.windows.net/09-23-2024-user-0957f203-cb20-4270-be97-44e03a28e52f/27aa551d-7247-46b7-93a9-a6bcfbf8e761/33bd4544f0b74e52939b0ceb4f135222.dll?skoid=38ebbd80-c6ff-4f7e-9a05-d083a1ec3f23&sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d&skt=2024-09-20T13%3a34%3a48Z&ske=2024-09-23T13%3a34%3a48Z&sks=b&skv=2024-05-04&sv=2024-05-04&se=2024-09-23T13%3a34%3a48Z&sr=c&sp=rwdl, Transfer request Id: 16406a7f-dce5-4aac-8d64-421520a53edd
+2024-09-20T13:34:52.1078866Z:Uploading C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Client.dll to destinationUrl prodgatewayv2west30.blob.core.windows.net/09-23-2024-user-0957f203-cb20-4270-be97-44e03a28e52f/476cc816-1de9-4d6e-b8bd-2dcaf1b99d90/9212b13ff10549dfa9cd4b472b0455bb.dll?skoid=38ebbd80-c6ff-4f7e-9a05-d083a1ec3f23&sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d&skt=2024-09-20T13%3a34%3a48Z&ske=2024-09-23T13%3a34%3a48Z&sks=b&skv=2024-05-04&sv=2024-05-04&se=2024-09-23T13%3a34%3a48Z&sr=c&sp=rwdl, Transfer request Id: 9f6874c1-e231-48a9-80a8-51d9093fa64d
+2024-09-20T13:34:52.1078866Z:Uploading C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Serialization.HybridRow.dll to destinationUrl prodgatewayv2west3.blob.core.windows.net/09-23-2024-user-0957f203-cb20-4270-be97-44e03a28e52f/a06f4201-e221-44b5-b4fe-053e0a6f1ec9/8eba049bd4bb404b8e48bf12c375f0b5.dll?skoid=38ebbd80-c6ff-4f7e-9a05-d083a1ec3f23&sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d&skt=2024-09-20T13%3a34%3a48Z&ske=2024-09-23T13%3a34%3a48Z&sks=b&skv=2024-05-04&sv=2024-05-04&se=2024-09-23T13%3a34%3a48Z&sr=c&sp=rwdl, Transfer request Id: 64c39309-7256-4f0d-9e6a-6b95aa9ad01b
+2024-09-20T13:34:52.1078866Z:Uploading C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Core.dll to destinationUrl prodgatewayv2west39.blob.core.windows.net/09-23-2024-user-0957f203-cb20-4270-be97-44e03a28e52f/ec9e1dd6-c68d-40c0-85d6-931c6f2a088e/8f9470918e8143139cebd79b702a5112.dll?skoid=38ebbd80-c6ff-4f7e-9a05-d083a1ec3f23&sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d&skt=2024-09-20T13%3a34%3a48Z&ske=2024-09-23T13%3a34%3a48Z&sks=b&skv=2024-05-04&sv=2024-05-04&se=2024-09-23T13%3a34%3a48Z&sr=c&sp=rwdl, Transfer request Id: fb37fff3-9779-4782-b728-f456b4d8951a
+2024-09-20T13:34:52.2897271Z:Client Telemetry: Events published in this batch: 5
+2024-09-20T13:34:52.2897271Z:Client Telemetry: Events received so far in this session: 10
+2024-09-20T13:34:52.2897271Z:Client Telemetry: Events published so far in this session: 5
+2024-09-20T13:34:52.8098528Z:Client Telemetry: Events published in this batch: 5
+2024-09-20T13:34:52.8098528Z:Client Telemetry: Events received so far in this session: 10
+2024-09-20T13:34:52.8098528Z:Client Telemetry: Events published so far in this session: 10
+2024-09-20T13:34:52.8879934Z:Successfully uploaded "C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Serialization.HybridRow.dll" to prodgatewayv2west3.blob.core.windows.net
+2024-09-20T13:34:52.8879934Z:Successfully uploaded "C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Core.dll" to prodgatewayv2west39.blob.core.windows.net
+2024-09-20T13:34:52.8879934Z:embed sign submission, request expire time is: 9/20/2024 5:34:48 PM
+2024-09-20T13:34:52.8879934Z:destination location type is UNC, this is a UNC typed file submitted
+2024-09-20T13:34:52.9036147Z:embed sign submission, request expire time is: 9/20/2024 5:34:48 PM
+2024-09-20T13:34:52.9036147Z:destination location type is UNC, this is a UNC typed file submitted
+2024-09-20T13:34:52.9036147Z:MSAL logging: False MSAL 4.40.0.0 MSAL.Desktop 4.8 or later Windows Server 2019 Datacenter [2024-09-20 13:34:52Z] ConfidentialClientApplication 65820887 created
+2024-09-20T13:34:52.9036147Z:Gateway Client: Enter AuthenticationProvider, no calls to AAD yet, client id is 0957f203-cb20-4270-be97-44e03a28e52f, and resource url is https://api.esrp.microsoft.com, tenant id is 72f988bf-86f1-41af-91ab-2d7cd011db47
+2024-09-20T13:34:52.9036147Z:Gateway Client: a new client and client id is created:  c1e4242f-32bb-4467-986c-8605a91c7291
+2024-09-20T13:34:52.9036147Z:ManagedThreadId: 21 Loading request signing cert
+2024-09-20T13:34:52.9036147Z:ManagedThreadId: 6 Loading request signing cert
+2024-09-20T13:34:52.9036147Z:ManagedThreadId: 21, The request signing cert we choose to use, subject name is: CN=0957F203-CB20-4270-BE97-44E03A28E52F thumbprint is: E9728EB0D7343C960BEDDF674082136B07E4DFC8
+2024-09-20T13:34:52.9036147Z:ManagedThreadId: 6, The request signing cert we choose to use, subject name is: CN=0957F203-CB20-4270-BE97-44E03A28E52F thumbprint is: E9728EB0D7343C960BEDDF674082136B07E4DFC8
+2024-09-20T13:34:52.9192436Z:Existing Token Acquisition Time: 00:00:00.0004841
+2024-09-20T13:34:52.9192436Z:Existing Token Acquisition Time: 00:00:00.0005672
+2024-09-20T13:34:52.9817309Z:Successfully uploaded "C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Direct.dll" to prodgatewayv2westp224.blob.core.windows.net
+2024-09-20T13:34:52.9817309Z:embed sign submission, request expire time is: 9/20/2024 5:34:48 PM
+2024-09-20T13:34:52.9817309Z:destination location type is UNC, this is a UNC typed file submitted
+2024-09-20T13:34:52.9817309Z:MSAL logging: False MSAL 4.40.0.0 MSAL.Desktop 4.8 or later Windows Server 2019 Datacenter [2024-09-20 13:34:52Z] ConfidentialClientApplication 30135413 created
+2024-09-20T13:34:52.9817309Z:Gateway Client: Enter AuthenticationProvider, no calls to AAD yet, client id is 0957f203-cb20-4270-be97-44e03a28e52f, and resource url is https://api.esrp.microsoft.com, tenant id is 72f988bf-86f1-41af-91ab-2d7cd011db47
+2024-09-20T13:34:52.9817309Z:Gateway Client: a new client and client id is created:  407a4326-6864-4ed1-a9ed-67f77e8d2493
+2024-09-20T13:34:52.9817309Z:ManagedThreadId: 20 Loading request signing cert
+2024-09-20T13:34:52.9817309Z:ManagedThreadId: 20, The request signing cert we choose to use, subject name is: CN=0957F203-CB20-4270-BE97-44E03A28E52F thumbprint is: E9728EB0D7343C960BEDDF674082136B07E4DFC8
+2024-09-20T13:34:52.9817309Z:Existing Token Acquisition Time: 00:00:00.0004876
+2024-09-20T13:34:52.9973800Z:Gateway Client: the client id that is sending a request is:  ea7bf67e-29ef-4fcd-851c-1c764ec1858a
+2024-09-20T13:34:52.9973800Z:Gateway Client: the client id that is sending a request is:  c1e4242f-32bb-4467-986c-8605a91c7291
+2024-09-20T13:34:53.0129839Z:Gateway Client: the client id that is sending a request is:  407a4326-6864-4ed1-a9ed-67f77e8d2493
+2024-09-20T13:34:53.1881920Z:Gateway Client: response send time from cloud gateway:  2024-09-20T13:34:53.1616026+00:00
+2024-09-20T13:34:53.1881920Z:Gateway Client: response receive time from client SendAsync:  2024-09-20T13:34:53.1881920+00:00
+2024-09-20T13:34:53.1881920Z:Gateway Client: response duration time between cloud gateway and client SendAsync:  00:00:00.0265894
+2024-09-20T13:34:53.2453378Z:Submitted file 'C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Direct.dll' for Sign, OperationId:e06dfe9a-06b6-454f-8414-a9a19795fb94
+2024-09-20T13:34:53.2507247Z:Gateway Client: response send time from cloud gateway:  2024-09-20T13:34:53.2020189+00:00
+2024-09-20T13:34:53.2507247Z:Gateway Client: response receive time from client SendAsync:  2024-09-20T13:34:53.2507247+00:00
+2024-09-20T13:34:53.2507247Z:Gateway Client: response duration time between cloud gateway and client SendAsync:  00:00:00.0487058
+2024-09-20T13:34:53.2573596Z:Submitted file 'C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Serialization.HybridRow.dll' for Sign, OperationId:85049d4b-02a0-46c4-bfa5-b4bd05219c47
+2024-09-20T13:34:53.2663555Z:Gateway Client: response send time from cloud gateway:  2024-09-20T13:34:53.2249168+00:00
+2024-09-20T13:34:53.2663555Z:Gateway Client: response receive time from client SendAsync:  2024-09-20T13:34:53.2663555+00:00
+2024-09-20T13:34:53.2663555Z:Gateway Client: response duration time between cloud gateway and client SendAsync:  00:00:00.0414387
+2024-09-20T13:34:53.2663555Z:Submitted file 'C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Core.dll' for Sign, OperationId:2eeeac1f-7dc9-4aa5-871f-1956fcbe5fb2
+2024-09-20T13:34:53.2663555Z:Existing Token Acquisition Time: 00:00:00.0004113
+2024-09-20T13:34:53.2663555Z:Existing Token Acquisition Time: 00:00:00.0004585
+2024-09-20T13:34:53.2663555Z:Existing Token Acquisition Time: 00:00:00.0004889
+2024-09-20T13:34:53.2819823Z:Gateway Client: the client id that is sending a request is:  ea7bf67e-29ef-4fcd-851c-1c764ec1858a
+2024-09-20T13:34:53.2819823Z:Gateway Client: the client id that is sending a request is:  407a4326-6864-4ed1-a9ed-67f77e8d2493
+2024-09-20T13:34:53.2819823Z:Gateway Client: the client id that is sending a request is:  c1e4242f-32bb-4467-986c-8605a91c7291
+2024-09-20T13:34:53.3383421Z:Client Telemetry: Events published in this batch: 12
+2024-09-20T13:34:53.3383421Z:Client Telemetry: Events received so far in this session: 22
+2024-09-20T13:34:53.3383421Z:Client Telemetry: Events published so far in this session: 22
+2024-09-20T13:34:53.4008484Z:Gateway Client: response send time from cloud gateway:  2024-09-20T13:34:53.3708260+00:00
+2024-09-20T13:34:53.4008484Z:Gateway Client: response receive time from client SendAsync:  2024-09-20T13:34:53.4008484+00:00
+2024-09-20T13:34:53.4008484Z:Gateway Client: response duration time between cloud gateway and client SendAsync:  00:00:00.0300224
+2024-09-20T13:34:53.4008484Z:Gateway Client: response send time from cloud gateway:  2024-09-20T13:34:53.3862743+00:00
+2024-09-20T13:34:53.4008484Z:Gateway Client: response receive time from client SendAsync:  2024-09-20T13:34:53.4008484+00:00
+2024-09-20T13:34:53.4008484Z:Gateway Client: response duration time between cloud gateway and client SendAsync:  00:00:00.0145741
+2024-09-20T13:34:53.4477159Z:Gateway Client: response send time from cloud gateway:  2024-09-20T13:34:53.4107809+00:00
+2024-09-20T13:34:53.4477159Z:Gateway Client: response receive time from client SendAsync:  2024-09-20T13:34:53.4477159+00:00
+2024-09-20T13:34:53.4477159Z:Gateway Client: response duration time between cloud gateway and client SendAsync:  00:00:00.0369350
+2024-09-20T13:34:53.6664699Z:Successfully uploaded "C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Client.dll" to prodgatewayv2west30.blob.core.windows.net
+2024-09-20T13:34:53.6664699Z:embed sign submission, request expire time is: 9/20/2024 5:34:48 PM
+2024-09-20T13:34:53.6664699Z:destination location type is UNC, this is a UNC typed file submitted
+2024-09-20T13:34:53.6664699Z:Existing Token Acquisition Time: 00:00:00.0003856
+2024-09-20T13:34:53.6664699Z:Gateway Client: the client id that is sending a request is:  c1e4242f-32bb-4467-986c-8605a91c7291
+2024-09-20T13:34:53.8541359Z:Client Telemetry: Events published in this batch: 2
+2024-09-20T13:34:53.8541359Z:Client Telemetry: Events received so far in this session: 24
+2024-09-20T13:34:53.8541359Z:Client Telemetry: Events published so far in this session: 24
+2024-09-20T13:34:53.8541359Z:Gateway Client: response send time from cloud gateway:  2024-09-20T13:34:53.8197788+00:00
+2024-09-20T13:34:53.8541359Z:Gateway Client: response receive time from client SendAsync:  2024-09-20T13:34:53.8541359+00:00
+2024-09-20T13:34:53.8541359Z:Gateway Client: response duration time between cloud gateway and client SendAsync:  00:00:00.0343571
+2024-09-20T13:34:53.8541359Z:Submitted file 'C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Client.dll' for Sign, OperationId:76e98b7d-23d6-466b-ba9b-346fcee07b68
+2024-09-20T13:34:53.8541359Z:Existing Token Acquisition Time: 00:00:00.0003695
+2024-09-20T13:34:53.8541359Z:Gateway Client: the client id that is sending a request is:  c1e4242f-32bb-4467-986c-8605a91c7291
+2024-09-20T13:34:53.9947491Z:Gateway Client: response send time from cloud gateway:  2024-09-20T13:34:53.9681410+00:00
+2024-09-20T13:34:53.9947491Z:Gateway Client: response receive time from client SendAsync:  2024-09-20T13:34:53.9947491+00:00
+2024-09-20T13:34:53.9947491Z:Gateway Client: response duration time between cloud gateway and client SendAsync:  00:00:00.0266081
+2024-09-20T13:34:54.3699053Z:Client Telemetry: Events published in this batch: 2
+2024-09-20T13:34:54.3699053Z:Client Telemetry: Events received so far in this session: 26
+2024-09-20T13:34:54.3699053Z:Client Telemetry: Events published so far in this session: 26
+2024-09-20T13:35:03.4160985Z:Existing Token Acquisition Time: 00:00:00.0005318
+2024-09-20T13:35:03.4160985Z:Gateway Client: the client id that is sending a request is:  c1e4242f-32bb-4467-986c-8605a91c7291
+2024-09-20T13:35:03.4160985Z:Existing Token Acquisition Time: 00:00:00.0005105
+2024-09-20T13:35:03.4160985Z:Gateway Client: the client id that is sending a request is:  407a4326-6864-4ed1-a9ed-67f77e8d2493
+2024-09-20T13:35:03.4629879Z:Existing Token Acquisition Time: 00:00:00.0003597
+2024-09-20T13:35:03.4629879Z:Gateway Client: the client id that is sending a request is:  ea7bf67e-29ef-4fcd-851c-1c764ec1858a
+2024-09-20T13:35:03.5254902Z:Gateway Client: response send time from cloud gateway:  2024-09-20T13:35:03.5152336+00:00
+2024-09-20T13:35:03.5254902Z:Gateway Client: response receive time from client SendAsync:  2024-09-20T13:35:03.5254902+00:00
+2024-09-20T13:35:03.5254902Z:Gateway Client: response duration time between cloud gateway and client SendAsync:  00:00:00.0102566
+2024-09-20T13:35:03.5254902Z:Waiting for Get status call, Operation id is: e06dfe9a-06b6-454f-8414-a9a19795fb94, status is: Inprogress
+2024-09-20T13:35:03.5254902Z:Gateway Client: response send time from cloud gateway:  2024-09-20T13:35:03.4984099+00:00
+2024-09-20T13:35:03.5254902Z:Gateway Client: response receive time from client SendAsync:  2024-09-20T13:35:03.5254902+00:00
+2024-09-20T13:35:03.5254902Z:Gateway Client: response duration time between cloud gateway and client SendAsync:  00:00:00.0270803
+2024-09-20T13:35:03.5254902Z:Waiting for Get status call, Operation id is: 85049d4b-02a0-46c4-bfa5-b4bd05219c47, status is: Inprogress
+2024-09-20T13:35:03.5410889Z:Gateway Client: response send time from cloud gateway:  2024-09-20T13:35:03.5090804+00:00
+2024-09-20T13:35:03.5410889Z:Gateway Client: response receive time from client SendAsync:  2024-09-20T13:35:03.5410889+00:00
+2024-09-20T13:35:03.5410889Z:Gateway Client: response duration time between cloud gateway and client SendAsync:  00:00:00.0320085
+2024-09-20T13:35:03.5567089Z:Waiting for Get status call, Operation id is: 2eeeac1f-7dc9-4aa5-871f-1956fcbe5fb2, status is: Inprogress
+2024-09-20T13:35:03.5567089Z:Attempting download of "prodgatewayv2west41.blob.core.windows.net/09-23-2024-user-0957f203-cb20-4270-be97-44e03a28e52f/5abe54f6-759c-4f38-9887-7f093a1c2afb/36b975851d56426782d220b817b03bbd.dll?skoid=38ebbd80-c6ff-4f7e-9a05-d083a1ec3f23&sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d&skt=2024-09-20T13%3a34%3a48Z&ske=2024-09-23T13%3a34%3a48Z&sks=b&skv=2024-05-04&sv=2024-05-04&se=2024-09-23T13%3a34%3a48Z&sr=c&sp=rwdl" to "C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Core.dll"
+2024-09-20T13:35:03.5723426Z:Downloading from this blob location: prodgatewayv2west41.blob.core.windows.net/09-23-2024-user-0957f203-cb20-4270-be97-44e03a28e52f/5abe54f6-759c-4f38-9887-7f093a1c2afb/36b975851d56426782d220b817b03bbd.dll?skoid=38ebbd80-c6ff-4f7e-9a05-d083a1ec3f23&sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d&skt=2024-09-20T13%3a34%3a48Z&ske=2024-09-23T13%3a34%3a48Z&sks=b&skv=2024-05-04&sv=2024-05-04&se=2024-09-23T13%3a34%3a48Z&sr=c&sp=rwdl
+2024-09-20T13:35:03.5723426Z:Downloading signed file to tmp folder: C:\__w\_temp\sign\esrp\EsrpClient_e2c8fd384c0d4779b4b7b793f089fd65
+2024-09-20T13:35:03.8880083Z:Downloaded signed file to: C:\__w\_temp\sign\esrp\EsrpClient_e2c8fd384c0d4779b4b7b793f089fd65\5abe54f6-759c-4f38-9887-7f093a1c2afb/36b975851d56426782d220b817b03bbd.dll
+2024-09-20T13:35:03.9644832Z:CleanupStorage: account prodgatewayv2west41.blob.core.windows.net blob 5abe54f6-759c-4f38-9887-7f093a1c2afb/36b975851d56426782d220b817b03bbd.dll returned True
+2024-09-20T13:35:03.9847608Z:Successfully downloaded "prodgatewayv2west41.blob.core.windows.net" to "C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Core.dll"
+2024-09-20T13:35:04.0004017Z:Existing Token Acquisition Time: 00:00:00.0004522
+2024-09-20T13:35:04.0004017Z:Gateway Client: the client id that is sending a request is:  ea7bf67e-29ef-4fcd-851c-1c764ec1858a
+2024-09-20T13:35:04.0078410Z:OperationId:2eeeac1f-7dc9-4aa5-871f-1956fcbe5fb2, Status:Pass, IsResubmission :False, Finished processing 1/4, % Completed :25%
+2024-09-20T13:35:04.0643527Z:Client Telemetry: Events published in this batch: 5
+2024-09-20T13:35:04.0643527Z:Client Telemetry: Events received so far in this session: 31
+2024-09-20T13:35:04.0643527Z:Client Telemetry: Events published so far in this session: 31
+2024-09-20T13:35:04.1049178Z:Gateway Client: response send time from cloud gateway:  2024-09-20T13:35:04.0751717+00:00
+2024-09-20T13:35:04.1049178Z:Gateway Client: response receive time from client SendAsync:  2024-09-20T13:35:04.1049178+00:00
+2024-09-20T13:35:04.1049178Z:Gateway Client: response duration time between cloud gateway and client SendAsync:  00:00:00.0297461
+2024-09-20T13:35:04.1049178Z:Waiting for Get status call, Operation id is: 76e98b7d-23d6-466b-ba9b-346fcee07b68, status is: Inprogress
+2024-09-20T13:35:13.5403416Z:Existing Token Acquisition Time: 00:00:00.0005454
+2024-09-20T13:35:13.5403416Z:Existing Token Acquisition Time: 00:00:00.0004542
+2024-09-20T13:35:13.5403416Z:Gateway Client: the client id that is sending a request is:  c1e4242f-32bb-4467-986c-8605a91c7291
+2024-09-20T13:35:13.5403416Z:Gateway Client: the client id that is sending a request is:  ea7bf67e-29ef-4fcd-851c-1c764ec1858a
+2024-09-20T13:35:13.5872361Z:Gateway Client: response send time from cloud gateway:  2024-09-20T13:35:13.5800074+00:00
+2024-09-20T13:35:13.5872361Z:Gateway Client: response receive time from client SendAsync:  2024-09-20T13:35:13.5872361+00:00
+2024-09-20T13:35:13.5872361Z:Gateway Client: response duration time between cloud gateway and client SendAsync:  00:00:00.0072287
+2024-09-20T13:35:13.5872361Z:Waiting for Get status call, Operation id is: e06dfe9a-06b6-454f-8414-a9a19795fb94, status is: Inprogress
+2024-09-20T13:35:13.5872361Z:Attempting download of "prodgatewayv2west43.blob.core.windows.net/09-23-2024-user-0957f203-cb20-4270-be97-44e03a28e52f/bad58b6e-2e67-466c-abd2-f1c050e105e2/e3063ad3419b45af860ec4787aa565e0.dll?skoid=38ebbd80-c6ff-4f7e-9a05-d083a1ec3f23&sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d&skt=2024-09-20T13%3a34%3a48Z&ske=2024-09-23T13%3a34%3a48Z&sks=b&skv=2024-05-04&sv=2024-05-04&se=2024-09-23T13%3a34%3a48Z&sr=c&sp=rwdl" to "C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Direct.dll"
+2024-09-20T13:35:13.6028325Z:Downloading from this blob location: prodgatewayv2west43.blob.core.windows.net/09-23-2024-user-0957f203-cb20-4270-be97-44e03a28e52f/bad58b6e-2e67-466c-abd2-f1c050e105e2/e3063ad3419b45af860ec4787aa565e0.dll?skoid=38ebbd80-c6ff-4f7e-9a05-d083a1ec3f23&sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d&skt=2024-09-20T13%3a34%3a48Z&ske=2024-09-23T13%3a34%3a48Z&sks=b&skv=2024-05-04&sv=2024-05-04&se=2024-09-23T13%3a34%3a48Z&sr=c&sp=rwdl
+2024-09-20T13:35:13.6028325Z:Downloading signed file to tmp folder: C:\__w\_temp\sign\esrp\EsrpClient_e2c8fd384c0d4779b4b7b793f089fd65
+2024-09-20T13:35:13.6369325Z:Gateway Client: response send time from cloud gateway:  2024-09-20T13:35:13.6024601+00:00
+2024-09-20T13:35:13.6369325Z:Gateway Client: response receive time from client SendAsync:  2024-09-20T13:35:13.6369325+00:00
+2024-09-20T13:35:13.6369325Z:Gateway Client: response duration time between cloud gateway and client SendAsync:  00:00:00.0344724
+2024-09-20T13:35:13.6369325Z:Waiting for Get status call, Operation id is: 85049d4b-02a0-46c4-bfa5-b4bd05219c47, status is: Inprogress
+2024-09-20T13:35:13.6369325Z:Attempting download of "prodgatewayv2west43.blob.core.windows.net/09-23-2024-user-0957f203-cb20-4270-be97-44e03a28e52f/bad58b6e-2e67-466c-abd2-f1c050e105e2/59c165bcd40743e0a09cdb34d4421d4a.dll?skoid=38ebbd80-c6ff-4f7e-9a05-d083a1ec3f23&sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d&skt=2024-09-20T13%3a34%3a48Z&ske=2024-09-23T13%3a34%3a48Z&sks=b&skv=2024-05-04&sv=2024-05-04&se=2024-09-23T13%3a34%3a48Z&sr=c&sp=rwdl" to "C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Serialization.HybridRow.dll"
+2024-09-20T13:35:13.6369325Z:Downloading from this blob location: prodgatewayv2west43.blob.core.windows.net/09-23-2024-user-0957f203-cb20-4270-be97-44e03a28e52f/bad58b6e-2e67-466c-abd2-f1c050e105e2/59c165bcd40743e0a09cdb34d4421d4a.dll?skoid=38ebbd80-c6ff-4f7e-9a05-d083a1ec3f23&sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d&skt=2024-09-20T13%3a34%3a48Z&ske=2024-09-23T13%3a34%3a48Z&sks=b&skv=2024-05-04&sv=2024-05-04&se=2024-09-23T13%3a34%3a48Z&sr=c&sp=rwdl
+2024-09-20T13:35:13.6369325Z:Downloading signed file to tmp folder: C:\__w\_temp\sign\esrp\EsrpClient_e2c8fd384c0d4779b4b7b793f089fd65
+2024-09-20T13:35:13.9181551Z:Downloaded signed file to: C:\__w\_temp\sign\esrp\EsrpClient_e2c8fd384c0d4779b4b7b793f089fd65\bad58b6e-2e67-466c-abd2-f1c050e105e2/59c165bcd40743e0a09cdb34d4421d4a.dll
+2024-09-20T13:35:13.9494064Z:CleanupStorage: account prodgatewayv2west43.blob.core.windows.net blob bad58b6e-2e67-466c-abd2-f1c050e105e2/59c165bcd40743e0a09cdb34d4421d4a.dll returned True
+2024-09-20T13:35:13.9494064Z:Successfully downloaded "prodgatewayv2west43.blob.core.windows.net" to "C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Serialization.HybridRow.dll"
+2024-09-20T13:35:13.9494064Z:OperationId:85049d4b-02a0-46c4-bfa5-b4bd05219c47, Status:Pass, IsResubmission :False, Finished processing 2/4, % Completed :50%
+2024-09-20T13:35:14.0431552Z:Downloaded signed file to: C:\__w\_temp\sign\esrp\EsrpClient_e2c8fd384c0d4779b4b7b793f089fd65\bad58b6e-2e67-466c-abd2-f1c050e105e2/e3063ad3419b45af860ec4787aa565e0.dll
+2024-09-20T13:35:14.0639343Z:CleanupStorage: account prodgatewayv2west43.blob.core.windows.net blob bad58b6e-2e67-466c-abd2-f1c050e105e2/e3063ad3419b45af860ec4787aa565e0.dll returned True
+2024-09-20T13:35:14.0639343Z:Successfully downloaded "prodgatewayv2west43.blob.core.windows.net" to "C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Direct.dll"
+2024-09-20T13:35:14.0796010Z:OperationId:e06dfe9a-06b6-454f-8414-a9a19795fb94, Status:Pass, IsResubmission :False, Finished processing 3/4, % Completed :75%
+2024-09-20T13:35:14.1108495Z:Existing Token Acquisition Time: 00:00:00.0004076
+2024-09-20T13:35:14.1108495Z:Gateway Client: the client id that is sending a request is:  c1e4242f-32bb-4467-986c-8605a91c7291
+2024-09-20T13:35:14.1601769Z:Gateway Client: response send time from cloud gateway:  2024-09-20T13:35:14.1485097+00:00
+2024-09-20T13:35:14.1601769Z:Gateway Client: response receive time from client SendAsync:  2024-09-20T13:35:14.1601769+00:00
+2024-09-20T13:35:14.1601769Z:Gateway Client: response duration time between cloud gateway and client SendAsync:  00:00:00.0116672
+2024-09-20T13:35:14.1601769Z:Waiting for Get status call, Operation id is: 76e98b7d-23d6-466b-ba9b-346fcee07b68, status is: Inprogress
+2024-09-20T13:35:14.1601769Z:Attempting download of "prodgatewayv2west31.blob.core.windows.net/09-23-2024-user-0957f203-cb20-4270-be97-44e03a28e52f/b9cd34ab-e868-4197-a6e2-75d7fa64365a/62e83ac387654eafb5c59f0321873116.dll?skoid=38ebbd80-c6ff-4f7e-9a05-d083a1ec3f23&sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d&skt=2024-09-20T13%3a34%3a48Z&ske=2024-09-23T13%3a34%3a48Z&sks=b&skv=2024-05-04&sv=2024-05-04&se=2024-09-23T13%3a34%3a48Z&sr=c&sp=rwdl" to "C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Client.dll"
+2024-09-20T13:35:14.1757928Z:Downloading from this blob location: prodgatewayv2west31.blob.core.windows.net/09-23-2024-user-0957f203-cb20-4270-be97-44e03a28e52f/b9cd34ab-e868-4197-a6e2-75d7fa64365a/62e83ac387654eafb5c59f0321873116.dll?skoid=38ebbd80-c6ff-4f7e-9a05-d083a1ec3f23&sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d&skt=2024-09-20T13%3a34%3a48Z&ske=2024-09-23T13%3a34%3a48Z&sks=b&skv=2024-05-04&sv=2024-05-04&se=2024-09-23T13%3a34%3a48Z&sr=c&sp=rwdl
+2024-09-20T13:35:14.1757928Z:Downloading signed file to tmp folder: C:\__w\_temp\sign\esrp\EsrpClient_e2c8fd384c0d4779b4b7b793f089fd65
+2024-09-20T13:35:14.2831074Z:Client Telemetry: Events published in this batch: 10
+2024-09-20T13:35:14.2831074Z:Client Telemetry: Events received so far in this session: 41
+2024-09-20T13:35:14.2831074Z:Client Telemetry: Events published so far in this session: 41
+2024-09-20T13:35:14.5956053Z:Downloaded signed file to: C:\__w\_temp\sign\esrp\EsrpClient_e2c8fd384c0d4779b4b7b793f089fd65\b9cd34ab-e868-4197-a6e2-75d7fa64365a/62e83ac387654eafb5c59f0321873116.dll
+2024-09-20T13:35:14.6268494Z:CleanupStorage: account prodgatewayv2west31.blob.core.windows.net blob b9cd34ab-e868-4197-a6e2-75d7fa64365a/62e83ac387654eafb5c59f0321873116.dll returned True
+2024-09-20T13:35:14.6268494Z:Successfully downloaded "prodgatewayv2west31.blob.core.windows.net" to "C:\__w\1\s\CosmosDbProxy\CosmosDbProxy\bin\Release\net6.0\Microsoft.Azure.Cosmos.Client.dll"
+2024-09-20T13:35:14.6268494Z:OperationId:76e98b7d-23d6-466b-ba9b-346fcee07b68, Status:Pass, IsResubmission :False, Finished processing 4/4, % Completed :100%
+2024-09-20T13:35:14.6268494Z:Completed the TPL workflow
+2024-09-20T13:35:14.6424763Z:
+2024-09-20T13:35:14.6424763Z: | File Name                 | Status | FileSize | Total Time(sec) | Upload(sec) | Submit(sec) | SignWait(sec) | Download(sec) | Overwrite(sec) | Retry Count | OperationId                          | 
+ |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
+ | oft.Azure.Cosmos.Core.dll | Pass   | 135.44KB | 11.91           | 0.81        | 0.38        | 10.29         | 0.41          | 0.045          | 0           | 2eeeac1f-7dc9-4aa5-871f-1956fcbe5fb2 | 
+ | rialization.HybridRow.dll | Pass   | 231.4KB  | 21.87           | 0.81        | 0.37        | 20.38         | 0.31          | 0.031          | 0           | 85049d4b-02a0-46c4-bfa5-b4bd05219c47 | 
+ | t.Azure.Cosmos.Direct.dll | Pass   | 1.24MB   | 21.99           | 0.91        | 0.24        | 20.33         | 0.46          | 0.021          | 0           | e06dfe9a-06b6-454f-8414-a9a19795fb94 | 
+ | t.Azure.Cosmos.Client.dll | Pass   | 2.54MB   | 22.55           | 1.59        | 0.19        | 20.31         | 0.45          | 0.031          | 0           | 76e98b7d-23d6-466b-ba9b-346fcee07b68 | 
+
+2024-09-20T13:35:14.6424763Z:Running result validation..
+2024-09-20T13:35:14.6424763Z:4 files signed successfully!
+2024-09-20T13:35:14.6580996Z:final fileToSignResult number is: 4
+2024-09-20T13:35:14.6893508Z:Constructing EsrpClientResponse
+2024-09-20T13:35:14.6893508Z:EsrpClientResponse is constructed
+2024-09-20T13:35:14.7049821Z:result json is: {
+  "submissionResponses": [
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "/xYoPswwLB/ExbY+qSENHSO2WC/fy5rjMohJEGznjn8=",
+          "hashType": "sha256",
+          "destinationHash": "MQ4BIBZjURItbUUPwRIN96VPtBZoIIC/SOzfl+YoU8Y=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Core.dll",
+          "destinationFileSizeInBytes": 138784,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Core.dll"
+        }
+      ],
+      "operationId": "2eeeac1f-7dc9-4aa5-871f-1956fcbe5fb2",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "MaZyqZ6ixwQ+fM7QJfNJ4KPKfnUGONEmmOH+CGrZWuo=",
+          "hashType": "sha256",
+          "destinationHash": "+Yo0ldknn+hPCTHgpm/fIeIrlXMmeBYtNJTNRbg6BLw=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Serialization.HybridRow.dll",
+          "destinationFileSizeInBytes": 237112,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Serialization.HybridRow.dll"
+        }
+      ],
+      "operationId": "85049d4b-02a0-46c4-bfa5-b4bd05219c47",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "k66vceG4f7C4sFkGEocV+tyKYurBnqe3npS+WjSGjyo=",
+          "hashType": "sha256",
+          "destinationHash": "FgrUaT4Rps2Q3aFBP+B6+zW1ilpNIJQXEMTFBN7t9uA=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Direct.dll",
+          "destinationFileSizeInBytes": 1302560,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Direct.dll"
+        }
+      ],
+      "operationId": "e06dfe9a-06b6-454f-8414-a9a19795fb94",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    },
+    {
+      "fileStatusDetail": [
+        {
+          "sourceHash": "q/JWDhfJ+hRmt9EQ4Jjo4x7BMnxjTpTo5+5J1/YCQ5c=",
+          "hashType": "sha256",
+          "destinationHash": "r21ZyjRyEsOgDlvTMJDPToWYPJZLetzqAFSub3qES18=",
+          "certificateThumbprint": null,
+          "destinationLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Client.dll",
+          "destinationFileSizeInBytes": 2663856,
+          "sourceLocation": "C:\\__w\\1\\s\\CosmosDbProxy\\CosmosDbProxy\\bin\\Release\\net6.0\\Microsoft.Azure.Cosmos.Client.dll"
+        }
+      ],
+      "operationId": "76e98b7d-23d6-466b-ba9b-346fcee07b68",
+      "customerCorrelationId": "00000000-0000-0000-0000-000000000000",
+      "statusCode": "pass",
+      "errorInfo": null
+    }
+  ],
+  "esrpClientSessionGuid": "e2c8fd38-4c0d-4779-b4b7-b793f089fd65",
+  "version": "1.0.0"
+}
+2024-09-20T13:35:14.7206021Z:Warning: 
+
+2024-09-20T13:35:14.7206021Z:esrp-client-finalTime: 29868.9465
+2024-09-20T13:35:14.7362269Z:Final return code is: 0
+2024-09-20T13:35:14.7362269Z:ClientTelemetryDispose started, this is not affecting Exe reliability, only lost telemetry if error happens ***********************
+2024-09-20T13:35:14.7362269Z:Client Telemetry: Flushing telemetry buffer with timeout 0 ms
+2024-09-20T13:35:14.7362269Z:Client Telemetry: Flushing telemetry buffer completed within timeout (true/false): False
+2024-09-20T13:35:14.7362269Z:Client Telemetry: Disposing telemetry buffer and event hub client
+2024-09-20T13:35:14.7518494Z:Client Telemetry: Events published in this batch: 15
+2024-09-20T13:35:14.7518494Z:Client Telemetry: Events received so far in this session: 56
+2024-09-20T13:35:14.7518494Z:Client Telemetry: Events published so far in this session: 56
+2024-09-20T13:35:14.7674820Z:event lost number: 0
+2024-09-20T13:35:14.7674820Z:total event processed number: 56
+2024-09-20T13:35:14.7674820Z:total event received number: 56
+2024-09-20T13:35:14.7674820Z:##EsrpClientTelemetry.TotalEventsProcessed##: 56
+2024-09-20T13:35:14.7674820Z:##EsrpClientTelemetry.TotalEventsReceived##: 56
+2024-09-20T13:35:14.7674820Z:##EsrpClientTelemetry.DisposeTimeMilliseconds##: 45
+2024-09-20T13:35:14.7831080Z:ClientTelemetryDispose ended ***********************
